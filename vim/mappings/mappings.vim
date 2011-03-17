@@ -1,6 +1,6 @@
 "Personal command  mapping
 map   <silent> <F2> :write<CR>
-map   <silent> <F3> :set ivnrelativenumber<CR>
+map   <silent> <F3> :set invrelativenumber<CR>
 nnoremap <silent> <F4> :NERDTreeToggle `=CodePath()`<cr>
 map   <silent> <F5> gg=G<CR><C-O><C-O>
 map   <silent> <F9> :set spell!<CR>
@@ -10,7 +10,7 @@ map  <C-P> :cp<CR>
 map " ci"
 
 imap  <silent> <F2> <Esc> :write<CR>
-imap  <silent> <F3> <Esc> :set ivnrelativenumber<CR>
+imap  <silent> <F3> <Esc> :set invrelativenumber<CR>
 inoremap <silent> <F4> <Esc>:NERDTreeToggle `=CodePath()` <cr>
 imap  <silent> <F5> <Esc> gg=G<CR><C-O><C-O>
 imap  <silent> <F9> <Esc> :set spell!<CR>
