@@ -2,9 +2,14 @@ require 'rake'
 require 'find'
 require 'pathname'
 
-IGNORE_FILES = [/^\.gitignore$/, /^Rakefile$/,/^README.textile$/]
+IGNORE_FILES = [/^\.gitignore$/, /^Rakefile$/,/^README.textile$/,/^\.gitmodules$/]
 
-files = `git ls-files`.split("\n")
+files = `git ls-files`.split("\n").reject! {|f| f.match(/^vim\/bundle/)}
+
+Dir["vim/bundle/**/*"].each { |file|
+    files << file unless File.directory?(file)
+}
+
 files.reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
 
 desc 'installs vim files in home dir'
