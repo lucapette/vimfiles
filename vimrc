@@ -49,6 +49,8 @@ set statusline+=%=
 set statusline+=\ [%p%%]
 set statusline+=\ [%L]
 
+let mapleader = ","
+
 " I don't remember where I stole the initial colour scheme.
 colorscheme lucapette
 

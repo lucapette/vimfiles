@@ -4,7 +4,7 @@ This repository includes my vim files, it also contains a _Rakefile_ for syncing
 
 I currently use the following plugins:
 
-* pathgen
+* pathogen
 * FuzzyFinder
 * FuzzyFinderTextmate
 * NERDTree
