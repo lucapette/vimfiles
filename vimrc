@@ -76,6 +76,8 @@ let g:NERDTreeHijackNetrw = 1
 let g:codepath_add_to_tags = 1
 let g:codepath_add_to_path = 1
 
+" snipmate config
+let g:snippets_dir = "$HOME/.vim/snippets"
 "FuzzyFinderTextMate Config
 autocmd User Rails let g:fuzzy_ignore = 'tmp/**/*,*.png,*.jpg'
 let g:fuzzy_path_display = 'highlighted_path'

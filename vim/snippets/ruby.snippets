@@ -7,15 +7,9 @@ snippet def
 	def ${1:method_name}
 		${2}
 	end
-snippet if if
+snippet if
 	if ${1:condition}
 		${2}
-	end
-snippet if if else
-	if ${1:condition}
-		${2}
-	else
-		${3}
 	end
 snippet unless
 	unless ${1:condition}
@@ -47,9 +41,9 @@ snippet missing
 	def method_missing(name, *args, &block)
 		${1}
 	end
-snippet array
+snippet Array
 	Array.new(${1:10}) { |${2:i}| ${3} }
-snippet hash
+snippet Hash
 	Hash.new { |${1:hash}, ${2:key}| $1[$2] = ${3} }
 snippet log
 	logger.info("${1}")
@@ -91,3 +85,10 @@ snippet redirect message
 	redirect_to ${1:path}, :${2:notice} => "${3:message}"
 snippet accepts
 	accepts_nested_attributes_for :${1:association_name}
+snippet one
+	has_one	:item
+snippet many
+	has_many :items
+snippet belongs
+	belongs_to :item
+	
