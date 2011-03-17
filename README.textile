@@ -1,0 +1,14 @@
+My vim configuration files
+
+This repository includes my vim files, it also contains a _Rakefile_ for syncing files.
+
+I currently use the following plugins:
+
+* pathgen
+* FuzzyFinder
+* FuzzyFinderTextmate
+* NERDTree
+* codepath
+* rails
+* snipMate
+* textile
