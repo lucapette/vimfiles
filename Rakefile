@@ -29,6 +29,19 @@ task :install do
 
 end
 
+desc 'inits bundles'
+task :bundles do
+    bundles = []
+    Dir["vim/bundle/*"].each { |file|
+        bundles << file
+    }
+    bundles.each do |bundle|
+        system("git submodule update --init #{bundle}")
+    end
+
+end
+
+
 desc 'pulls from git repository'
 task :pull do
     puts "Updating from git repository"
