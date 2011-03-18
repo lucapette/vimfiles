@@ -23,25 +23,25 @@ snippet mail_to
 snippet link_to
 	<%= link_to("${1}",${2})  %>
 snippet checkbox
-	<%= f.label :${1:attribute} %>
+	<%= f.label :${1:attribute} %><br />
 	<%= f.check_box :$1  %>
 snippet text_field
-	<%= f.label :${1:attribute} %>
+	<%= f.label :${1:attribute} %><br />
 	<%= f.text_field :$1 %>
 snippet file_field
-	<%= f.label :${1:attribute} %>
+	<%= f.label :${1:attribute} %><br />
 	<%= f.file_field :$1  %>
 snippet password_field
-	<%= f.label :${1:attribute} %>
+	<%= f.label :${1:attribute} %><br />
 	<%= f.password_field :$1  %>
 snippet text_area
-	<%= f.label :${1:attribute} %>
+	<%= f.label :${1:attribute} %><br />
 	<%= f.text_area :$1 %>
 snippet radio_button
-	<%= f.label :${1:attribute} %>
+	<%= f.label :${1:attribute} %><br />
 	<%= f.radio_button :$1, :${2:tag_value}  %>
 snippet hidden_field
-	<%= f.label :${1:attribute} %>
+	<%= f.label :${1:attribute} %><br />
 	<%= f.hidden_field :${1:attribute}  %>
 snippet fields_for
 	<%= f.fields_for :${1:model} do |${2:item}|

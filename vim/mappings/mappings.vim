@@ -28,9 +28,7 @@ map <C-l> <C-W>l
 " sane regex
 nnoremap / /\v
 vnoremap / /\v
-nnoremap <space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
+nnoremap <leader><space> :noh<cr>
 
 " select all plus yank all plus cut all
 nmap <C-A> ggVG
