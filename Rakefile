@@ -13,7 +13,7 @@ Dir["vim/bundle/**/*"].each { |file|
 files.reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
 
 desc 'installs vim files in home dir'
-task :install do
+task :install => ["bundles"] do
     targetdir=File.expand_path("~")
     files.each do |file|
         if File.exists?(file)
