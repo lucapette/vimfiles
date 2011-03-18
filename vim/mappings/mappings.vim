@@ -8,7 +8,10 @@ map   <silent> <C-T> :FuzzyFinderTextMate<CR>
 map  <C-N> :cn<CR>
 map  <C-P> :cp<CR>
 map " ci"
-map <leader># :g/^#./d<CR>
+map <leader># :g/^\s*#.*/d<CR>
+map <leader><space> :g/^\n$/d
+
+" you forget sudo too
 cmap w!! w !sudo tee % >/dev/null
 
 imap  <silent> <F2> <Esc> :write<CR>
@@ -30,7 +33,7 @@ map <C-l> <C-W>l
 " sane regex
 nnoremap / /\v
 vnoremap / /\v
-nnoremap <leader><space> :noh<cr>
+nnoremap <leader>/ :noh<cr>
 
 " select all plus yank all plus cut all
 nmap <C-A> ggVG
