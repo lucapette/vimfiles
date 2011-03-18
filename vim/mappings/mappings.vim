@@ -8,6 +8,8 @@ map   <silent> <C-T> :FuzzyFinderTextMate<CR>
 map  <C-N> :cn<CR>
 map  <C-P> :cp<CR>
 map " ci"
+map <leader># :g/^#./d<CR>
+cmap w!! w !sudo tee % >/dev/null
 
 imap  <silent> <F2> <Esc> :write<CR>
 imap  <silent> <F3> <Esc> :set invrelativenumber<CR>
