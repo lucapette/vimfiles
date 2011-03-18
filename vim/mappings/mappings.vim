@@ -9,7 +9,7 @@ map  <C-N> :cn<CR>
 map  <C-P> :cp<CR>
 map " ci"
 map <leader># :g/^\s*#.*/d<CR>
-map <leader><space> :g/^\n$/d
+map <leader><space> :g/^\n$/d<CR>
 
 " you forget sudo too
 cmap w!! w !sudo tee % >/dev/null
