@@ -40,8 +40,8 @@ imap <C-@> <C-Space>
 
 "Leader based mappings
 map <leader>z z=<CR>
-map <leader>n ]s<CR>
-map <leader>p [s<CR>
+map <leader>n ]s
+map <leader>p [s
 nnoremap <leader>/ :noh<cr>
 map <leader><space> :g/^\n$/d<CR>
 
