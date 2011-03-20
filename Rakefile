@@ -36,7 +36,7 @@ task :bundles do
         bundles << file
     }
     bundles.each do |bundle|
-        system("git submodule update --init #{bundle}")
+        system("git submodule update --init #{bundle}") if File.exists?(File.join(bundle,".git"))
     end
 
 end
