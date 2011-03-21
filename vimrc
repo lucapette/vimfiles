@@ -18,6 +18,7 @@ set hlsearch
 set ignorecase
 set incsearch
 set laststatus=2
+set magic
 set matchtime=4
 set nocompatible
 set nofoldenable
@@ -46,7 +47,7 @@ set statusline+=%w
 set statusline+=\ [%{&ff}]
 set statusline+=\ [%Y]
 set statusline+=%=
-set statusline+=\ [%p%%]
+set statusline+=\ [%l]
 set statusline+=\ [%L]
 
 let mapleader = ","
@@ -68,6 +69,8 @@ autocmd BufReadPost *
 autocmd FocusLost * :wa
 
 source ~/.vim/mappings/mappings.vim
+
+let g:ackprg="ack-grep -H --nocolor --nogroup"
 
 "NERDTree plugin config
 let g:NERDTreeHijackNetrw = 1

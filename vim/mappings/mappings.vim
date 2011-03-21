@@ -11,7 +11,6 @@ imap  <silent> <F5> <Esc> gg=G<CR><C-O><C-O>
 imap  <silent> <F9> <Esc> :set spell!<CR>
 imap  <silent> <C-T> <Esc> :FuzzyFinderTextMate<CR>
 
-" I think I can find a better way
 map " ci"
 cmap w!! w !sudo tee % >/dev/null
 
@@ -19,6 +18,7 @@ cmap w!! w !sudo tee % >/dev/null
 map   <silent> <C-T> :FuzzyFinderTextMate<CR>
 map  <C-N> :cn<CR>
 map  <C-P> :cp<CR>
+
 " windows
 map + <C-W>+
 map - <C-W>-
@@ -26,6 +26,7 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
 " select all plus yank all plus cut all
 nmap <C-A> ggVG
 nmap <C-Y> <c-a>y
@@ -39,11 +40,13 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 imap <C-@> <C-Space>
 
 "Leader based mappings
-map <leader>z z=<CR>
+map <leader>z z=
 map <leader>n ]s
 map <leader>p [s
 nnoremap <leader>/ :noh<cr>
 map <leader><space> :g/^\n$/d<CR>
+map <leader>c :s/^\(\s*\)/\1#/<CR><leader>/
+map <leader>u :s/^\(\s*\)#/\1/<CR><leader>/
 
 " sane regex
 nnoremap / /\v
