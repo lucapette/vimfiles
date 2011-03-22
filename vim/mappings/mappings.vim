@@ -20,8 +20,8 @@ map  <C-N> :cn<CR>
 map  <C-P> :cp<CR>
 
 " windows
-map + <C-W>+
-map - <C-W>-
+map + <C-W>>
+map - <C-W><
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
