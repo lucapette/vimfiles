@@ -31,12 +31,9 @@ end
 
 desc 'inits bundles'
 task :bundles do
-    bundles = []
-    Dir["vim/bundle/*"].each { |file|
-        bundles << file
-    }
+    bundles = `git submodule | cut -d' ' -f3`.split("\n")
     bundles.each do |bundle|
-        system("git submodule update --init #{bundle}") if File.exists?(File.join(bundle,".git"))
+        system("git submodule update --init #{bundle}")
     end
 
 end
