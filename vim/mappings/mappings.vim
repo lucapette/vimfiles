@@ -2,17 +2,23 @@
 map   <silent> <F2> :write<CR>
 map   <silent> <F3> :set invrelativenumber<CR>
 nnoremap <silent> <F4> :NERDTreeToggle `=CodePath()`<cr>
-map   <silent> <F5> gg=G<CR><C-O><C-O>
+map   <silent> <F5> gg=G<CR>
 map   <silent> <F9> :set spell!<CR>
 imap  <silent> <F2> <Esc> :write<CR>
 imap  <silent> <F3> <Esc> :set invrelativenumber<CR>
 inoremap <silent> <F4> <Esc>:NERDTreeToggle `=CodePath()` <cr>
-imap  <silent> <F5> <Esc> gg=G<CR><C-O><C-O>
+imap  <silent> <F5> <Esc> gg=G<CR>
 imap  <silent> <F9> <Esc> :set spell!<CR>
 imap  <silent> <C-T> <Esc> :FuzzyFinderTextMate<CR>
 
 map " ci"
 cmap w!! w !sudo tee % >/dev/null
+
+if has('gui_running')
+  " Make shift-insert work like in Xterm
+  map <S-Insert> <MiddleMouse>
+  map! <S-Insert> <MiddleMouse>
+endif
 
 " Ctrl-based mappings
 map   <silent> <C-T> :FuzzyFinderTextMate<CR>

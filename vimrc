@@ -13,13 +13,18 @@ set directory=/tmp
 set expandtab
 set gdefault
 set grepprg=ack
-set history=50
+set guioptions-=A
+set guioptions-=T
+set guioptions-=m
+set guioptions-=r
+set history=1000
 set hlsearch
 set ignorecase
 set incsearch
 set laststatus=2
 set magic
 set matchtime=4
+set mouse=a
 set nocompatible
 set nofoldenable
 set numberwidth=1
@@ -34,12 +39,12 @@ set smartcase
 set spelllang=en_gb
 set splitright
 set tabstop=4
-set term=gnome-256color
 set textwidth=78
 set wildignore=*.bak,*.o,*.e,*~
 set wildmenu
 
 set statusline=%F
+set statusline+=%{fugitive#statusline()}
 set statusline+=%m
 set statusline+=%r
 set statusline+=%h
@@ -52,8 +57,7 @@ set statusline+=\ [%L]
 
 let mapleader = ","
 
-" I don't remember where I stole the initial colour scheme.
-colorscheme lucapette
+colorscheme vividchalk
 
 syntax on
 
