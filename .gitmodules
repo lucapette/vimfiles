@@ -37,3 +37,6 @@
 [submodule "vim/bundle/fugitive"]
 	path = vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/visualstar"]
+	path = vim/bundle/visualstar
+	url = https://github.com/thinca/vim-visualstar.git
