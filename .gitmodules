@@ -10,9 +10,6 @@
 [submodule "vim/bundle/ruby"]
 	path = vim/bundle/ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "vim/bundle/preview"]
-	path = vim/bundle/preview
-	url = https://github.com/greyblake/vim-preview.git
 [submodule "vim/bundle/snipmate"]
 	path = vim/bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git

@@ -74,8 +74,6 @@ autocmd FocusLost * :wa
 
 source ~/.vim/mappings/mappings.vim
 
-let g:ackprg="ack-grep -H --nocolor --nogroup"
-
 "NERDTree plugin config
 let g:NERDTreeHijackNetrw = 1
 
