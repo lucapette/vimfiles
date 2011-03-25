@@ -42,7 +42,6 @@ set tabstop=4
 set textwidth=78
 set wildignore=*.bak,*.o,*.e,*~
 set wildmenu
-
 set statusline=%F
 set statusline+=%{fugitive#statusline()}
 set statusline+=%m
@@ -73,6 +72,10 @@ autocmd BufReadPost *
 autocmd FocusLost * :wa
 
 source ~/.vim/mappings/mappings.vim
+
+" textile plugin
+let g:TextileOS="Linux"
+let g:TextileBrowser="/opt/google/chrome/chrome"
 
 "NERDTree plugin config
 let g:NERDTreeHijackNetrw = 1
