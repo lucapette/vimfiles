@@ -1,4 +1,3 @@
-map " ci"
 cmap w!! w !sudo tee % >/dev/null
 
 if has('gui_running')
