@@ -18,21 +18,20 @@ do dig into this solution please take a look at
 "this":http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim article.
 * NERDTree
 This is a very famous plugins and provides a very nice tree filesystem tree. Check
-it out "here":http://www.vim.org/scripts/script.php?script_id=1658.
+it out http://www.vim.org/scripts/script.php?script_id=1658.
 * codepath
 I personally wrote this one and I use it to get the current project directory
 based on the assumption that all your projects are under the same _code_ path.
+Check it out http://www.vim.org/scripts/script.php?script_id=3435.
 * rails.vim
 I love rails and I love vim. Someone would say I love tpope. But everyone
 loves tpope. BTW, this plugin is essential.
-* snipMate
+* "snipMate":http://www.vim.org/scripts/script.php?script_id=2540
 This plugin tries to implement some features of the snippet feature of
-Textmate. I use it very often, you will. Check it out
-"here":http://www.vim.org/scripts/script.php?script_id=2540.
-* textile
+Textmate. I use it very often, you will.
+* "textile":http://www.vim.org/scripts/script.php?script_id=2305
 I use textile for many things and I was in need for a bit of syntax and a
-simple preview. This plugin does exactly that. Check it out
-"here":http://www.vim.org/scripts/script.php?script_id=2305.
+simple preview. This plugin does exactly that.
 
 h2. Roadmap
 
