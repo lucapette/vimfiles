@@ -49,3 +49,6 @@
 [submodule "vim/bundle/ruby-refactoring"]
 	path = vim/bundle/ruby-refactoring
 	url = https://github.com/ecomba/vim-ruby-refactoring
+[submodule "vim/bundle/liquid"]
+	path = vim/bundle/liquid
+	url = https://github.com/tpope/vim-liquid.git
