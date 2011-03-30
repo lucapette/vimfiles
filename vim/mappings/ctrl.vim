@@ -1,9 +1,7 @@
-" Ctrl-based mappings
-
 map   <silent> <C-T> :FuzzyFinderTextMate<CR>
 imap  <silent> <C-T> <Esc> :FuzzyFinderTextMate<CR>
-map  <C-N> :cn<CR>
-map  <C-P> :cp<CR>
+map <silent> <C-N> :cn<CR>
+map <silent> <C-P> :cp<CR>
 
 " windows
 map + <C-W>>
@@ -13,7 +11,7 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" select all plus yank all plus cut all
+" select all
 nmap <C-A> ggVG
 
 "Code completion with ctrl-space
