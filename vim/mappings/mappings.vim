@@ -22,6 +22,14 @@ nnoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
+" search
+nmap n nzz
+nmap N Nzz
+nmap * *zz
+nmap # #zz
+nmap g* g*zz
+nmap g# g#zz
+
 source ~/.vim/mappings/ctrl.vim
 source ~/.vim/mappings/function-keys.vim
 source ~/.vim/mappings/leader.vim
