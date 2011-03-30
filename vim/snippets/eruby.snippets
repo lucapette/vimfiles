@@ -59,7 +59,7 @@ snippet render render
 snippet render render partial
 	<%= render :partial => "${1:item}"  %>
 snippet image_tag
-	<%= image_tag "$1${2:.png}" %>
+	<%= image_tag "${1:image}${2:.png}" %>
 snippet style
 	<%= stylesheet_link_tag ${1::all} %>
 snippet javascript_include_tag
