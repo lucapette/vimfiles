@@ -56,8 +56,6 @@ set statusline+=\ [%L]
 
 let mapleader = ","
 
-colorscheme vividchalk
-
 syntax on
 
 filetype plugin indent on
@@ -90,3 +88,6 @@ let g:snippets_dir = "$HOME/.vim/snippets"
 "FuzzyFinderTextMate Config
 autocmd User Rails let g:fuzzy_ignore = 'tmp/**/*,*.png,*.jpg'
 let g:fuzzy_path_display = 'highlighted_path'
+
+colorscheme desert
+highlight Pmenu guibg=darkkhaki
