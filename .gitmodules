@@ -52,3 +52,6 @@
 [submodule "vim/bundle/liquid"]
 	path = vim/bundle/liquid
 	url = https://github.com/tpope/vim-liquid.git
+[submodule "vim/bundle/specky"]
+	path = vim/bundle/specky
+	url = https://github.com/vim-scripts/Specky
