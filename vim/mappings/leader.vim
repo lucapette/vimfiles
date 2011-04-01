@@ -9,5 +9,5 @@ map <leader>w :Gwrite<CR>
 map <leader>q :Gwq<CR>
 map <leader>z z=
 
-nnoremap <leader>/ :noh<cr>
+nnoremap <leader>7 :noh<cr>
 vnoremap <leader>a y:Ack <c-r>=expand(@")<CR><CR>
