@@ -44,14 +44,17 @@ set wildignore=*.bak,*.o,*.e,*~
 set wildmenu
 
 function! RvmStatusLine()
-    let prompt=system("~/.rvm/bin/rvm-prompt v g")
-    return substitute(prompt, '\n', '', 'g')
+    if ! exists('g:rvm_prompt')
+        let g:rvm_prompt = system("~/.rvm/bin/rvm-prompt v g")
+        let g:rvm_prompt = substitute(g:rvm_prompt, '\n', '', 'g')
+    endif
+    return '['.g:rvm_prompt.']'
 endfunction
 
 " more informative status line
-set statusline=%F
-set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
-set statusline+=%{RvmStatusLine()}
+set statusline=\ %{exists('g:loaded_fugitive')?fugitive#statusline():''}
+set statusline+=\ %{RvmStatusLine()}
+set statusline+=\ [%F]
 set statusline+=%m
 set statusline+=%r
 set statusline+=%h
