@@ -3,6 +3,9 @@ imap  <silent> <C-T> <Esc> :FuzzyFinderTextMate<CR>
 map <silent> <C-N> :cn<CR>
 map <silent> <C-P> :cp<CR>
 
+" save and indent
+map <silent> <C-S> :w<CR><F5>
+
 " windows
 map + <C-W>>
 map - <C-W><
