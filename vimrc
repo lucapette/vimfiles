@@ -102,3 +102,5 @@ let g:fuzzy_path_display = 'highlighted_path'
 
 colorscheme desert
 highlight Pmenu guibg=darkkhaki
+highlight Normal guibg=black
+highlight NonText guibg=black
