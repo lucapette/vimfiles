@@ -42,8 +42,16 @@ set tabstop=4
 set textwidth=78
 set wildignore=*.bak,*.o,*.e,*~
 set wildmenu
+
+function! RvmStatusLine()
+    let prompt=system("~/.rvm/bin/rvm-prompt v g")
+    return substitute(prompt, '\n', '', 'g')
+endfunction
+
+" more informative status line
 set statusline=%F
-set statusline+=%{fugitive#statusline()}
+set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
+set statusline+=%{RvmStatusLine()}
 set statusline+=%m
 set statusline+=%r
 set statusline+=%h
