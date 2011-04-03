@@ -43,17 +43,10 @@ set textwidth=78
 set wildignore=*.bak,*.o,*.e,*~
 set wildmenu
 
-function! RvmStatusLine()
-    if ! exists('g:rvm_prompt')
-        let g:rvm_prompt = system("~/.rvm/bin/rvm-prompt v g")
-        let g:rvm_prompt = substitute(g:rvm_prompt, '\n', '', 'g')
-    endif
-    return '['.g:rvm_prompt.']'
-endfunction
-
+let g:rvmprompt_tokens = "v g"
 " more informative status line
 set statusline=\ %{exists('g:loaded_fugitive')?fugitive#statusline():''}
-set statusline+=\ %{RvmStatusLine()}
+set statusline=\ %{exists('g:loaded_rvmprompt')?rvmprompt#statusline():''}
 set statusline+=\ [%F]
 set statusline+=%m
 set statusline+=%r

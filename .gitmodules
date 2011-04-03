@@ -52,3 +52,6 @@
 [submodule "vim/bundle/specky"]
 	path = vim/bundle/specky
 	url = https://github.com/vim-scripts/Specky
+[submodule "vim/bundle/rvmprompt"]
+	path = vim/bundle/rvmprompt
+	url = https://github.com/lucapette/rvmprompt.vim.git
