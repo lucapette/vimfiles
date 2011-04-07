@@ -22,6 +22,7 @@ nnoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
+nmap D dd
 " search
 nmap n nzz
 nmap N Nzz
