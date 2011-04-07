@@ -14,6 +14,8 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+imap <silent> <C-F> <C-X><C-F>
+
 " select all
 nmap <C-A> ggVG
 
