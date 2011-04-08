@@ -3,27 +3,23 @@ My vim configuration files
 This repository includes my vim files, it also contains a _Rakefile_ for
 syncing files. Sooner or later, I'll describe rake tasks.
 
-
 h2. plugins
 
 I currently use the following plugins:
 
-* pathogen
+* "pathogen":https://github.com/tpope/vim-pathogen
 This is a wonderful plugin for handling your configuration. If you don't use
-it you should. Check it out at "https://github.com/tpope/vim-pathogen":https://github.com/tpope/vim-pathogen.
+it you should.
 * FuzzyFinder and FuzzyFinderTextmate
 These plugins try to emulate cmd-t feature in textmate. There are many options
 out there, as command-t and PeepOpen but I still prefer this one. If you want
-do dig into this solution please take a look at
-"this":http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim article.
-* NERDTree
-This is a very famous plugins and provides a very nice tree filesystem tree. Check
-it out http://www.vim.org/scripts/script.php?script_id=1658.
-* codepath
+to dig into this solution please take a look at "this":http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim article.
+* "NERDTree":http://www.vim.org/scripts/script.php?script_id=1658
+This is a very famous plugins and provides a very nice tree filesystem tree.
+* "codepath":http://www.vim.org/scripts/script.php?script_id=3435
 I personally wrote this one and I use it to get the current project directory
 based on the assumption that all your projects are under the same _code_ path.
-Check it out http://www.vim.org/scripts/script.php?script_id=3435.
-* rails.vim
+* "rails.vim":http://rails.vim.tpope.net/
 I love rails and I love vim. Someone would say I love tpope. But everyone
 loves tpope. BTW, this plugin is essential.
 * "snipMate":http://www.vim.org/scripts/script.php?script_id=2540
@@ -32,6 +28,25 @@ Textmate. I use it very often, you will.
 * "textile":http://www.vim.org/scripts/script.php?script_id=2305
 I use textile for many things and I was in need for a bit of syntax and a
 simple preview. This plugin does exactly that.
+* "Ack.vim":http://www.vim.org/scripts/script.php?script_id=2572
+This plugin is just an interface to "ack":http://betterthangrep.com/. I
+recommend to install ack from the site.
+
+h2. Rake tasks
+
+"Rake":http://rake.rubyforge.org/ is the ruby version of make. This project
+contains the followibng tasks:
+
+* bundles
+It is run by the install task in order to initialize all the git bundles.
+* install
+It copies all the project files into your home directory.
+* pull
+It updates the project from git repo.
+* update
+It pulls from the repo and then installs the files in your home directory.
+
+The install task is the default one.
 
 h2. Roadmap
 
