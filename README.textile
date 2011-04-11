@@ -1,7 +1,7 @@
 My vim configuration files
 
 This repository includes my vim files, it also contains a _Rakefile_ for
-syncing files. Sooner or later, I'll describe rake tasks.
+syncing files.
 
 h2. plugins
 
