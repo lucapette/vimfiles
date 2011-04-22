@@ -93,7 +93,7 @@ let g:snippets_dir = "$HOME/.vim/snippets"
 autocmd User Rails let g:fuzzy_ignore = 'tmp/**/*,*.png,*.jpg'
 let g:fuzzy_path_display = 'highlighted_path'
 
-colorscheme desert
-highlight Pmenu guibg=darkkhaki
-highlight Normal guibg=black
-highlight NonText guibg=black
+colorscheme vividchalk
+hi Comment guifg=SkyBlue
+hi Pmenu gui=Italic guibg=DarkGrey
+hi PmenuSel gui=Italic guibg=SkyBlue

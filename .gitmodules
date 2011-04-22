@@ -55,3 +55,6 @@
 [submodule "vim/bundle/rvmprompt"]
 	path = vim/bundle/rvmprompt
 	url = https://github.com/lucapette/rvmprompt.vim.git
+[submodule "vim/bundle/vividchalk"]
+	path = vim/bundle/vividchalk
+	url = https://github.com/tpope/vim-vividchalk.git
