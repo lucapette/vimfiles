@@ -40,6 +40,7 @@ set spelllang=en_gb
 set splitright
 set tabstop=4
 set textwidth=78
+set title titlestring=%F\ %m%r%h%w
 set wildignore=*.bak,*.o,*.e,*~
 set wildmenu
 
