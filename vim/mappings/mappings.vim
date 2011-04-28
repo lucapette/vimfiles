@@ -22,10 +22,7 @@ nnoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
-nmap D d$
-nmap Y y$
-
-" search
+" search and move
 nmap n nzz
 nmap N Nzz
 nmap * *zz
