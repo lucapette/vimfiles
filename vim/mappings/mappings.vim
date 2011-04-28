@@ -14,6 +14,10 @@ vnoremap / /\v
 vmap > >gv
 vmap < <gv
 
+" Make selecting inside an HTML tag less dumb. Thanks to @stevelosh.
+nnoremap Vit vitVkoj
+nnoremap Vat vatV
+
 " Zen time
 nnoremap <up> <nop>
 nnoremap <down> <nop>
