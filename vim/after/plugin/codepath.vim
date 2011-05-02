@@ -1,1 +1,1 @@
-let g:fuzzy_roots = [CodePath()]
+let g:fuzzy_roots = [codepath#path()]

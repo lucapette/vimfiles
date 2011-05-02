@@ -1,7 +1,7 @@
 map <F1> <ESC>
 map   <silent> <F2> :write<CR>
 map   <silent> <F3> :set invrelativenumber<CR>
-nnoremap <silent> <F4> :NERDTreeToggle `=CodePath()`<CR>
+nnoremap <silent> <F4> :NERDTreeToggle `=codepath#path()`<CR>
 nnoremap <silent> <S-F4> :NERDTree <C-R>=expand("%:p:h")<CR><CR>
 map   <silent> <F5> mmgg=G'm
 map   <silent> <F9> :set spell!<CR>

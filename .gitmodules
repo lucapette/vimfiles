@@ -58,3 +58,6 @@
 [submodule "vim/bundle/vividchalk"]
 	path = vim/bundle/vividchalk
 	url = https://github.com/tpope/vim-vividchalk.git
+[submodule "vim/bundle/codepath"]
+	path = vim/bundle/codepath
+	url = https://github.com/lucapette/codepath.vim
