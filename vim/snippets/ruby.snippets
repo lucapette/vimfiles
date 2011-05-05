@@ -56,6 +56,8 @@ snippet fatal
 	logger.fatal( "${1:message}")
 snippet flash
 	flash[:${1:notice}] = "${2:text}"
+snippet find
+	find { |${1:e}| ${2}$1 }
 snippet map
 	map {|${1:e}| $1${2} }
 snippet select
@@ -70,8 +72,6 @@ snippet all
 	all? { |${1:e}| $1.${2:method}?  }
 snippet any
 	any? { |${1:e}| $1.${2:method}?  }
-snippet find
-	@${1:item} = ${2:Model}.find(params[:${3:id}])
 snippet scope scope name condition
 	scope :${1:name}, ${2:condition}
 snippet scope scope name lambda
