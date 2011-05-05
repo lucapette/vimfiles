@@ -57,11 +57,11 @@ snippet fatal
 snippet flash
 	flash[:${1:notice}] = "${2:text}"
 snippet map
-	map {|${1:e}| ${2} $1 }
+	map {|${1:e}| $1${2} }
 snippet select
-	select {|${1:e}| ${2} $1 }
+	select {|${1:e}| $1${2} }
 snippet each
-	each { |${1:e}| ${2} $1 }
+	each { |${1:e}| $1${2} }
 snippet sort
 	sort { |${1:a}, ${2:b}| $1 <=> $2 }
 snippet sort_by
