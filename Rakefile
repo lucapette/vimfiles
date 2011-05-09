@@ -13,7 +13,7 @@ Dir["vim/bundle/**/*"].each { |file|
 files.reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
 
 desc 'install vimfiles in home dir'
-task :install => ["bundles"] do
+task :install => ["init_bundles"] do
     targetdir=File.expand_path("~")
     files.each do |file|
         if File.exists?(file)
@@ -30,12 +30,9 @@ task :install => ["bundles"] do
 end
 
 desc 'init bundles'
-task :bundles do
-    bundles = `git submodule | cut -d' ' -f3`.split("\n")
-    bundles.each do |bundle|
-        system("git submodule update --init #{bundle}")
-    end
-
+task :init_bundles do
+    system("git submodule init")
+    system("git submodule update")
 end
 
 
