@@ -16,6 +16,8 @@ nnoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
+map Q @@
+
 " search and move
 nmap n nzz
 nmap N Nzz
