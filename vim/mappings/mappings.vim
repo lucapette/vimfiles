@@ -34,6 +34,9 @@ nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
 
+" textile linkify
+vmap l s"f"a:
+
 source ~/.vim/mappings/ctrl.vim
 source ~/.vim/mappings/function-keys.vim
 source ~/.vim/mappings/leader.vim
