@@ -32,7 +32,7 @@ set pastetoggle=<F12>
 set relativenumber
 set ruler
 set shell=/bin/bash\ -i
-set shiftwidth=4
+set shiftwidth=2
 set showcmd
 set showmatch
 set smartcase
