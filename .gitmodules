@@ -64,3 +64,6 @@
 [submodule "vim/bundle/textobj-quoted"]
 	path = vim/bundle/textobj-quoted
 	url = https://github.com/lucapette/vim-textobj-quoted.git
+[submodule "vim/bundle/zencoding"]
+	path = vim/bundle/zencoding
+	url = https://github.com/mattn/zencoding-vim.git

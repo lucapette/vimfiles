@@ -19,6 +19,10 @@ imap <silent> <C-F> <C-X><C-F>
 " select all
 nmap <C-A> ggVG
 
+" zencoding map
+nmap <c-e> <c-y>,
+imap <c-e> <c-y>,
+
 "Code completion with ctrl-space
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
             \ "\<lt>C-n>" :

@@ -90,6 +90,9 @@ let g:codepath_add_to_path = 1
 " snipmate config
 let g:snippets_dir = "$HOME/.vim/snippets"
 
+" zencoding
+let g:user_zen_settings = { 'indentation' : '  '}
+
 "FuzzyFinderTextMate Config
 autocmd User Rails let g:fuzzy_ignore = 'tmp/**/*,*.png,*.jpg'
 let g:fuzzy_path_display = 'highlighted_path'
