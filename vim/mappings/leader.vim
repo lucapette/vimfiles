@@ -10,3 +10,6 @@ map <leader>q :Gwq<CR>
 map <leader>z z=
 
 vnoremap <leader>a y:Ack <c-r>=expand(@")<CR><CR>
+
+" textile linkify
+vmap  <leader>l s"f"a:

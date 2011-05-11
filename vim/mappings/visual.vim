@@ -6,8 +6,5 @@ vmap < <gv
 nnoremap Vit vitVkoj
 nnoremap Vat vatV
 
-" textile linkify
-vmap l s"f"a:
-
 " zencoding mapping
 vmap <c-e> <c-y>,
