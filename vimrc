@@ -97,7 +97,5 @@ let g:user_zen_settings = { 'indentation' : '  '}
 autocmd User Rails let g:fuzzy_ignore = 'tmp/**/*,*.png,*.jpg'
 let g:fuzzy_path_display = 'highlighted_path'
 
-colorscheme vividchalk
+colorscheme molokai
 hi Comment guifg=SkyBlue
-hi Pmenu gui=Italic guibg=DarkGrey
-hi PmenuSel gui=Italic guibg=SkyBlue
