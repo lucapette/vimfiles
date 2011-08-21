@@ -1,4 +1,5 @@
 map <S-Insert> "+p
+imap <S-Insert> <esc>"+pi
 
 " sane regex
 nnoremap / /\v
