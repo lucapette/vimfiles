@@ -76,10 +76,6 @@ autocmd FocusLost * :wa
 
 source ~/.vim/mappings/mappings.vim
 
-" textile plugin
-let g:TextileOS="Linux"
-let g:TextileBrowser="/opt/google/chrome/chrome"
-
 "NERDTree plugin config
 let g:NERDTreeHijackNetrw = 1
 
