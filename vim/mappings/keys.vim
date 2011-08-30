@@ -1,10 +1,10 @@
-imap  <silent> <F2> <Esc> :write<CR>
+imap  <silent> <F2> <Esc> :write<CR>:silent !%s/\s\+$//<cr>
 imap  <silent> <F3> <Esc> :set invrelativenumber<CR>
 imap  <silent> <F5> <Esc> mmgg=G'm
 imap  <silent> <F9> <Esc> :set spell!<CR>
 imap <silent> <F1> <ESC>
 
-map   <silent> <F2> :write<CR>
+map   <silent> <F2> :write<CR>:silent! %s/\s\+$//<cr>
 map   <silent> <F3> :set invrelativenumber<CR>
 map   <silent> <F5> mmgg=G'm
 map   <silent> <F9> :set spell!<CR>
