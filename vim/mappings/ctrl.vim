@@ -7,8 +7,6 @@ map <silent> <C-P> :cp<CR>
 map <silent> <C-S> :w<CR><F5>
 
 " windows
-map + <C-W>>
-map - <C-W><
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
