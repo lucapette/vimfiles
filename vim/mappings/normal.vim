@@ -16,6 +16,9 @@ inoremap <down> <nop>
 " last macro
 map Q @@
 
+nmap j +
+nmap k -
+
 " search and move
 nmap n nzz
 nmap N Nzz
