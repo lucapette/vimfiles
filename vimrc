@@ -95,3 +95,4 @@ let g:fuzzy_path_display = 'highlighted_path'
 
 colorscheme molokai
 hi Comment guifg=SkyBlue
+hi Visual term=reverse cterm=reverse gui=reverse guifg=#66D9EF guibg=#000000
