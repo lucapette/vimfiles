@@ -48,16 +48,17 @@ let g:rvmprompt_tokens = "v g"
 " more informative status line
 set statusline=\ %{exists('g:loaded_fugitive')?fugitive#statusline():''}
 set statusline=\ %{exists('g:loaded_rvmprompt')?rvmprompt#statusline():''}
-set statusline+=\ [%F]
+set statusline=\ %{exists('g:loaded_codepath')?codepath#statusline():''}
 set statusline+=%m
 set statusline+=%r
 set statusline+=%h
 set statusline+=%w
-set statusline+=\ [%{&ff}]
 set statusline+=\ [%Y]
 set statusline+=%=
 set statusline+=\ [%l]
 set statusline+=\ [%L]
+set statusline+=\ [%p%%]
+set statusline+=\ [%{&ff}]
 
 let mapleader = ","
 
