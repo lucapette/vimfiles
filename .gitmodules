@@ -58,3 +58,6 @@
 [submodule "vim/bundle/commentary"]
 	path = vim/bundle/commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "vim/bundle/blockle"]
+	path = vim/bundle/blockle
+	url = https://github.com/vim-scripts/blockle.vim
