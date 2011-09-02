@@ -73,6 +73,12 @@ snippet sort_by!
 	sort_by! { |${1:e}| $1.${2:method} }
 snippet utf
 	# coding: UTF-8
+snippet bm
+	Benchmark.bm do |x|
+		x.report { ${1} }
+	end
+snippet report
+	x.report { ${1} }
 snippet log
 	logger.info("${1}")
 snippet debug
