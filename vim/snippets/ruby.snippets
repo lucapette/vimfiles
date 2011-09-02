@@ -51,18 +51,6 @@ snippet Array
 	Array.new(${1:10}) { |${2:i}| ${3} }
 snippet Hash
 	Hash.new { |${1:hash}, ${2:key}| $1[$2] = ${3} }
-snippet log
-	logger.info("${1}")
-snippet debug
-	logger.debug("${1:message}")
-snippet warn
-	logger.warn("${1:message}")
-snippet error
-	logger.error("${1:message}")
-snippet fatal
-	logger.fatal( "${1:message}")
-snippet flash
-	flash[:${1:notice}] = "${2:text}"
 snippet find
 	find { |${1:e}| ${2}$1 }
 snippet map
@@ -83,12 +71,24 @@ snippet sort!
 	sort! { |${1:a}, ${2:b}| $1 <=> $2 }
 snippet sort_by!
 	sort_by! { |${1:e}| $1.${2:method} }
+snippet utf
+	# coding: UTF-8
+snippet log
+	logger.info("${1}")
+snippet debug
+	logger.debug("${1:message}")
+snippet warn
+	logger.warn("${1:message}")
+snippet error
+	logger.error("${1:message}")
+snippet fatal
+	logger.fatal( "${1:message}")
+snippet flash
+	flash[:${1:notice}] = "${2:text}"
 snippet scope scope name condition
 	scope :${1:name}, ${2:condition}
 snippet scope scope name lambda
 	scope :${1:name}, lambda { |${2:param}| ${3:function} }
-snippet utf
-	# coding: UTF-8
 snippet redirect path
 	redirect_to ${1:path}
 snippet redirect message
