@@ -46,9 +46,9 @@ set wildmenu
 
 let g:rvmprompt_tokens = "v g"
 " more informative status line
-set statusline=\ %{exists('g:loaded_fugitive')?fugitive#statusline():''}
-set statusline=\ %{exists('g:loaded_rvmprompt')?rvmprompt#statusline():''}
-set statusline=\ %{exists('g:loaded_codepath')?codepath#statusline():''}
+set statusline=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
+set statusline+=\ %{exists('g:loaded_rvmprompt')?rvmprompt#statusline():''}
+set statusline+=\ [%F]
 set statusline+=%m
 set statusline+=%r
 set statusline+=%h
