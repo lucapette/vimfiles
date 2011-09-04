@@ -30,13 +30,13 @@ task :install => ["init_bundles"] do
 
 end
 
-desc 'init bundles'
+desc 'init the installed bundles'
 task :init_bundles do
   system("git submodule init")
   system("git submodule update")
 end
 
-desc 'update_bundles'
+desc 'update the installed bundles'
 task :update_bundles do
   bundles = `git submodule | cut -d' ' -f3`.split("\n")
   bundles.each do |bundle|
