@@ -8,3 +8,9 @@ nnoremap Vat vatV
 
 " zencoding mapping
 vmap <c-e> <c-y>,
+
+" visual search with ack
+vnoremap <leader>a y:Ack <c-r>=expand(@")<CR><CR>
+
+" textile linkify
+vmap <leader>l S"f"a:
