@@ -37,6 +37,12 @@ snippet password_field
 snippet text_area
 	<%= ${2:f}.label :${1:attribute} %><br />
 	<%= $2.text_area :$1 %>
+snippet select
+	<%= ${2:f}.label :${1:attribute} %><br />
+	<%= select("${3}",":$1",${4}) %>
+snippet select_tag
+	<%= label_tag :${1:attribute} %><br />
+	<%= select_tag("${3}",":$1",${4}) %>
 snippet radio_button
 	<%= ${2:f}.label :${1:attribute} %><br />
 	<%= $2.radio_button :$1, :${2:tag_value} %>
