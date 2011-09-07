@@ -3,7 +3,7 @@ map <leader>A :copen<CR>
 map <leader>a :Ack
 map <leader>c :Gcommit<CR>
 map <leader>d :Gdiff<CR>
-map <leader>h mm*`m
+nmap <silent> <leader>h :setl hls<CR>:let @/="\\<<C-r><C-w>\\>"<CR>
 map <leader>n ]s
 map <leader>p [s
 map <leader>q :Gwq<CR>
