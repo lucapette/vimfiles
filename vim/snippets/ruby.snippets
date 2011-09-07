@@ -2,6 +2,10 @@ snippet #!
 	#!/usr/bin/env ruby
 snippet require
 	require "${1}"
+snippet do
+	do |${1:e}|
+		$1${2}
+	end
 snippet def
 	def ${1:method_name}
 		${2}
