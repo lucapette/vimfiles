@@ -80,10 +80,6 @@ source ~/.vim/mappings/mappings.vim
 "NERDTree plugin config
 let g:NERDTreeHijackNetrw = 1
 
-"codepath.vim config
-let g:codepath_add_to_tags = 1
-let g:codepath_add_to_path = 1
-
 " snipmate config
 let g:snippets_dir = "$HOME/.vim/snippets"
 
