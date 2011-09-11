@@ -8,8 +8,8 @@ I use the following plugins:
 
 * "pathogen":https://github.com/tpope/vim-pathogen
 This is a wonderful plugin for handling your configuration. If you don't use it you should.
-* FuzzyFinder and FuzzyFinderTextmate
-These plugins try to emulate cmd-t feature in textmate. There are many options out there, as command-t and PeepOpen but I still prefer this one. If you want to dig into this solution please take a look at "this":http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim article.
+* "command-t":https://wincent.com/products/command-t
+Citing homepage _The Command-T plug-in for VIM provides an extremely fast, intuitive mechanism for opening files with a minimal number of keystrokes_. Believe him, it's really fast!
 * "NERDTree":http://www.vim.org/scripts/script.php?script_id=1658
 This is a very famous plugins and provides a very nice tree filesystem tree.
 * "codepath":http://www.vim.org/scripts/script.php?script_id=3435
