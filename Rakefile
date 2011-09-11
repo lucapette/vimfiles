@@ -34,7 +34,6 @@ end
 desc 'init the installed bundles'
 task :init_bundles do
   system("git submodule init")
-  system("git submodule update")
 end
 
 desc 'update the installed bundles'
