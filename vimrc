@@ -73,8 +73,6 @@ autocmd BufReadPost *
     \   exe "normal g`\"" |
     \ endif
 
-autocmd FocusLost * :wa
-
 source ~/.vim/mappings/mappings.vim
 
 "NERDTree plugin config
