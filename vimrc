@@ -88,6 +88,10 @@ let g:user_zen_settings = { 'indentation' : '  '}
 autocmd User Rails let g:fuzzy_ignore = 'tmp/**/*,*.png,*.jpg'
 let g:fuzzy_path_display = 'highlighted_path'
 
+" RubyComplete
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_rails = 1
+
 colorscheme molokai
 hi Comment guifg=SkyBlue
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#66D9EF guibg=#000000
