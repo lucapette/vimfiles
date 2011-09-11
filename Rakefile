@@ -27,7 +27,8 @@ task :install => ["init_bundles"] do
       puts "#{file} removed?"
     end
   end
-
+  command_t_path=File.join(File.expand_path("~"),".vim","bundle","command-t")
+  system("cd #{command_t_path}; rake make")
 end
 
 desc 'init the installed bundles'

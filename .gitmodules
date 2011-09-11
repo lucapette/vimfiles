@@ -55,3 +55,6 @@
 [submodule "vim/bundle/blockle"]
 	path = vim/bundle/blockle
 	url = https://github.com/vim-scripts/blockle.vim
+[submodule "vim/bundle/command-t"]
+	path = vim/bundle/command-t
+	url = git://git.wincent.com/command-t.git
