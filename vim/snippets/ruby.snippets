@@ -112,7 +112,7 @@ snippet one
 snippet many
 	has_many :${1:items}
 snippet belongs
-	belongs_to :${1:item} 
+	belongs_to :${1:item}
 snippet	namespace
 	namespace :${1:admin} do
 		${2}
@@ -123,4 +123,20 @@ snippet infinity
 	   notifications :lib_notify do
 		  show_images :mode => :rubies
 	   end
+	end
+snippet describe
+	describe "${1:subject}" do
+		${2}
+	end
+snippet it
+	it "${1:does}" do
+		${2}
+	end
+snippet context
+	context "${1:context}" do
+		${2}
+	end
+snippet before
+	before(:each) do
+		${1}
 	end

@@ -92,6 +92,10 @@ let g:fuzzy_path_display = 'highlighted_path'
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_rails = 1
 
+" highlight rspec keywords properly https://gist.github.com/64635
+autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it specify it_should_behave_like before after setup subject its shared_examples_for shared_context let
+highlight def link rubyRspec Function
+
 colorscheme molokai
 hi Comment guifg=SkyBlue
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#66D9EF guibg=#000000
