@@ -75,10 +75,10 @@ autocmd BufReadPost *
 
 source ~/.vim/mappings/mappings.vim
 
-"NERDTree plugin config
+" NERDTree
 let g:NERDTreeHijackNetrw = 1
 
-" snipmate config
+" snipmate
 let g:snippets_dir = "$HOME/.vim/snippets"
 
 " zencoding
@@ -95,6 +95,7 @@ let g:rubycomplete_rails = 1
 autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it specify it_should_behave_like before after setup subject its shared_examples_for shared_context let
 highlight def link rubyRspec Function
 
+" colorscheme
 colorscheme molokai
 hi Comment guifg=SkyBlue
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#66D9EF guibg=#000000
