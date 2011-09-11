@@ -84,6 +84,9 @@ let g:snippets_dir = "$HOME/.vim/snippets"
 " zencoding
 let g:user_zen_settings = { 'indentation' : '  '}
 
+" command-t
+let g:CommandTMatchWindowAtTop = 1
+
 " RubyComplete
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_rails = 1
