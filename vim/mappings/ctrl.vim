@@ -1,5 +1,7 @@
 map   <silent> <C-T> :CommandT <c-r>=codepath#path()<CR><CR>
 map   <silent> <C-T> <ESC>:CommandT <c-r>=codepath#path()<CR><CR>
+map   <silent> <C-B> :CommandTBuffer<CR>
+map   <silent> <C-B> <ESC>:CommandTBuffer<CR>
 map <silent> <C-N> :cn<CR>
 map <silent> <C-P> :cp<CR>
 
