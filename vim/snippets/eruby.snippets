@@ -47,8 +47,7 @@ snippet radio_button
 	<%= ${2:f}.label :${1:attribute} %><br />
 	<%= $2.radio_button :$1, :${2:tag_value} %>
 snippet hidden_field
-	<%= ${2:f}.label :${1:attribute} %><br />
-	<%= $2.hidden_field :${1:attribute} %>
+	<%= ${1:f}.hidden_field :${2:attribute} %>
 snippet fields_for
 	<%= f.fields_for :${1:model} do |${2:item}|
 		$3
@@ -70,7 +69,7 @@ snippet style
 	<%= stylesheet_link_tag ${1::all} %>
 snippet javascript_include_tag
 	<%= javascript_include_tag ${1::all} %>
-snippet paginate 
+snippet paginate
 	<%= paginate(@${1:items}) %>
 snippet content_for
 	<% content_for :${1:part} do -%>
