@@ -86,6 +86,8 @@ let g:user_zen_settings = { 'indentation' : '  '}
 
 " command-t
 let g:CommandTMatchWindowAtTop = 1
+let g:CommandTSelectPrevMap = "<C-p>"
+let g:CommandTAcceptSelectionVSplitMap = "<C-k>"
 
 " RubyComplete
 let g:rubycomplete_buffer_loading = 1
