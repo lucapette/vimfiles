@@ -3,6 +3,7 @@ call pathogen#helptags()
 
 set autochdir
 set autoindent
+set autoread
 set autowrite
 set backspace=indent,eol,start
 set backup
