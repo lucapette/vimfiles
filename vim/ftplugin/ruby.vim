@@ -1,2 +1,2 @@
-map <c-f> ]mzt
-map <c-b> [mzt
+map <c-f> ]mzz
+map <c-b> [mzz
