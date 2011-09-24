@@ -79,9 +79,6 @@ source ~/.vim/mappings/mappings.vim
 " NERDTree
 let g:NERDTreeHijackNetrw = 1
 
-" snipmate
-let g:snippets_dir = "$HOME/.vim/snippets"
-
 " zencoding
 let g:user_zen_settings = { 'indentation' : '  '}
 
