@@ -16,7 +16,7 @@ This is a very famous plugins and provides a very nice tree filesystem tree.
 I personally wrote this one and I use it to get the current project directory based on the assumption that all your projects are under the same _code_ path.
 * "rails.vim":http://rails.vim.tpope.net/
 I love rails and I love vim. Someone would say I love tpope. But everyone loves tpope. BTW, this plugin is essential if you are a Rails developer.
-* "snipMate":http://www.vim.org/scripts/script.php?script_id=2540
+* "snipMate":https://github.com/garbas/vim-snipmate
 This plugin tries to implement some features of the snippet feature of Textmate. I use it very often, you will.
 * "Ack.vim":http://www.vim.org/scripts/script.php?script_id=2572
 This plugin is just an interface to "ack":http://betterthangrep.com/. I recommend to get the latest version of ack on the website.
