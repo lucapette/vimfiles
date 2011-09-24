@@ -1,3 +1,4 @@
+" insert from the clipboard
 map <S-Insert> "+p
 imap <S-Insert> <esc>"+pi
 
@@ -13,9 +14,10 @@ nnoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
-" last macro
-map Q @@
+" re-execute the stored q macro
+map Q @q
 
+" non-blank characters moving
 nmap j +
 nmap k -
 
