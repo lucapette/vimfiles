@@ -12,9 +12,9 @@ cd vimfiles
 rake init
 
 rake sync
+</code>
 
 h2. plugins
-</code>
 
 I use the following plugins:
 
