@@ -1,8 +1,20 @@
 My vim configuration files
 
-This repository includes my vim files, it also contains a _Rakefile_ for syncing files with your vim configuration directory.
+It also contains a _Rakefile_ for syncing files with your vim configuration directory.
+
+h2. Installation
+
+<code>
+git clone https://github.com/lucapette/vimfiles
+
+cd vimfiles
+
+rake init
+
+rake sync
 
 h2. plugins
+</code>
 
 I use the following plugins:
 
@@ -25,18 +37,14 @@ h2. Rake tasks
 
 "Rake":http://rake.rubyforge.org/ is the ruby version of make. This project contains the following Rake tasks:
 
-* init_bundles
-It is run by the install task in order to initialize all the git bundles.
+* init
+You have to run it to ste up your installation
 * update_bundles
 It updates all the bundles repository from the remote source.
-* install
+* sync
 It copies all the project files into your home directory.
-* pull
-It updates the project from git repo.
-* update
-It pulls from the repo and then installs the files in your home directory.
 
-The install task is the default one.
+The sync task is the default one.
 
 h2. Roadmap
 
@@ -44,7 +52,7 @@ h2. Roadmap
 * reorganize snippets.
 * write documentation for configurations.
 
-h2. Copyright 
+h2. Copyright
 
 Copyright 2011 Luca Pette
 

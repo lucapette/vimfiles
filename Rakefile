@@ -14,8 +14,8 @@ Dir["vim/bundle/**/*"].each { |file|
 
 files.reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
 
-desc "install vimfiles in #{target_dir}"
-task :install => ["init_bundles"] do
+desc "sync vimfiles in #{target_dir}"
+task :sync do
   files.each do |file|
     if File.exists?(file)
       target_file = File.join(target_dir, ".#{file}")
@@ -31,9 +31,10 @@ task :install => ["init_bundles"] do
   system("cd #{command_t_path}; rake make")
 end
 
-desc 'init the installed bundles'
-task :init_bundles do
+desc "init project"
+task :init do
   system("git submodule init")
+  system("git submodule update")
 end
 
 desc 'update the installed bundles'
@@ -44,15 +45,4 @@ task :update_bundles do
   end
 end
 
-desc 'pull from git repository'
-task :pull do
-  puts "Updating from git repository"
-  system("cd " << Dir.new(File.dirname(__FILE__)).path << " && git pull")
-end
-
-desc 'update from git repository and then updates files in dir'
-task :update => ['pull', 'install'] do
-  puts "Update of vim files completed."
-end
-
-task :default => ['install']
+task :default => ['sync']
