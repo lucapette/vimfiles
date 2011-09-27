@@ -3,9 +3,6 @@ imap   <silent> <C-T> <ESC>:CommandT <c-r>=codepath#path()<CR><CR>
 map <silent> <C-N> :cn<CR>
 map <silent> <C-P> :cp<CR>
 
-" save and indent
-map <silent> <C-S> :w<CR><F5>
-
 " windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
