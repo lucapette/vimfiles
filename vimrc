@@ -95,6 +95,9 @@ let g:rubycomplete_rails = 1
 autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it specify it_should_behave_like before after setup subject its shared_examples_for shared_context let
 highlight def link rubyRspec Function
 
+" rails-tags
+autocmd User Rails call setbufvar('%','&tags',&tags.', '.RailsRoot().'/.git/rails-tags')
+
 " colorscheme
 colorscheme molokai
 hi Comment guifg=SkyBlue
