@@ -30,7 +30,7 @@ snippet for
 		${3} $1
 	end
 snippet class
-	class ${1:`substitute(Filename(), '^.', '\u&', '')`}
+	class ${1:`substitute(Filename(),'\v\C%([_]|<)(.)','\u\1','g')`}
 		${2}
 	end
 snippet init
@@ -38,7 +38,7 @@ snippet init
 		${2}
 	end
 snippet module
-	module ${1:`substitute(Filename(), '^.', '\u&', '')`}
+	module ${1:`substitute(Filename(),'\v\C%([_]|<)(.)','\u\1','g')`}
 		${2}
 	end
 snippet r
