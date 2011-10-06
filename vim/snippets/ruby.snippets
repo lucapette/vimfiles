@@ -83,10 +83,10 @@ snippet utf
 	# coding: UTF-8
 snippet bm
 	Benchmark.bm do |x|
-		x.report { ${1} }
+		x.report "${1:description}" { ${2} }
 	end
 snippet report
-	x.report { ${1} }
+	x.report "${1:description}" { ${2} }
 snippet gem
 	gem "${1:gemname}"
 snippet log
