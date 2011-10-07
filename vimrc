@@ -42,7 +42,7 @@ set splitright
 set tabstop=4
 set textwidth=78
 set title titlestring=%F\ %m%r%h%w
-set wildignore=*.bak,*.o,*.e,*~
+set wildignore=*~,.git,tmp,_site
 set wildmenu
 
 let g:rvmprompt_tokens = "v g"
