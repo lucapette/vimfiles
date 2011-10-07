@@ -1,7 +1,7 @@
 snippet #!
 	#!/usr/bin/env ruby
 snippet require
-	require "${1}"
+	require '${1}'
 snippet do
 	do |${1:e}|
 		$1${2}
@@ -88,7 +88,7 @@ snippet bm
 snippet report
 	x.report "${1:description}" { ${2} }
 snippet gem
-	gem "${1:gemname}"
+	gem '${1:name}'
 snippet log
 	logger.info("${1}")
 snippet debug
