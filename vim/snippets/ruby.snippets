@@ -2,10 +2,6 @@ snippet #!
 	#!/usr/bin/env ruby
 snippet require
 	require '${1}'
-snippet do
-	do |${1:e}|
-		$1${2}
-	end
 snippet def
 	def ${1:method_name}
 		${2}
@@ -91,14 +87,6 @@ snippet gem
 	gem '${1:name}'
 snippet log
 	logger.info("${1}")
-snippet debug
-	logger.debug("${1:message}")
-snippet warn
-	logger.warn("${1:message}")
-snippet error
-	logger.error("${1:message}")
-snippet fatal
-	logger.fatal( "${1:message}")
 snippet flash
 	flash[:${1:notice}] = "${2:text}"
 snippet scope scope name condition
