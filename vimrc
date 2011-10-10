@@ -1,5 +1,6 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+set nocompatible
 
 set autochdir
 set autoindent
@@ -26,7 +27,6 @@ set laststatus=2
 set magic
 set matchtime=4
 set mouse=a
-set nocompatible
 set nofoldenable
 set numberwidth=1
 set pastetoggle=<F12>
