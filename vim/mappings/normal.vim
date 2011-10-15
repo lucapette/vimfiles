@@ -28,3 +28,8 @@ nmap * *zz
 nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
+
+" call docs
+noremap RB :call OpenDoc('ruby', expand('<cword>'))<CR>
+noremap RR :call OpenDoc('rails', expand('<cword>'))<CR>
+noremap RS :call OpenDoc('rspec', expand('<cword>'))<CR>
