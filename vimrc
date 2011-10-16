@@ -74,7 +74,8 @@ autocmd BufReadPost *
     \   exe "normal g`\"" |
     \ endif
 
-source ~/.vim/mappings/mappings.vim
+" source mappings
+exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
 
 " NERDTree
 let g:NERDTreeHijackNetrw = 1
