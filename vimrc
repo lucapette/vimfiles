@@ -75,7 +75,6 @@ autocmd BufReadPost *
     \ endif
 
 source ~/.vim/mappings/mappings.vim
-source ~/.vim/functions/opendoc.vim
 
 " NERDTree
 let g:NERDTreeHijackNetrw = 1
