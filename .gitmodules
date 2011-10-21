@@ -70,3 +70,6 @@
 [submodule "vim/bundle/textobj-indent"]
 	path = vim/bundle/textobj-indent
 	url = https://github.com/kana/vim-textobj-indent
+[submodule "vim/bundle/pathogen"]
+	path = vim/bundle/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
