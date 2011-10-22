@@ -1,6 +1,4 @@
 map <leader><space> :noh<cr>
-map <leader>A :copen<CR>
-map <leader>B :CommandTBuffer<CR>
 map <leader>a :Ack <c-r>=expand("<cword>")<CR><CR>
 map <leader>c :Gcommit<CR>
 map <leader>d :Gdiff<CR>
