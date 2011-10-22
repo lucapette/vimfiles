@@ -1,4 +1,4 @@
-map <leader><space> :noh<cr>
+map <silent> <leader><space> :noh<cr>
 map <leader>a :Ack <c-r>=expand("<cword>")<CR><CR>
 map <leader>c :Gcommit<CR>
 map <leader>d :Gdiff<CR>
