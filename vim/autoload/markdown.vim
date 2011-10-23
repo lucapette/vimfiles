@@ -20,3 +20,13 @@ function! markdown#Preview()
 
   silent exec '!sensible-browser "' . output_name . '" &'
 endfunction
+
+function markdown#Headerify(level)
+  if a:level == 1
+    normal! yypVr=
+  elseif a:level == 2
+    normal! yypVr-
+  else
+    execute "normal! ^i".repeat('#',a:level)." "
+  endif
+endfunction
