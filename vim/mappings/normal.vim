@@ -1,6 +1,6 @@
 " insert from the clipboard
-map <S-Insert> "+p
-imap <S-Insert> <esc>"+pi
+nmap <S-Insert> "+p
+inoremap <S-Insert> <esc>"+pi
 
 " sane regex
 nnoremap / /\v
@@ -15,7 +15,7 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 
 " re-execute the stored q macro
-map Q @q
+nmap Q @q
 
 " non-blank characters moving
 nmap j +

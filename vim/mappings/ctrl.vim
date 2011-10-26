@@ -1,22 +1,22 @@
-map   <silent> <C-T> :CommandT <c-r>=codepath#path()<CR><CR>
-imap   <silent> <C-T> <ESC>:CommandT <c-r>=codepath#path()<CR><CR>
-map <silent> <C-N> :cn<CR>
-map <silent> <C-P> :cp<CR>
+nmap   <silent> <C-T> :CommandT <c-r>=codepath#path()<CR><CR>
+inoremap   <silent> <C-T> <ESC>:CommandT <c-r>=codepath#path()<CR><CR>
+nmap <silent> <C-N> :cn<CR>
+nmap <silent> <C-P> :cp<CR>
 
 " windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+nmap <C-j> <C-W>j
+nmap <C-k> <C-W>k
+nmap <C-h> <C-W>h
+nmap <C-l> <C-W>l
 
-imap <silent> <C-F> <C-X><C-F>
+inoremap <silent> <C-F> <C-X><C-F>
 
 " select all
 nmap <C-A> ggVG
 
 " zencoding map
 nmap <c-e> <c-y>,
-imap <c-e> <c-y>,
+inoremap <c-e> <c-y>,
 
 "Omni completion with ctrl-space
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
@@ -24,7 +24,7 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
             \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
             \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
             \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
-imap <C-@> <C-Space>
+inoremap <C-@> <C-Space>
 
 "User defined completion with ctrl-u
 inoremap <expr> <C-u> pumvisible() \|\| &completefunc == '' ?
