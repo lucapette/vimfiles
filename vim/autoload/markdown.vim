@@ -30,3 +30,7 @@ function! markdown#headerify(level)
     execute "normal! ^i".repeat('#',a:level)." "
   endif
 endfunction
+
+function! markdown#linkify()
+  exe "normal! gvxi[\<esc>pa](\<esc>pa)\<esc>F(vib"
+endfunction
