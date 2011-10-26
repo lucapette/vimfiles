@@ -1,4 +1,4 @@
-function! markdown#Preview()
+function! markdown#preview()
 
   silent update
   let output_name = tempname() . '.html'
@@ -21,7 +21,7 @@ function! markdown#Preview()
   silent exec '!sensible-browser "' . output_name . '" &'
 endfunction
 
-function markdown#Headerify(level)
+function! markdown#headerify(level)
   if a:level == 1
     normal! yypVr=
   elseif a:level == 2
