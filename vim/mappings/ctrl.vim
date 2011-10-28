@@ -16,7 +16,7 @@ nmap <C-A> ggVG
 
 " zencoding map
 nmap <c-e> <c-y>,
-inoremap <c-e> <c-y>,
+imap <c-e> <c-y>,
 
 "Omni completion with ctrl-space
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
