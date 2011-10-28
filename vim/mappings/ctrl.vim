@@ -1,5 +1,5 @@
-nmap   <silent> <C-T> :CommandT <c-r>=codepath#path()<CR><CR>
-inoremap   <silent> <C-T> <ESC>:CommandT <c-r>=codepath#path()<CR><CR>
+nmap   <silent> <C-T> :CommandTFlush<CR>:CommandT <c-r>=codepath#path()<CR><CR>
+inoremap   <silent> <C-T> <ESC>:CommandTFlush<CR>:CommandT <c-r>=codepath#path()<CR><CR>
 nmap <silent> <C-N> :cn<CR>
 nmap <silent> <C-P> :cp<CR>
 
