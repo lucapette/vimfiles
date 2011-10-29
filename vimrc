@@ -17,6 +17,7 @@ set directory=/tmp
 set expandtab
 set gdefault
 set grepprg=ack
+set guifont=Monospace\ 11
 set guioptions-=A
 set guioptions-=T
 set guioptions-=m
