@@ -1,5 +1,4 @@
 function! markdown#preview()
-
   silent update
   let output_name = tempname() . '.html'
 
@@ -33,4 +32,9 @@ endfunction
 
 function! markdown#linkify()
   exe "normal! gvxi[\<esc>pa](\<esc>pa)\<esc>F(vib"
+endfunction
+
+function! markdown#spellBalloon()
+  let lines = spellsuggest( spellbadword(v:beval_text)[ 0 ], 5, 0 )
+  return join( lines, has( "balloon_multiline" ) ? "\n" : " " )
 endfunction
