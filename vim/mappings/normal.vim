@@ -29,6 +29,12 @@ nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
 
+" see https://github.com/kana/vim-smartword
+map w  <Plug>(smartword-w)
+map b  <Plug>(smartword-b)
+map e  <Plug>(smartword-e)
+map ge <Plug>(smartword-ge)
+
 " call docs
 noremap RB :call apidock#openUrl('ruby', expand('<cword>'))<CR>
 noremap RR :call apidock#openUrl('rails', expand('<cword>'))<CR>
