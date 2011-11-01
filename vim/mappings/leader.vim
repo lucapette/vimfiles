@@ -7,6 +7,7 @@ nmap <leader>p [s
 nmap <leader>q :Gwq<CR>
 nmap <leader>r :Gread<CR>
 nmap <leader>s :Gstatus<CR>
+nmap <leader>S :Rserver! thin<CR>
 nmap <leader>w :Gwrite<CR>
 nmap <leader>W :Gwrite<bar>Gcommit<CR>
 nmap <leader>z z=
