@@ -30,7 +30,7 @@ nmap g* g*zz
 nmap g# g#zz
 
 " see https://github.com/kana/vim-smartword
-map w  <Plug>(smartword-w)
-map b  <Plug>(smartword-b)
-map e  <Plug>(smartword-e)
-map ge <Plug>(smartword-ge)
+nmap w  <Plug>(smartword)
+nmap b  <Plug>(smartword-b)
+nmap e  <Plug>(smartword-e)
+nmap ge <Plug>(smartword-ge)
