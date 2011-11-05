@@ -9,10 +9,10 @@ inoremap <silent> <F11> <ESC>:Rlog<CR><c-w>P<c-w>J
 nmap <silent> <F1> <ESC>
 nmap <silent> <F2>  mm:w<bar>call utils#trimspaces()<CR>`m
 nmap <silent> <F3> :set invrelativenumber<CR>
+nmap <silent> <F4> :NERDTreeToggle <C-R>=codepath#path()<CR><CR>
 nmap <silent> <F5> gg=G``
 nmap <silent> <F9> :set spell!<CR>
 nmap <silent> <F10> :set invlist<CR>
 nmap <silent> <F11> :Rlog<CR><c-w>P<c-w>J
 
-nmap <silent> <F4> :NERDTreeToggle `=codepath#path()`<CR>
 nmap <silent> <S-F4> :NERDTree <C-R>=expand("%:p:h")<CR><CR>
