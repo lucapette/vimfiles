@@ -1,9 +1,9 @@
 inoremap <silent> <F1> <ESC>
 inoremap <silent> <F2> <ESC> mm:w<bar>call utils#trimspaces()<CR>`m
-inoremap <silent> <F3> <ESC> :set invrelativenumber<CR>
-inoremap <silent> <F5> <ESC> gg=G``
-inoremap <silent> <F9> <ESC> :set spell!<CR>
-inoremap <silent> <F10> <ESC> :set invlist<CR>
+inoremap <silent> <F3> <ESC> :set invrelativenumber<CR>i
+inoremap <silent> <F5> <ESC> gg=G``a
+inoremap <silent> <F9> <ESC> :set spell!<CR>i
+inoremap <silent> <F10> <ESC> :set invlist<CR>i
 inoremap <silent> <F11> <ESC>:Rlog<CR><c-w>P<c-w>J
 
 nmap <silent> <F1> <ESC>
