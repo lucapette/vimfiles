@@ -4,7 +4,6 @@ nmap <leader>c :Gcommit<CR>
 nmap <leader>d :Gdiff<CR>
 nmap <leader>n ]s
 nmap <leader>p [s
-nmap <leader>q :Gwq<CR>
 nmap <leader>r :Gread<CR>
 nmap <leader>s :Gstatus<CR>
 nmap <leader>S :Rserver! thin<CR>
