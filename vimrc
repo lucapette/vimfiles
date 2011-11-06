@@ -60,8 +60,9 @@ set statusline+=%w
 set statusline+=\ [%Y]
 set statusline+=%=
 set statusline+=\ [%l]
-set statusline+=\ [%L]
+set statusline+=\ [%c]
 set statusline+=\ [%p%%]
+set statusline+=\ [%L]
 set statusline+=\ [%{&ff}]
 
 let mapleader = ","
