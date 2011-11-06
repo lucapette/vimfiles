@@ -34,6 +34,16 @@ function! markdown#linkify()
   exe "normal! gvxi[\<esc>pa](\<esc>pa)\<esc>F(vib"
 endfunction
 
+" require surrond.vim
+function! markdown#boldify()
+  exe "normal gvS*gvS*"
+endfunction
+
+" require surrond.vim
+function! markdown#italicize()
+  exe "normal gvS*"
+endfunction
+
 function! markdown#spellBalloon()
   let lines = spellsuggest( spellbadword(v:beval_text)[ 0 ], 5, 0 )
   return join( lines, has( "balloon_multiline" ) ? "\n" : " " )
