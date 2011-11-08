@@ -1,58 +1,57 @@
-My Vim configuration directory. It also contains a Rakefile for syncing files with your vim configuration directory.
-
-Installation
-------------
-
-    git clone https://github.com/lucapette/vimfiles
-
-    cd vimfiles
-
-    rake init
-
-    rake sync
+My [Vim](http://www.vim.org) configuration directory. The project contains a
+rakefile for syncing files with your vim configuration directory and updating
+the plugins.
 
 Plugins
 -------
 
-I use the following plugins:
+- [pathogen](https://github.com/tpope/vim-pathogen)
 
--    [pathogen](https://github.com/tpope/vim-pathogen)
+  This is a wonderful plugin for handling your configuration. If you don’t
+  use it you should.
 
-     This is a wonderful plugin for handling your configuration. If you don’t
-     use it you should.
+- [fugitive.vim](https://github.com/tpope/vim-fugitive)
+  If you use git you **must** learn to use this plugin.
+  [Drew Neil](https://github.com/nelstrom) has done a great series of
+  [screencasts](http://vimcasts.org/) about it.
 
--    [command-t](https://wincent.com/products/command-t)
+- [command-t](https://wincent.com/products/command-t)
 
-     Citing homepage *The Command-T plug-in for VIM provides an extremely
-     fast, intuitive mechanism for opening files with a minimal number of
-     keystrokes*. Believe him, it’s really fast!
+  Citing homepage *The Command-T plug-in for VIM provides an extremely
+  fast, intuitive mechanism for opening files with a minimal number of
+  keystrokes*. Believe him, it’s really fast!
 
--    [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
+- [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
 
-     This is a very famous plugins and provides a very nice tree filesystem
-     tree.
+  This is a very famous plugins and provides a very nice tree filesystem
+  tree.
 
--    [codepath](http://www.vim.org/scripts/script.php?script_id=3435)
+- [rails.vim](http://rails.vim.tpope.net/)
 
-     I personally wrote this one and I use it to get the current project
-     directory based on the assumption that all your projects are under the
-     same *code* path.
+  I love rails and I love vim. Someone would say I love tpope. But
+  everyone loves tpope. BTW, this plugin is essential if you are a Rails
+  developer.
 
--    [rails.vim](http://rails.vim.tpope.net/)
+- [snipMate](https://github.com/garbas/vim-snipmate)
 
-     I love rails and I love vim. Someone would say I love tpope. But
-     everyone loves tpope. BTW, this plugin is essential if you are a Rails
-     developer.
+  This plugin tries to implement some features of the snippet feature of
+  Textmate. I use it very often, you will.
 
--    [snipMate](https://github.com/garbas/vim-snipmate)
+- [Ack.vim](http://www.vim.org/scripts/script.php?script_id=2572)
 
-     This plugin tries to implement some features of the snippet feature of
-     Textmate. I use it very often, you will.
+  This plugin is the Vim interface to [ack](http://betterthangrep.com/). I
+  recommend to get the latest version of ack from the website.
 
--    [Ack.vim](http://www.vim.org/scripts/script.php?script_id=2572)
+- [vim-smartword](https://github.com/kana/vim-smartword)
 
-     This plugin is just an interface to [ack](http://betterthangrep.com/). I
-     recommend to get the latest version of ack on the website.
+  It provides word motions that are smarter in some sense. It's a little
+  nice plugin.
+
+- [codepath](http://www.vim.org/scripts/script.php?script_id=3435)
+
+  I personally wrote this one and I use it to get the current project
+  directory based on the assumption that all your projects are under the
+  same *code* path.
 
 Rake tasks
 ----------
@@ -60,25 +59,25 @@ Rake tasks
 [Rake](http://rake.rubyforge.org/) is the ruby version of make. This
 project contains the following Rake tasks:
 
--    init
+- init
 
-     You have to run it to ste up your installation
+  You have to run it to ste up your installation
 
--    update\_bundles
+- update\_bundles
 
-     It updates all the bundles repository from the remote source.
+  It updates all the bundles repository from the remote source.
 
--    sync
+- sync
 
-     It copies all the project files into your home directory.
+  It copies all the project files into your home directory.
 
 The sync task is the default one.
 
 TODO
--------
+----
 
 - add all the plugins used to the README.
-- reorganize snippets.
+- reorganize snippets and filetype configuration
 - write documentation for configurations.
 
 Copyright
