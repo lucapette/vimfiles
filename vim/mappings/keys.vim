@@ -5,6 +5,7 @@ inoremap <silent> <F5> <ESC> gg=G``a
 inoremap <silent> <F9> <ESC> :set spell!<CR>i
 inoremap <silent> <F10> <ESC> :set invlist<CR>i
 inoremap <silent> <F11> <ESC>:let old_wildignore=&wildignore<bar>let &wildignore=""<bar>Rlog<bar>let &wildignore=old_wildignore<CR>
+inoremap <F12> <ESC>:Rcd<bar>!bundle exec annotate<CR>
 
 nmap <silent> <F1> <ESC>
 nmap <silent> <F2>  mm:w<bar>call utils#trimspaces()<CR>`m
@@ -14,5 +15,6 @@ nmap <silent> <F5> gg=G``
 nmap <silent> <F9> :set spell!<CR>
 nmap <silent> <F10> :set invlist<CR>
 nmap <silent> <F11> :let old_wildignore=&wildignore<bar>let &wildignore=""<bar>Rlog<bar>let &wildignore=old_wildignore<CR>
+nmap <F12> :Rcd<bar>!bundle exec annotate<CR>
 
 nmap <silent> <S-F4> :NERDTree <C-R>=expand("%:p:h")<CR><CR>
