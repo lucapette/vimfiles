@@ -47,10 +47,6 @@ snippet missing
 	def method_missing(name, *args, &block)
 		${1}
 	end
-snippet Array
-	Array.new(${1:10}) { |${2:i}| ${3} }
-snippet Hash
-	Hash.new { |${1:hash}, ${2:key}| $1[$2] = ${3} }
 snippet find
 	find { |${1:e}| ${2}$1 }
 snippet map
@@ -108,13 +104,6 @@ snippet belongs
 snippet	namespace
 	namespace :${1:admin} do
 		${2}
-	end
-snippet infinity
-	infinity_test do
-	   use :rubies => %w(1.8.7 1.9.2), :test_framework => :rspec
-	   notifications :lib_notify do
-		  show_images :mode => :rubies
-	   end
 	end
 snippet describe
 	describe "${1:subject}" do
