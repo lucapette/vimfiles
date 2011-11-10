@@ -34,12 +34,12 @@ function! markdown#linkify()
   exe "normal! gvxi[\<esc>pa](\<esc>pa)\<esc>F(vib"
 endfunction
 
-" require surrond.vim
+" require surround.vim
 function! markdown#boldify()
   exe "normal gvS*gvS*"
 endfunction
 
-" require surrond.vim
+" require surround.vim
 function! markdown#italicize()
   exe "normal gvS*"
 endfunction
