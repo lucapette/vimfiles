@@ -84,7 +84,7 @@ snippet gem
 snippet log
 	logger.info(${1})
 snippet flash
-	flash[:${1:notice}] = "${2:text}"
+	flash[:${1:notice}] = '${2:text}'
 snippet scope scope name condition
 	scope :${1:name}, ${2:condition}
 snippet scope scope name lambda
@@ -92,7 +92,7 @@ snippet scope scope name lambda
 snippet redirect path
 	redirect_to ${1:path}
 snippet redirect message
-	redirect_to ${1:path}, :${2:notice} => "${3:message}"
+	redirect_to ${1:path}, :${2:notice} => '${3:message}'
 snippet accepts
 	accepts_nested_attributes_for :${1:association_name}
 snippet one
@@ -106,15 +106,15 @@ snippet	namespace
 		${2}
 	end
 snippet describe
-	describe "${1:subject}" do
+	describe '${1:subject}' do
 		${2}
 	end
 snippet it
-	it "${1:does}" do
+	it '${1:does}' do
 		${2}
 	end
 snippet context
-	context "${1:context}" do
+	context '${1:context}' do
 		${2}
 	end
 snippet before
