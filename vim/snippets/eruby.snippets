@@ -59,6 +59,12 @@ snippet form_for
 		${2}
 		<%= f.submit %>
 	<% end %>
+snippet input
+	<%= ${2:f}.input :${1:field} %>
+	${3}
+snippet association
+	<%= ${2:f}.association :${1:name} %>
+	${3}
 snippet render render
 	<%= render "${1:item}" %>
 snippet render render partial
