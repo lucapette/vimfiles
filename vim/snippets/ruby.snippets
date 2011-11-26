@@ -41,11 +41,11 @@ snippet @
 	@${1:var} = ${2:$1}
 	${3}
 snippet r
-	attr_reader :${1:attr_names}
+	attr_reader :${1:attribute}
 snippet w
-	attr_writer :${1:attr_names}
+	attr_writer :${1:attribute}
 snippet rw
-	attr_accessor :${1:attr_names}
+	attr_accessor :${1:attribute}
 snippet missing
 	def method_missing(name, *args, &block)
 		${1}
