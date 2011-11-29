@@ -83,6 +83,7 @@ exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "
 
 " NERDTree
 let g:NERDTreeHijackNetrw = 1
+let g:NERDTreeQuitOnOpen = 1
 
 " zencoding
 let g:user_zen_settings = { 'indentation' : '  '}
