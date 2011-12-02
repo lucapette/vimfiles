@@ -2,15 +2,15 @@ require 'rake'
 require 'find'
 require 'pathname'
 
-IGNORE_FILES = [/^\.gitignore$/, /^Rakefile$/,/^README.textile$/,/^\.gitmodules$/]
+IGNORE_FILES = [/^\.gitignore$/, /^Rakefile$/,/^README.markdown$/,/^\.gitmodules$/]
 
 files = `git ls-files`.split("\n").reject! {|f| f.match(/^vim\/bundle/)}
 
 target_dir=File.expand_path("~")
 
-Dir["vim/bundle/**/*"].each { |file|
+Dir["vim/bundle/**/*"].each do |file|
   files << file unless File.directory?(file)
-}
+end
 
 files.reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
 
