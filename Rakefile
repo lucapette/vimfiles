@@ -1,12 +1,8 @@
-require 'rake'
-require 'find'
-require 'pathname'
+IGNORE_FILES = [/^\.gitignore$/, /^Rakefile$/,/^README.markdown$/,/^\.gitmodules$/, /^vim\/bundle/]
 
-IGNORE_FILES = [/^\.gitignore$/, /^Rakefile$/,/^README.markdown$/,/^\.gitmodules$/]
+files = `git ls-files`.split("\n").reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
 
-files = `git ls-files`.split("\n").reject! {|f| f.match(/^vim\/bundle/)}
-
-target_dir=File.expand_path("~")
+target_dir=File.expand_path('~')
 
 Dir["vim/bundle/**/*"].each do |file|
   files << file unless File.directory?(file)
@@ -27,14 +23,14 @@ task :sync do
       puts "#{file} removed?"
     end
   end
-  command_t_path=File.join(File.expand_path("~"),".vim","bundle","command-t")
+  command_t_path=File.join(File.expand_path('~'),'.vim','bundle','command-t')
   system("cd #{command_t_path}; rake make")
 end
 
-desc "init project"
+desc 'init project'
 task :init do
-  system("git submodule init")
-  system("git submodule update")
+  system('git submodule init')
+  system('git submodule update')
 end
 
 desc 'update the installed bundles'
