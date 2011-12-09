@@ -8,8 +8,6 @@ Dir["vim/bundle/**/*"].each do |file|
   files << file unless File.directory?(file)
 end
 
-files.reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
-
 desc "sync vimfiles in #{target_dir}"
 task :sync do
   files.each do |file|
