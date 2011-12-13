@@ -1,0 +1,3 @@
+snippet class
+	class ${1:`substitute(Filename(),'\v\C%([_]|<)(.)','\u\1','g')`}
+		${2}
