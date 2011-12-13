@@ -95,6 +95,10 @@ snippet one
 	has_one	:${1:item}
 snippet many
 	has_many :${1:items}
+snippet with_options
+	with_options :${1:presence} => ${2:true} do |${3:f}|
+		$3.${4}
+	end
 snippet belongs
 	belongs_to :${1:item}
 snippet	namespace
