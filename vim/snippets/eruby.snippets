@@ -38,11 +38,11 @@ snippet text_area
 	<%= ${2:f}.label :${1:attribute} %><br />
 	<%= $2.text_area :$1 %>
 snippet select
-	<%= ${2:f}.label :${1:attribute} %><br />
-	<%= select("${3}",":$1",${4}) %>
+	<%= ${3:f}.label :${1:attribute} %><br />
+	<%= select("${2:model}",:$1,${4}) %>
 snippet select_tag
 	<%= label_tag :${1:attribute} %><br />
-	<%= select_tag("${3}",":$1",${4}) %>
+	<%= select_tag("${2:name}",${3}) %>
 snippet radio_button
 	<%= ${2:f}.label :${1:attribute} %><br />
 	<%= $2.radio_button :$1, :${2:tag_value} %>
