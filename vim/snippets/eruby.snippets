@@ -40,9 +40,6 @@ snippet text_area
 snippet select
 	<%= ${3:f}.label :${1:attribute} %><br />
 	<%= select("${2:model}",:$1,${4}) %>
-snippet select_tag
-	<%= label_tag :${1:attribute} %><br />
-	<%= select_tag("${2:name}",${3}) %>
 snippet radio_button
 	<%= ${2:f}.label :${1:attribute} %><br />
 	<%= $2.radio_button :$1, :${2:tag_value} %>
@@ -71,6 +68,9 @@ snippet render render partial
 	<%= render :partial => "${1:item}" %>
 snippet image_tag
 	<%= image_tag "${1:image}${2:.png}" %>
+snippet select_tag
+	<%= label_tag :${1:attribute} %><br />
+	<%= select_tag("${2:name}",${3}) %>
 snippet style
 	<%= stylesheet_link_tag ${1::all} %>
 snippet javascript_include_tag
