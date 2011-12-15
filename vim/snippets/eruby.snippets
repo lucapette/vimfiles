@@ -46,8 +46,8 @@ snippet radio_button
 snippet hidden_field
 	<%= ${1:f}.hidden_field :${2:attribute} %>
 snippet fields_for
-	<%= f.fields_for :${1:model} do |${2:item}| %>
-		$3
+	<%= f.fields_for :${1:model} do |${2:model_builder}| %>
+		${3}
 	<% end %>
 snippet submit
 	<%= f.submit %>
