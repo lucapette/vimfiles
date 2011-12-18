@@ -1,5 +1,5 @@
 nmap <silent> <leader><space> :noh<cr>
-nmap <leader>a :Ack <c-r>=expand("<cword>")<CR><CR>
+nmap <leader>a :Ack<CR>
 nmap <leader>b :CommandTBuffer<CR>
 nmap <leader>c :Gcommit<CR>
 nmap <leader>d :Gdiff<CR>
