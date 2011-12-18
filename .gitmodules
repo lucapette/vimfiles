@@ -76,3 +76,6 @@
 [submodule "vim/bundle/rake"]
 	path = vim/bundle/rake
 	url = https://github.com/tpope/vim-rake
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
