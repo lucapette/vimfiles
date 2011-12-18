@@ -9,6 +9,5 @@ nmap <leader>r :Gread<CR>
 nmap <leader>s :Gstatus<CR>
 nmap <leader>S :Rserver! thin<CR>
 nmap <leader>w :Gwrite<CR>
-nmap <leader>W :Gwrite<bar>Gcommit<CR>
 nmap <leader>z z=
 nmap <silent> <leader>h :setl hls<CR>:let @/="\\<<C-r><C-w>\\>"<CR>
