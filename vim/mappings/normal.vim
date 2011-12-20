@@ -17,10 +17,6 @@ inoremap <down> <nop>
 " re-execute the stored q macro
 nmap Q @q
 
-" non-blank characters moving
-nmap j +
-nmap k -
-
 " search and move
 nmap n nzz
 nmap N Nzz
