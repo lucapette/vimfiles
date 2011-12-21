@@ -17,11 +17,11 @@ snippet unless
 		${2}
 	<% end %>
 snippet title
-	<% title "${1:title}" %>
+	<% title '${1:title}' %>
 snippet mail_to
-	<%= mail_to("${1:address}",${2:text}) %>
+	<%= mail_to('${1:address}',${2:text}) %>
 snippet link
-	<%= link_to("${1}",${2}) %>
+	<%= link_to('${1}',${2}) %>
 snippet checkbox
 	<%= ${2:f}.label :${1:attribute} %><br />
 	<%= $2.check_box :$1 %>
@@ -39,7 +39,7 @@ snippet text_area
 	<%= $2.text_area :$1 %>
 snippet select
 	<%= ${3:f}.label :${1:attribute} %><br />
-	<%= select("${2:model}",:$1,${4}) %>
+	<%= select('${2:model}',:$1,${4}) %>
 snippet radio_button
 	<%= ${2:f}.label :${1:attribute} %><br />
 	<%= $2.radio_button :$1, :${2:tag_value} %>
@@ -63,14 +63,14 @@ snippet association
 	<%= ${2:f}.association :${1:name} %>
 	${3}
 snippet render render
-	<%= render "${1:item}" %>
+	<%= render '${1:item}' %>
 snippet render render partial
-	<%= render :partial => "${1:item}" %>
+	<%= render :partial => '${1:item}' %>
 snippet image_tag
-	<%= image_tag "${1:image}${2:.png}" %>
+	<%= image_tag '${1:image}${2:.png}' %>
 snippet select_tag
 	<%= label_tag :${1:attribute} %><br />
-	<%= select_tag("${2:name}",${3}) %>
+	<%= select_tag('${2:name}',${3}) %>
 snippet style
 	<%= stylesheet_link_tag ${1::all} %>
 snippet javascript_include_tag
