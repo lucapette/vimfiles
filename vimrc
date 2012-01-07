@@ -100,6 +100,9 @@ let g:rubycomplete_rails = 1
 " CoffeeScript
 let coffee_compile_vert = 1
 
+" Surround
+let g:surround_{char2nr('-')} = "<% \r %>"
+let g:surround_{char2nr('=')} = "<%= \r %>"
 
 " highlight rspec keywords properly https://gist.github.com/64635
 autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it specify it_should_behave_like before after setup subject its shared_examples_for shared_context let

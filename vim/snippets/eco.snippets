@@ -1,0 +1,12 @@
+snippet =
+	<%= ${1} %>
+snippet %
+	<% ${1} %>
+snippet for
+	<% for ${1:item} in ${2:collection}: %>
+		<%= $1 %>
+	<% end %>
+snippet if
+	<% if ${1:condition}: %>
+		${2}
+	<% end %>
