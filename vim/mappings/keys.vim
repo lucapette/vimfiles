@@ -10,4 +10,5 @@ nmap <silent> <F4> :NERDTreeToggle <C-R>=codepath#path()<CR><CR>
 nmap <silent> <F5> gg=G``
 nmap <silent> <buffer> <F9> :set spell!<CR>
 
-nmap <silent> <S-F4> :NERDTree <C-R>=expand("%:p:h")<CR><CR>
+inoremap <silent> <S-F4> <ESC>:NERDTree <C-R>=getcwd()<CR><CR>
+nmap <silent> <S-F4> :NERDTree <C-R>=getcwd()<CR><CR>
