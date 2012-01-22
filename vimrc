@@ -88,10 +88,9 @@ let g:NERDTreeQuitOnOpen = 1
 " zencoding
 let g:user_zen_settings = { 'indentation' : '  '}
 
-" command-t
-let g:CommandTMatchWindowAtTop = 1
-let g:CommandTSelectPrevMap = "<C-p>"
-let g:CommandTAcceptSelectionVSplitMap = "<C-k>"
+" CtrlP
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_working_path_mode = 2
 
 " RubyComplete
 let g:rubycomplete_buffer_loading = 1
