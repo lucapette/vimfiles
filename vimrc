@@ -11,6 +11,7 @@ set autowrite
 set backspace=indent,eol,start
 set backup
 set backupdir=/tmp
+set complete+=k
 set completeopt=longest,menuone
 set dictionary=/usr/share/dict/words
 set directory=/tmp
