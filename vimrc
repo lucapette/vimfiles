@@ -58,6 +58,7 @@ set statusline+=%m
 set statusline+=%r
 set statusline+=%h
 set statusline+=%w
+set statusline+=%{&spell?'[spell]':''}
 set statusline+=%=
 set statusline+=\ [%l]
 set statusline+=\ [%c]
