@@ -40,7 +40,7 @@ snippet w
 snippet rw
 	attr_accessor :${1:attribute}
 snippet missing
-	def method_missing(name, *args, &block)
+	def method_missing name, *args, &block
 		${1}
 	end
 snippet find
@@ -71,10 +71,10 @@ snippet utf
 	# coding: UTF-8
 snippet bm
 	Benchmark.bm do |x|
-		x.report("${1:description}") { ${2} }
+		x.report('${1:description}') { ${2} }
 	end
 snippet report
-	x.report("${1:description}") { ${2} }
+	x.report('${1:description}') { ${2} }
 snippet gem
 	gem '${1:name}'
 snippet log
@@ -88,7 +88,7 @@ snippet scope scope name lambda
 snippet redirect path
 	redirect_to ${1:path}
 snippet redirect message
-	redirect_to ${1:path}, :${2:notice} => '${3:message}'
+	redirect_to ${1:path}, ${2:notice}: '${3:message}'
 snippet accepts
 	accepts_nested_attributes_for :${1:association_name}
 snippet one
@@ -96,7 +96,7 @@ snippet one
 snippet many
 	has_many :${1:items}
 snippet with_options
-	with_options :${1:presence} => ${2:true} do |${3:f}|
+	with_options ${1:presence}: ${2:true} do |${3:f}|
 		$3.${4}
 	end
 snippet belongs

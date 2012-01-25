@@ -18,10 +18,8 @@ snippet unless
 	<% end %>
 snippet title
 	<% title '${1:title}' %>
-snippet mail_to
-	<%= mail_to('${1:address}',${2:text}) %>
 snippet link
-	<%= link_to('${1}',${2}) %>
+	<%= link_to '${1}', ${2} %>
 snippet checkbox
 	<%= ${2:f}.label :${1:attribute} %><br />
 	<%= $2.check_box :$1 %>
@@ -65,18 +63,18 @@ snippet association
 snippet render render
 	<%= render '${1:item}' %>
 snippet render render partial
-	<%= render :partial => '${1:item}' %>
+	<%= render partial: '${1:item}' %>
 snippet image_tag
 	<%= image_tag '${1:image}${2:.png}' %>
 snippet select_tag
 	<%= label_tag :${1:attribute} %><br />
-	<%= select_tag('${2:name}',${3}) %>
+	<%= select_tag '${2:name}', ${3}  %>
 snippet style
 	<%= stylesheet_link_tag ${1::all} %>
 snippet javascript_include_tag
 	<%= javascript_include_tag ${1::all} %>
 snippet paginate
-	<%= paginate(@${1:items}) %>
+	<%= paginate @${1:items} %>
 snippet content_for
 	<% content_for :${1:part} do -%>
 		$2
