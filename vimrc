@@ -41,6 +41,7 @@ set shiftwidth=2
 set showcmd
 set showmatch
 set smartcase
+set spellfile=$HOME/Dropbox/spell.utf8.add
 set spelllang=en_gb
 set splitright
 set tabstop=4
