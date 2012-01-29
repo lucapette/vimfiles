@@ -82,3 +82,6 @@
 [submodule "vim/bundle/ruby-doc"]
 	path = vim/bundle/ruby-doc
 	url = https://github.com/lucapette/vim-ruby-doc
+[submodule "vim/bundle/jquery-doc"]
+	path = vim/bundle/jquery-doc
+	url = https://github.com/lucapette/vim-jquery-doc
