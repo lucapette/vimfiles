@@ -36,7 +36,6 @@ set numberwidth=1
 set pastetoggle=<F12>
 set relativenumber
 set ruler
-set shell=/bin/zsh\ -i
 set shiftwidth=2
 set showcmd
 set showmatch
