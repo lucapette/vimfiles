@@ -24,6 +24,7 @@ set guioptions-=T
 set guioptions-=m
 set guioptions-=r
 set history=1000
+set hidden
 set hlsearch
 set ignorecase
 set incsearch
