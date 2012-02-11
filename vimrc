@@ -139,13 +139,15 @@ let g:rvmprompt_tokens = "v g"
 " Let me decide what goes in the status line.
 set stl=%{exists('g:loaded_fugitive')?fugitive#statusline():''}               " git branch from fugitive.vim
 set stl+=\ %{exists('g:loaded_rvmprompt')?rvmprompt#statusline():''}          " rvm prompt from rvm-prompt.vim
+
                                                                               " Current buffer:
 set stl+=\ [%F]                                                               " Full path filename
 set stl+=%y                                                                   " Extension downcase
 set stl+=%m                                                                   " Modified flag
 set stl+=%r                                                                   " Readlonly flag
+
 set stl+=%{&spell?'[spell]':''}                                               " Add '[spell]' if spell option is on
-set stl+=%=                                                                   " Add that follow is right aligned
+set stl+=%=                                                                   " All that follow is right aligned
 set stl+=\ [%l]                                                               " Cursor line number
 set stl+=\ [%c]                                                               " Cursor column number
 set stl+=\ [%p%%]                                                             " Percentage through file in lines
