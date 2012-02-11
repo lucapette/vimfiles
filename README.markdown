@@ -1,6 +1,6 @@
 My [Vim](http://www.vim.org) configuration directory.
 
-I'm really thankful [Bram Moolenaar](http://www.moolenaar.net/) for his
+I'm really thankful to [Bram Moolenaar](http://www.moolenaar.net/) for his
 generous work on the best editor ever. And I want to say thank you to
 [tpope](http://tpo.pe/) too. Without his incredible amount of work, I would
 have been using some crappy editor out there.
