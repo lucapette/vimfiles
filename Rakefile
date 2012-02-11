@@ -31,10 +31,7 @@ end
 
 desc 'update the installed bundles'
 task :update_bundles do
-  bundles = `git submodule | cut -d' ' -f3`.split("\n")
-  bundles.each do |bundle|
-    system("cd #{bundle} && git pull origin master")
-  end
+  system('git submodule foreach git pull origin master')
 end
 
-task :default => ['sync']
+task default: :sync
