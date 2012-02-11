@@ -1,4 +1,4 @@
-"Do not lost block selection after indentation. Such a good thing!
+" Do not lost block selection after indentation. Such a good thing!
 vmap > >gv
 vmap < <gv
 
@@ -6,8 +6,8 @@ vmap < <gv
 nnoremap Vit vitVkoj
 nnoremap Vat vatV
 
-" zencoding mapping
+" Trigger zencoding expansion.
 vmap <c-e> <c-y>,
 
-" visual search with ack
+" Visual search with Ack.vim
 vnoremap <leader>a y:Ack <c-r>=expand(@")<CR><CR>

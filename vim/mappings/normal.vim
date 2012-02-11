@@ -1,12 +1,12 @@
-" insert from the clipboard
+" Paste content from clipboard.
 nmap <S-Insert> "+p
 inoremap <S-Insert> <esc>"+pi
 
-" sane regex
+" Use the regex in a sane way.
 nnoremap / /\v
 vnoremap / /\v
 
-" Zen time. Do it. You'll understand later
+" Zen time. Do it. You'll understand later.
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -14,10 +14,10 @@ nnoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 
-" re-execute the stored q macro
+" Re-execute the stored q macro.
 nmap Q @q
 
-" search and move
+" While searching scroll to the center of the window.
 nmap n nzz
 nmap N Nzz
 nmap * *zz
@@ -25,7 +25,7 @@ nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
 
-" see https://github.com/kana/vim-smartword
+" See https://github.com/kana/vim-smartword
 nmap w  <Plug>(smartword-w)
 nmap b  <Plug>(smartword-b)
 nmap e  <Plug>(smartword-e)
