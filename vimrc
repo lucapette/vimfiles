@@ -73,7 +73,7 @@ set ignorecase
 " Show matched search while typing.
 set incsearch
 
-" Always show the statusline, please.
+" Always show the stl, please.
 set laststatus=2
 
 " Be magic with patterns
@@ -136,55 +136,59 @@ set wildmenu
 " Show only main version and gemset for RVM.
 let g:rvmprompt_tokens = "v g"
 
-" more informative status line
-set statusline=%{exists('g:loaded_fugitive')?fugitive#statusline():''}
-set statusline+=\ %{exists('g:loaded_rvmprompt')?rvmprompt#statusline():''}
-set statusline+=\ [%F]
-set statusline+=%y
-set statusline+=%m
-set statusline+=%r
-set statusline+=%h
-set statusline+=%w
-set statusline+=%{&spell?'[spell]':''}
-set statusline+=%=
-set statusline+=\ [%l]
-set statusline+=\ [%c]
-set statusline+=\ [%p%%]
-set statusline+=\ [%L]
-set statusline+=\ [%{&ff}]
+" Let me decide what goes in the status line.
+set stl=%{exists('g:loaded_fugitive')?fugitive#statusline():''}               " git branch from fugitive.vim
+set stl+=\ %{exists('g:loaded_rvmprompt')?rvmprompt#statusline():''}          " rvm prompt from rvm-prompt.vim
+                                                                              " Current buffer:
+set stl+=\ [%F]                                                               " Full path filename
+set stl+=%y                                                                   " Extension downcase
+set stl+=%m                                                                   " Modified flag
+set stl+=%r                                                                   " Readlonly flag
+set stl+=%{&spell?'[spell]':''}                                               " Add '[spell]' if spell option is on
+set stl+=%=                                                                   " Add that follow is right aligned
+set stl+=\ [%l]                                                               " Cursor line number
+set stl+=\ [%c]                                                               " Cursor column number
+set stl+=\ [%p%%]                                                             " Percentage through file in lines
+set stl+=\ [%L]                                                               " Number of lines of the current buffer
+set stl+=\ [%{&ff}]                                                           " File Format of the current buffer
 
+" Use the ',' for <Leader> mappings.
 let mapleader = ","
 
+" Enable syntax highlighter.
 syntax on
 
+" Indentation.
 filetype plugin indent on
 
+" And plugins too.
 filetype plugin plugin on
 
+" Go to the last place I've been in the current buffer.
 autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
     \ endif
 
-" source mappings
+" Load my personal mappings.
 exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
 
 " NERDTree
 let g:NERDTreeHijackNetrw = 1
-let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeQuitOnOpen  = 1
 
 " zencoding
 let g:user_zen_settings = { 'indentation' : '  '}
 
 " CtrlP
-let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_bottom   = 0
 let g:ctrlp_match_window_reversed = 0
-let g:ctrlp_working_path_mode = 2
-let g:ctrlp_map = '<c-t>'
+let g:ctrlp_working_path_mode     = 2
+let g:ctrlp_map                   = '<c-t>'
 
 " RubyComplete
 let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_rails = 1
+let g:rubycomplete_rails          = 1
 
 " CoffeeScript
 let coffee_compile_vert = 1
@@ -197,10 +201,7 @@ let g:surround_{char2nr('=')} = "<%= \r %>"
 autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it specify it_should_behave_like before after setup subject its shared_examples_for shared_context let
 highlight def link rubyRspec Function
 
-" rails-tags
-autocmd User Rails call setbufvar('%','&tags',&tags.', '.RailsRoot().'/.git/rails-tags')
-
-" colorscheme
+" Load colorscheme and fix it a bit.
 colorscheme molokai
 hi Comment guifg=SkyBlue
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#66D9EF guibg=#000000
