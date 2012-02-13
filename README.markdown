@@ -81,7 +81,7 @@ consider, it could be a little outdated.
    It's like rails.vim without the rails.
 
 - [vim-repeat](https://github.com/tpope/vim-repeat)
-  It enables repeating supported plugin maps with `.`. A must-have.
+  It enables repeating supported plugin maps with `.`
 
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby)
   Vim/Ruby Configuration Files.
@@ -89,8 +89,12 @@ consider, it could be a little outdated.
 - [vim-ruby-doc](https://github.com/lucapette/vim-ruby-doc)
   Browse Ruby/RSpec/Rails doc quickly.
 
+- [vim-rvm](https://github.com/tpope/vim.rvm)
+  It helps you to switch Ruby versions from inside Vim. Futhermore, it
+  provides a nice statusline string.
+
 - [vim-snipmate](https://github.com/garbas/vim-snipmate)
-  Nice snippets for Vim. This fork is far way of the original plugin.
+  Nice snippets for Vim. This fork is far way better than the original plugin.
 
 - [vim-surround](https://github.com/tpope/vim-surround)
   Incredibly useful plugin for quoting stuff.
