@@ -181,6 +181,13 @@ let g:NERDTreeQuitOnOpen  = 1
 " zencoding
 let g:user_zen_settings = { 'indentation' : '  '}
 
+" ultisnips
+let g:UltiSnipsExpandTrigger       = "<tab>"
+let g:UltiSnipsJumpForwardTrigger  = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsSnippetDirectories  = ["snippets"]
+let g:UltiSnipsDoHash              = 0
+
 " CtrlP
 let g:ctrlp_match_window_bottom   = 0
 let g:ctrlp_match_window_reversed = 0

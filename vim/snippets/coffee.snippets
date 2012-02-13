@@ -1,5 +1,7 @@
 snippet class
-	class ${1:`substitute(Filename(),'\v\C%([_]|<)(.)','\u\1','g')`}
-		${2}
+class ${1:`!p res="".join(map(lambda x:x.capitalize(), snip.basename.split('_')))`}
+  $2
+endsnippet
 snippet log
-	@log(${1})
+@log($1)
+endsnippet

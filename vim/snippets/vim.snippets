@@ -1,8 +1,10 @@
 snippet function
-	function! ${1:function_name}(${2})
-		${3:" code}
-	endfunction
+function! ${1:function_name}($2)
+  $0
+endfunction
+endsnippet
 snippet if
-	if ${1:condition}
-		${2:" code}
-	endif
+if ${1:condition}
+  ${2:" code}
+endif
+endsnippet
