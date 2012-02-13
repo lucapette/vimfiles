@@ -31,9 +31,6 @@
 [submodule "vim/bundle/liquid"]
 	path = vim/bundle/liquid
 	url = https://github.com/tpope/vim-liquid.git
-[submodule "vim/bundle/rvmprompt"]
-	path = vim/bundle/rvmprompt
-	url = https://github.com/lucapette/rvmprompt.vim.git
 [submodule "vim/bundle/codepath"]
 	path = vim/bundle/codepath
 	url = https://github.com/lucapette/codepath.vim
@@ -85,3 +82,6 @@
 [submodule "vim/bundle/jquery-doc"]
 	path = vim/bundle/jquery-doc
 	url = https://github.com/lucapette/vim-jquery-doc
+[submodule "vim/bundle/rvm"]
+	path = vim/bundle/rvm
+	url = https://github.com/tpope/vim-rvm

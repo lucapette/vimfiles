@@ -133,26 +133,25 @@ set wildignore=*~,.git,tmp,_site,*.log,*.jpg,*.png,*.gif
 " Give me a nice completion on the command line.
 set wildmenu
 
-" Show only main version and gemset for RVM.
-let g:rvmprompt_tokens = "v g"
-
 " Let me decide what goes in the status line.
-set stl=%{exists('g:loaded_fugitive')?fugitive#statusline():''}               " git branch from fugitive.vim
-set stl+=\ %{exists('g:loaded_rvmprompt')?rvmprompt#statusline():''}          " rvm prompt from rvm-prompt.vim
+set stl=%{exists('g:loaded_fugitive')?fugitive#statusline():''}                " git branch from fugitive.vim
+set stl+=\ %{exists('g:loaded_rvm')?rvm#statusline():''}                       " rvm prompt from vim-rvm
 
-                                                                              " Current buffer:
-set stl+=\ [%F]                                                               " Full path filename
-set stl+=%y                                                                   " Extension downcase
-set stl+=%m                                                                   " Modified flag
-set stl+=%r                                                                   " Readlonly flag
+                                                                               " Current buffer:
+set stl+=\ [%F]                                                                " Full path filename
+set stl+=%y                                                                    " Extension downcase
+set stl+=%m                                                                    " Modified flag
+set stl+=%r                                                                    " Readlonly flag
 
-set stl+=%{&spell?'[spell]':''}                                               " Add '[spell]' if spell option is on
-set stl+=%=                                                                   " All that follow is right aligned
-set stl+=\ [%l]                                                               " Cursor line number
-set stl+=\ [%c]                                                               " Cursor column number
-set stl+=\ [%p%%]                                                             " Percentage through file in lines
-set stl+=\ [%L]                                                               " Number of lines of the current buffer
-set stl+=\ [%{&ff}]                                                           " File Format of the current buffer
+set stl+=%{&spell?'[spell]':''}                                                " Add '[spell]' if spell option is on
+
+set stl+=%=                                                                    " All that follow is right aligned
+
+set stl+=\ [%l]                                                                " Cursor line number
+set stl+=\ [%c]                                                                " Cursor column number
+set stl+=\ [%p%%]                                                              " Percentage through file in lines
+set stl+=\ [%L]                                                                " Number of lines of the current buffer
+set stl+=\ [%{&ff}]                                                            " File Format of the current buffer
 
 " Use the ',' for <Leader> mappings.
 let mapleader = ","
