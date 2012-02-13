@@ -11,14 +11,14 @@ inoremap <silent> <F4> <ESC> :NERDTreeToggle <C-R>=codepath#path()<CR><CR>
 inoremap <silent> <F5> <ESC> gg=G``a
 
 " Toggle spell checking.
-inoremap <buffer> <silent> <F9> <ESC> :set invspell<CR>i
+inoremap <silent> <F9> <ESC> :set invspell<CR>i
 
 " Normal mapping for just commented stuff
 nmap <silent> <F1> <ESC>
 nmap <silent> <F2>  mm:w<bar>call utils#trimspaces()<CR>`m
 nmap <silent> <F4> :NERDTreeToggle <C-R>=codepath#path()<CR><CR>
 nmap <silent> <F5> gg=G``
-nmap <buffer> <silent> <F9> :set spell!<CR>
+nmap <silent> <F9> :set invspell<CR>
 
 " Open a Tree in the current working directory.
 inoremap <silent> <S-F4> <ESC>:NERDTree <C-R>=getcwd()<CR><CR>
