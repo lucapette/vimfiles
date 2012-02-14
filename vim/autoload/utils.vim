@@ -1,3 +1,4 @@
+" Trimspaces without messing with the search register.
 function! utils#trimspaces()
   let oldsearch = @/
   let oldhlsearch = &hlsearch

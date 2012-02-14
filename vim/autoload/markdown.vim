@@ -1,3 +1,5 @@
+" Makes a markdown preview of the current buffer.
+" I stealed the idea somewhere and adopted it to my needs.
 function! markdown#preview()
   silent update
   let output_name = tempname() . '.html'
@@ -17,9 +19,10 @@ function! markdown#preview()
 
   silent exec '!echo "</div></body></html>" >> "' . output_name . '"'
 
-  silent exec '!sensible-browser "' . output_name . '" &'
+  silent exec '!xdg-open "' . output_name . '" &'
 endfunction
 
+" Create a markdown header basel on the level parameter (1..6)
 function! markdown#headerify(level)
   if a:level == 1
     normal! yypVr=
@@ -30,20 +33,22 @@ function! markdown#headerify(level)
   endif
 endfunction
 
+" Create a mardown link from the current selection.
 function! markdown#linkify()
   exe "normal! gvxi[\<esc>pa](\<esc>pa)\<esc>F(vib"
 endfunction
 
-" require surround.vim
+" Bold and italic of the selected text
+" Both require surround.vim
 function! markdown#boldify()
   exe "normal gvS*gvS*"
 endfunction
 
-" require surround.vim
 function! markdown#italicize()
   exe "normal gvS*"
 endfunction
 
+" Show suggestions for the current mispelled-word
 function! markdown#spellBalloon()
   let lines = spellsuggest( spellbadword(v:beval_text)[ 0 ], 5, 0 )
   return join( lines, has( "balloon_multiline" ) ? "\n" : " " )

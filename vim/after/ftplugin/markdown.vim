@@ -1,4 +1,4 @@
-inoremap <buffer> <F7> <ESC>:call markdown#preview()<CR>
+ino <buffer> <F7> <ESC>:call markdown#preview()<CR>
 nmap <buffer> <F7> :call markdown#preview()<CR>
 
 nmap <leader>l ve:<c-u>call markdown#linkify()<CR>
@@ -17,5 +17,6 @@ nmap <buffer> <silent> <leader>4 :call markdown#headerify(4)<CR>
 nmap <buffer> <silent> <leader>5 :call markdown#headerify(5)<CR>
 nmap <buffer> <silent> <leader>6 :call markdown#headerify(6)<CR>
 
+" Show me the spelling suggestions.
 setlocal ballooneval
 setlocal balloonexpr=markdown#spellBalloon()

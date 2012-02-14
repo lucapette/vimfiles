@@ -1,4 +1,5 @@
-
+" Go to the next/previous (based on direction parameter) Ruby method
+" definition.
 function! ruby#goto(direction)
   let command = {}
   let command.f = {"m": "normal ]m", "n": "normal! \<c-f>"}
