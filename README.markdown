@@ -1,23 +1,34 @@
-My [Vim](http://www.vim.org) configuration directory.
+*The day you'll understand how Vim works, the other editors will stop existing
+for you.*
+
+Acknowledgements
+----------------
 
 I'm really thankful to [Bram Moolenaar](http://www.moolenaar.net/) for his
 generous work on the best editor ever. And I want to say thank you to
 [tpope](http://tpo.pe/) too. Without his incredible amount of work, I would
 have been using some crappy editor out there.
 
-**Do not use my configuration**. Read it to learn something, to get inspired.
-Don't hesitate to contact me for any further information but, please, build
-your own configuration. Read [Lazy Modern
-Configuration](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration/)
-to better understand what I mean.
+Do not use a Vim distro
+-----------------------
 
-I'm continuously adding comments to all the configuration files.
+**Do not use my configuration** and please **do not use a Vim distro**. Read
+the files to learn something and to get inspired. Don't hesitate to contact me
+for any further information but, please, build your own configuration. Read
+[Lazy Modern
+Configuration](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration/)
+to better understand what I mean. Of course, **steal whatever you like**.
+
+I'm a Ruby developer and for this very reason my configuration
+has a lot of stuff for Ruby and Rails. By the way, I like to write a lot (as
+you can see from this README) and there is something interesting about
+markdown too.
 
 Bundles
 -------
 
 I'm using pathogen.vim to handle all my plugins in combination with git
-submodules. It's a quite common setup. Here a list of all my bundles. Please
+submodules. It's quite a common setup. Here a list of all my bundles. Please
 consider, it could be a little outdated.
 
 
@@ -41,7 +52,7 @@ consider, it could be a little outdated.
   feature. I tried a lot of them and this is the best one. Period.
 
 - [vim-endwise](https://github.com/tpope/vim-endwise)
-  This plugin will help you to end structures for Ruby, Vimscript and other
+  This plugin will help you to end structures for Ruby, VimL and other
   languages.
 
 - [vim-pathogen](https://github.com/tpope/vim-pathogen)
@@ -90,7 +101,7 @@ consider, it could be a little outdated.
   Browse Ruby/RSpec/Rails doc quickly.
 
 - [vim-rvm](https://github.com/tpope/vim.rvm)
-  It helps you to switch Ruby versions from inside Vim. Futhermore, it
+  It helps you to switch Ruby versions from inside Vim. Furthermore, it
   provides a nice statusline string.
 
 - [vim-snipmate](https://github.com/garbas/vim-snipmate)
@@ -100,7 +111,7 @@ consider, it could be a little outdated.
   Incredibly useful plugin for quoting stuff.
 
 - [tabular](https://github.com/godlygeek/tabular)
-  Vim script for text filtering and alignment. Is' very handy for tidying
+  Vim script for text filtering and alignment. It's very handy for tidying
   code.
 
 - [vim-textobj-indent](https://github.com/kana/vim-textobj-indent)
