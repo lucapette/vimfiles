@@ -27,10 +27,6 @@ set backspace=indent,eol,start
 set backup
 set backupdir=/tmp
 
-" Add the dictionary, I'm not a native speaker. So for me it's handy. But it
-" does slow down the search a bit.
-set complete+=k
-
 " Use a popup to show the completion and matches the longest match first.
 set completeopt=longest,menuone
 
