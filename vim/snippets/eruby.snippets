@@ -64,6 +64,12 @@ endsnippet
 snippet submit
 <%= f.submit %>
 endsnippet
+snippet simple_form_for
+<%= simple_form_for @${1:model} do |f| %>
+  $2
+  <%= f.button :submit %>
+<% end %>
+endsnippet
 snippet form_for
 <%= form_for @${1:model} do |f| %>
   $2
