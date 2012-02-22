@@ -124,7 +124,7 @@ namespace :${1:admin} do
 end
 endsnippet
 snippet describe
-describe ${1:subject} do
+describe ${1:`!p res="".join(map(lambda x:x.capitalize(),snip.basename.split('_')))[0:-4]`} do
   $0
 end
 endsnippet
