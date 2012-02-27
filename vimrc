@@ -42,9 +42,6 @@ set expandtab
 " when substitute enable g flag by default. Very handy.
 set gdefault
 
-" Use ack always.
-set grepprg=ack
-
 " My font of choice.
 set guifont=Monospace\ 11
 
