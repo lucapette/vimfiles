@@ -182,6 +182,7 @@ let g:UltiSnipsSnippetDirectories  = ["snippets"]
 let g:UltiSnipsDoHash              = 0
 
 " CtrlP
+let g:ctrlp_extensions            = ['tag']
 let g:ctrlp_map                   = '<c-t>'
 let g:ctrlp_match_window_bottom   = 0
 let g:ctrlp_match_window_reversed = 0
