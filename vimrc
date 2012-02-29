@@ -34,6 +34,9 @@ runtime mappings/visual.vim
 autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it specify it_should_behave_like before after setup subject its shared_examples_for shared_context let
 highlight def link rubyRspec Function
 
+" :help last-position-jump
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"zz" | endif
+
 " Load colorscheme and fix it a bit.
 colorscheme molokai
 hi Comment guifg=SkyBlue
