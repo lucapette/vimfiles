@@ -16,7 +16,3 @@ nmap <buffer> <silent> <leader>3 :call markdown#headerify(3)<CR>
 nmap <buffer> <silent> <leader>4 :call markdown#headerify(4)<CR>
 nmap <buffer> <silent> <leader>5 :call markdown#headerify(5)<CR>
 nmap <buffer> <silent> <leader>6 :call markdown#headerify(6)<CR>
-
-" Show me the spelling suggestions.
-setlocal ballooneval
-setlocal balloonexpr=markdown#spellBalloon()

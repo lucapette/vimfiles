@@ -47,9 +47,3 @@ endfunction
 function! markdown#italicize()
   exe "normal gvS*"
 endfunction
-
-" Show suggestions for the current mispelled-word
-function! markdown#spellBalloon()
-  let lines = spellsuggest( spellbadword(v:beval_text)[ 0 ], 5, 0 )
-  return join( lines, has( "balloon_multiline" ) ? "\n" : " " )
-endfunction
