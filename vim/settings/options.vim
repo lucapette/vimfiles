@@ -116,5 +116,8 @@ set wildignore=*~,.git,tmp,_site,*.log,*.jpg,*.png,*.gif
 " Give me a nice completion on the command line.
 set wildmenu
 
+" Add more line for saved registers
+set viminfo='100,<500,s10,h
+
 " Use the ',' for <Leader> mappings.
 let mapleader = ","
