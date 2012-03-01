@@ -110,9 +110,6 @@ set textwidth=78
 " Show me the title of the current file, plus some other useful information.
 set title titlestring=%F\ %m%r%h%w
 
-" Ignore this stuff while expand paths.
-set wildignore=*~,.git,tmp,_site,*.log,*.jpg,*.png,*.gif
-
 " Give me a nice completion on the command line.
 set wildmenu
 
