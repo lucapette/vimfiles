@@ -46,7 +46,7 @@ snippet rw
 attr_accessor :${1:attribute}
 endsnippet
 snippet find
-@${1:model} = ${1/\w+/\u$0/}.find(params[:${2:id}])
+@${1:model} = ${1/\w+/\u$0/}.find(params[:${2:id}])$0
 endsnippet
 snippet map
 map { |${1:e}| $1$0 }
@@ -58,10 +58,10 @@ snippet each
 each { |${1:e}| $1$0 }
 endsnippet
 snippet all
-all? { |${1:e}| $1.${2:method}?  }
+all? { |${1:e}| $1.${2:method}? }$0
 endsnippet
 snippet any
-any? { |${1:e}| $1.${2:method}?  }
+any? { |${1:e}| $1.${2:method}? }$0
 endsnippet
 snippet sort
 sort { |${1:a}, ${2:b}| $1 <=> $2 }$3
@@ -73,27 +73,27 @@ snippet sort!
 sort! { |${1:a}, ${2:b}| $1 <=> $2 }$0
 endsnippet
 snippet sort_by
-sort_by { |${1:e}| $1.${2:method} }
+sort_by { |${1:e}| $1.$0 }
 endsnippet
 snippet sort_by!
-sort_by! { |${1:e}| $1.${2:method} }
+sort_by! { |${1:e}| $1.$0 }
 endsnippet
 snippet times
-times { |${1:e}| $1${2} }
+times { |${1:e}| $1$0 }
 endsnippet
 snippet utf
 # coding: UTF-8
 endsnippet
 snippet bm
 Benchmark.bm do |x|
-  2.report('${1:description}') { $0 }
+  x.report('${1:description}') { $0 }
 end
 endsnippet
 snippet report
-x.report('${1:description}') { ${2} }
+x.report('${1:description}') { $0 }
 endsnippet
 snippet gem
-gem '${1:name}'
+gem '${1:name}'$0
 endsnippet
 snippet log
 logger.info(${1})
@@ -102,21 +102,21 @@ snippet flash
 flash[:${1:notice}] = '${2:text}'
 endsnippet
 snippet scope "scope name condition"
-scope :${1:name}, ${2:condition}
+scope :${1:name}, $0
 endsnippet
 snippet scope "scope name lambda"
-scope :${1:name}, lambda { |${2:param}| ${3:function} }
+scope :${1:name}, lambda { |${2:param}| $0 }
 endsnippet
 snippet accepts
-accepts_nested_attributes_for :${1:association_name}
+accepts_nested_attributes_for :${1:association_name}$0
 endsnippet
 snippet with_options
 with_options ${1:presence}: ${2:true} do |${3:f}|
-  $3.${4}
+  $3.$0
 end
 endsnippet
 snippet belongs
-  belongs_to :${1:item}
+  belongs_to :${1:item}$0
 endsnippet
 snippet	namespace
 namespace :${1:admin} do
@@ -147,8 +147,8 @@ snippet new
 @${1:model} = ${1/\w+/\u$0/g}.new$0
 endsnippet
 snippet factory
-@${1:model} = Factory(:$1)
+@${1:model} = Factory(:$1)$0
 endsnippet
 snippet build
-@${1:model} = Factory.build(:$1)
+@${1:model} = Factory.build(:$1)$0
 endsnippet
