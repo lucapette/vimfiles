@@ -123,7 +123,9 @@ namespace :${1:admin} do
   $0
 end
 endsnippet
-snippet describe
+snippet spec
+require 'spec_helper'
+
 describe ${1:`!p res="".join(map(lambda x:x.capitalize(),snip.basename.split('_')))[0:-4]`} do
   $0
 end
