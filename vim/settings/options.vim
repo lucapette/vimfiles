@@ -107,6 +107,9 @@ set tabstop=4
 " Universal width.
 set textwidth=78
 
+" My terminal has a lot of colors.
+set t_Co=256
+
 " Show me the title of the current file, plus some other useful information.
 set title titlestring=%F\ %m%r%h%w
 
