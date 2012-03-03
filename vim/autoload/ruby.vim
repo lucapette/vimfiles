@@ -4,8 +4,9 @@ function! ruby#goto(direction)
   let command = {}
   let command.f = {"m": "normal ]m", "n": "normal! \<c-f>"}
   let command.b = {"m": "normal [m", "n": "normal! \<c-b>"}
+  let current_position = line(".")
   exe command[a:direction]["m"]
-  if synIDattr(synID(line("."), col("."), 1), "name") != "rubyDefine"
+  if synIDattr(synID(line("."), col("."), 1), "name") != "rubyDefine" || current_position == line(".")
     exe command[a:direction]["n"]
   endif
 endfunction
