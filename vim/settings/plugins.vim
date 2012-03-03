@@ -21,8 +21,9 @@ let g:ctrlp_user_command          = ['.git/', 'cd %s && git ls-files -c -o']
 let g:ctrlp_working_path_mode     = 2
 
 " RubyComplete
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_rails          = 1
+let g:rubycomplete_buffer_loading = 0
+let g:rubycomplete_include_object = 0
+let g:rubycomplete_rails          = 0
 
 " CoffeeScript
 let coffee_compile_vert = 1
