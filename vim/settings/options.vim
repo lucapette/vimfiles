@@ -116,6 +116,9 @@ set title titlestring=%F\ %m%r%h%w
 " Give me a nice completion on the command line.
 set wildmenu
 
+" Don't ever show me the folllowing
+set wildignore=*~,.git,tmp,_site,*.log,*.jpg,*.png,*.gif
+
 " Add more line for saved registers
 set viminfo='100,<500,s10,h
 
