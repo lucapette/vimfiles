@@ -39,5 +39,5 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 " Load colorscheme and fix it a bit.
 colorscheme molokai
-hi Comment guifg=SkyBlue
+hi Comment guifg=SkyBlue ctermfg=74
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#66D9EF guibg=#000000
