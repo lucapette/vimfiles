@@ -33,7 +33,7 @@ end
 endsnippet
 snippet init
 def initialize ${1:args}
-  $2
+  $0
 end
 endsnippet
 snippet r
@@ -54,32 +54,29 @@ endsnippet
 snippet select
 select { |${1:e}| $1$0 }
 endsnippet
-snippet each
+snippet each "each" i
 each { |${1:e}| $1$0 }
 endsnippet
-snippet all
+snippet all "all" i
 all? { |${1:e}| $1.${2:method}? }$0
 endsnippet
-snippet any
+snippet any "any" i
 any? { |${1:e}| $1.${2:method}? }$0
 endsnippet
-snippet sort
+snippet sort "sort" i
 sort { |${1:a}, ${2:b}| $1 <=> $2 }$3
 endsnippet
-snippet map!
+snippet map! "map!" i
 map! { |${1:e}| $1$0 }
 endsnippet
-snippet sort!
+snippet sort! "sort!" i
 sort! { |${1:a}, ${2:b}| $1 <=> $2 }$0
 endsnippet
-snippet sort_by
+snippet sort_by "sort_by" i
 sort_by { |${1:e}| $1.$0 }
 endsnippet
-snippet sort_by!
+snippet sort_by! "sort_by!" i
 sort_by! { |${1:e}| $1.$0 }
-endsnippet
-snippet times
-times { |${1:e}| $1$0 }
 endsnippet
 snippet utf
 # coding: UTF-8
@@ -94,6 +91,11 @@ x.report('${1:description}') { $0 }
 endsnippet
 snippet gem
 gem '${1:name}'$0
+endsnippet
+snippet group
+group ${1::development} do
+  $0
+end
 endsnippet
 snippet log
 logger.info(${1})
