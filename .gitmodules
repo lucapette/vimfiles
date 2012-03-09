@@ -79,3 +79,6 @@
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
+[submodule "vim/bundle/tmux"]
+	path = vim/bundle/tmux
+	url = https://github.com/tsaleh/vim-tmux
