@@ -82,3 +82,6 @@
 [submodule "vim/bundle/tmux"]
 	path = vim/bundle/tmux
 	url = https://github.com/tsaleh/vim-tmux
+[submodule "vim/bundle/blockle"]
+	path = vim/bundle/blockle
+	url = https://github.com/jgdavey/vim-blockle
