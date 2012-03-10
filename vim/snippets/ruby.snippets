@@ -46,7 +46,7 @@ snippet rw
 attr_accessor :${1:attribute}
 endsnippet
 snippet find
-@${1:model} = ${1/\w+/\u$0/}.find(params[:${2:id}])$0
+@${1:model} = ${2:`!p res="".join(map(lambda x:x.capitalize(), t[1].split('_')))`}.find(params[:${3:id}])$0
 endsnippet
 snippet map
 map { |${1:e}| $1$0 }
@@ -153,7 +153,7 @@ before do
 end
 endsnippet
 snippet new
-@${1:object} = ${1/\w+/\u$0/g}.new$0
+@${1:object} = ${2:`!p res="".join(map(lambda x:x.capitalize(), t[1].split('_')))`}.new$0
 endsnippet
 snippet factory
 @${1:model} = Factory(:$1)$0
