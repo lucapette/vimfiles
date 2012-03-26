@@ -19,9 +19,6 @@ nmap <leader>n ]s
 " Go to the previous spelling error.
 nmap <leader>p [s
 
-" Reload the current buffer from the git index.
-nmap <leader>r :Gread<CR>
-
 " Show a preview of the git current status.
 nmap <leader>s :Gstatus<CR>
 

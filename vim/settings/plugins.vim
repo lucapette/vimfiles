@@ -26,6 +26,10 @@ let g:rubycomplete_buffer_loading = 0
 let g:rubycomplete_include_object = 0
 let g:rubycomplete_rails          = 0
 
+" RubyRunner
+let g:RubyRunner_open_below  = 1
+let g:RubyRunner_window_size = 10
+
 " blocke
 let g:blockle_mapping = '<Leader>B'
 

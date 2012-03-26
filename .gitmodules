@@ -85,3 +85,6 @@
 [submodule "vim/bundle/blockle"]
 	path = vim/bundle/blockle
 	url = https://github.com/jgdavey/vim-blockle
+[submodule "vim/bundle/ruby-runner"]
+	path = vim/bundle/ruby-runner
+	url = https://github.com/henrik/vim-ruby-runner

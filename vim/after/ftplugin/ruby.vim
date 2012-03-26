@@ -13,7 +13,7 @@ ino <buffer> <silent> <F6> <ESC>:update<bar>sil !make -c %<bar>cwindow<bar>redra
 nmap <buffer> <silent> <F6> :update<bar>sil! make -c %<bar>cwindow<bar>redraw!<CR>
 
 " Execute the current buffer.
-ino <buffer> <F7> <ESC>:update<bar>make %<CR>
-nmap <buffer> <F7> :make %<CR>
+ino <buffer> <F7> <ESC>:update<bar>RunRuby<CR><c-w>w
+nmap <buffer> <F7> :RunRuby<CR><c-w>w
 
 compiler ruby
