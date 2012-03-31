@@ -1,7 +1,3 @@
-" Paste content from clipboard.
-nmap <S-Insert> "+p
-inoremap <S-Insert> <esc>"+pi
-
 " Use the regex in a sane way.
 nnoremap / /\v
 vnoremap / /\v
