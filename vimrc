@@ -18,7 +18,7 @@ filetype plugin indent on
 filetype plugin plugin on
 
 " Load my personal settings.
-runtime settings/autocommands.vim:
+runtime settings/autocommands.vim
 runtime settings/commands.vim
 runtime settings/options.vim
 runtime settings/statusline.vim
