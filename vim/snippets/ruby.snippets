@@ -21,15 +21,25 @@ for ${1:element} in ${2:collection}
   $1$0
 end
 endsnippet
+global !p
+def classify(name):
+  return "".join(map(lambda x:x.capitalize(), name.split('_')))
+endglobal
 snippet class
-class ${1:`!p res="".join(map(lambda x:x.capitalize(), snip.basename.split('_')))`}
+class ${1:`!p snip.rv=classify(snip.basename)`}
   $0
 end
 endsnippet
 snippet module
-module ${1:`!p res="".join(map(lambda x:x.capitalize(), snip.basename.split('_')))`}
+module ${1:`!p snip.rv=classify(snip.basename)`}
   $0
 end
+endsnippet
+snippet find
+@${1:model} = ${2:`!p snip.rv=classify(t[1])`}.find params[:${3:id}]$0
+endsnippet
+snippet new
+@${1:object} = ${2:`!p snip.rv=classify(t[1])`}.new$0
 endsnippet
 snippet init
 def initialize ${1:args}
@@ -44,9 +54,6 @@ attr_writer :${1:attribute}
 endsnippet
 snippet rw
 attr_accessor :${1:attribute}
-endsnippet
-snippet find
-@${1:model} = ${2:`!p res="".join(map(lambda x:x.capitalize(), t[1].split('_')))`}.find(params[:${3:id}])$0
 endsnippet
 snippet map
 map { |${1:e}| $1$0 }
@@ -131,7 +138,7 @@ endsnippet
 snippet spec
 require 'spec_helper'
 
-describe ${1:`!p res="".join(map(lambda x:x.capitalize(),snip.basename.split('_')))[0:-4]`} do
+describe ${1:`!p snip.rv=classify(snip.basename)[0:-4]`} do
   $0
 end
 endsnippet
@@ -154,9 +161,6 @@ snippet before
 before do
   $0
 end
-endsnippet
-snippet new
-@${1:object} = ${2:`!p res="".join(map(lambda x:x.capitalize(), t[1].split('_')))`}.new$0
 endsnippet
 snippet factory
 @${1:model} = Factory(:$1)$0
