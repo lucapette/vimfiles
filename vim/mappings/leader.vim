@@ -1,7 +1,7 @@
-" Stop highlighting .
+" Stop highlighting.
 nmap <silent> <leader><space> :noh<cr>
 
-" Search with Ack.vim
+" Search with Ack.vim.
 nmap <leader>a :Ack<CR>
 
 " Open CtrlP.vim in buffer-mode search.
@@ -12,6 +12,9 @@ nmap <leader>c :Gcommit<CR>
 
 " Show the diff of current buffer with the git index version.
 nmap <leader>d :Gdiff<CR>
+
+" Delete the current line using the black-hole register.
+nmap <leader>D "_dd
 
 " Go to the next spelling error.
 nmap <leader>n ]s
