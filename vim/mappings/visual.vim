@@ -8,6 +8,3 @@ nnoremap Vat vatV
 
 " Trigger zencoding expansion.
 vmap <c-e> <c-y>,
-
-" Visual search with Ack.vim
-vnoremap <leader>a y:Ack <c-r>=expand(@")<CR><CR>

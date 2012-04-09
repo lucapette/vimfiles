@@ -33,3 +33,6 @@ nmap <leader>z z=
 
 " Highlight the current word without moving the curson. Very handy.
 nmap <silent> <leader>h :setl hls<CR>:let @/="\\<<C-r><C-w>\\>"<CR>
+
+" Visual search with Ack.vim
+vnoremap <leader>a y:Ack <c-r>=expand(@")<CR><CR>
