@@ -163,10 +163,10 @@ before do
 end
 endsnippet
 snippet f "factory" b
-@${1:model} = Factory(:$1)$0
+@${1:model} = FactoryGirl.create(:$1)$0
 endsnippet
 snippet b "factory build" b
-@${1:model} = Factory.build(:$1)$0
+@${1:model} = FactoryGirl.build(:$1)$0
 endsnippet
 snippet Given
 Given /^${1:description}$/ do
