@@ -32,18 +32,3 @@ function! markdown#headerify(level)
     execute "normal! ^i".repeat('#',a:level)." "
   endif
 endfunction
-
-" Create a mardown link from the current selection.
-function! markdown#linkify()
-  exe "normal! gvxi[\<esc>pa](\<esc>pa)\<esc>F(vib"
-endfunction
-
-" Bold and italic of the selected text
-" Both require surround.vim
-function! markdown#boldify()
-  exe "normal gvS*gvS*"
-endfunction
-
-function! markdown#italicize()
-  exe "normal gvS*"
-endfunction
