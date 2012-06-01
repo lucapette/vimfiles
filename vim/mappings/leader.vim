@@ -36,3 +36,6 @@ nmap <silent> <leader>h :setl hls<CR>:let @/="\\<<C-r><C-w>\\>"<CR>
 
 " Visual search with Ack.vim
 vnoremap <leader>a y:Ack <c-r>=expand(@")<CR><CR>
+
+" Tidy multiple assignment lines
+vnoremap <leader>= :Tabularize assignment<CR>
