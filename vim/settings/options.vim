@@ -29,12 +29,6 @@ set directory=/tmp
 " Use spaces for crappy tabs.
 set expandtab
 
-" when substitute enable g flag by default. Very handy.
-set gdefault
-
-" My font of choice.
-set guifont=Monospace\ 11
-
 " In short, don't show the menu in gVim
 set guioptions-=A
 set guioptions-=T
