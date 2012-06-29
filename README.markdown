@@ -31,7 +31,6 @@ I'm using pathogen.vim to handle all my plugins in combination with git
 submodules. It's quite a common setup. Here a list of all my bundles. Please
 consider, it could be a little outdated.
 
-
 - [Ack.vim](http://www.vim.org/scripts/script.php?script_id=2572)
   This plugin is the Vim interface to [ack](http://betterthangrep.com/). I
   recommend to get the latest version of ack from the website.
@@ -63,9 +62,6 @@ consider, it could be a little outdated.
   If you use git you **must** learn to use this plugin.
   [Drew Neil](https://github.com/nelstrom) has done a great series of
   [screencasts](http://vimcasts.org/) about it.
-
-- [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
-  You know this one. And if you don't know it, go straight to try it.
 
 - [rails.vim](http://rails.vim.tpope.net/)
   I love rails and I love Vim. Someone would say I love tpope. But everyone
