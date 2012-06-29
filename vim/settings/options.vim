@@ -29,6 +29,9 @@ set directory=/tmp
 " Use spaces for crappy tabs.
 set expandtab
 
+" when substitute enable g flag by default. Very handy.
+set gdefault
+
 " In short, don't show the menu in gVim
 set guioptions-=A
 set guioptions-=T
@@ -43,9 +46,6 @@ set hidden
 
 " Highlight search.
 set hlsearch
-
-" Ignore the case while searching.
-set ignorecase
 
 " Show matched search while typing.
 set incsearch
@@ -110,7 +110,7 @@ set title titlestring=%F\ %m%r%h%w
 " Give me a nice completion on the command line.
 set wildmenu
 
-" Don't ever show me the folllowing
+" Don't ever show me the following
 set wildignore=*~,.git,tmp,_site,*.log,*.jpg,*.png,*.gif
 
 " Add more line for saved registers
