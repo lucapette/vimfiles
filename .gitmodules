@@ -88,3 +88,6 @@
 [submodule "vim/bundle/ruby-runner"]
 	path = vim/bundle/ruby-runner
 	url = https://github.com/henrik/vim-ruby-runner
+[submodule "vim/bundle/textobj-underscore"]
+	path = vim/bundle/textobj-underscore
+	url = https://github.com/lucapette/vim-textobj-underscore
