@@ -2,15 +2,12 @@
 ino <silent> <F1> <ESC>
 nmap <silent> <F1> <ESC>
 
-" Save the current buffer and trimspaces.
-ino <silent> <F2> <ESC> mm:w<bar>call utils#trimspaces()<CR>`m
-nmap <silent> <F2>  mm:w<bar>call utils#trimspaces()<CR>`m
-
 " Open a Tree in the current project directory.
 ino <silent> <F4> <ESC> :Vexplore <C-R>=codepath#path()<CR><CR>
 nmap <silent> <F4> :Vexplore <C-R>=codepath#path()<CR><CR>
 
-" Indent all the file with one keystroke. See http://lucapette.com/vim/rails/vim-for-rails-developers-indenting-code.
+" Indent all the file with one keystroke.
+" See http://lucapette.com/vim/rails/vim-for-rails-developers-indenting-code.
 ino <silent> <F5> <ESC> gg=G``a
 nmap <silent> <F5> gg=G``
 

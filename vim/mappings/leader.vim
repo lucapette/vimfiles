@@ -25,13 +25,13 @@ nmap <leader>p [s
 " Show a preview of the git current status.
 nmap <leader>s :Gstatus<CR>
 
-" Save the current buffer and stage the result.
-nmap <leader>w :Gwrite<CR>
+" Save the current buffer and trimspaces.
+nmap <leader>w ma:w<bar>call utils#trimspaces()<CR>`a
 
 " Show the spelling suggestions.
 nmap <leader>z z=
 
-" Highlight the current word without moving the curson. Very handy.
+" Highlight the current word without moving the cursor. Very handy.
 nmap <silent> <leader>h :setl hls<CR>:let @/="\\<<C-r><C-w>\\>"<CR>
 
 " Visual search with Ack.vim
