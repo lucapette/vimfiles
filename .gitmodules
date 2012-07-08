@@ -91,3 +91,6 @@
 [submodule "vim/bundle/textobj-underscore"]
 	path = vim/bundle/textobj-underscore
 	url = https://github.com/lucapette/vim-textobj-underscore
+[submodule "vim/bundle/bundler"]
+	path = vim/bundle/bundler
+	url = https://github.com/tpope/vim-bundler
