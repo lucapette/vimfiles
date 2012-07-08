@@ -1,8 +1,8 @@
 " Stop highlighting.
 nmap <silent> <leader><space> :noh<cr>
 
-" Search with Ack.vim.
-nmap <leader>a :Ack<CR>
+" Alternate Rails.vim or Rake.vim
+nmap <leader>a :A<CR>
 
 " Open CtrlP.vim in buffer-mode search.
 nmap <leader>b :CtrlPBuffer<CR>
