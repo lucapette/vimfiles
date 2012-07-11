@@ -19,10 +19,8 @@ for any further information but, please, build your own configuration. Read
 Configuration](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration/)
 to better understand what I mean. Of course, **steal whatever you like**.
 
-I'm a Ruby developer and for this very reason my configuration
-has a lot of stuff for Ruby and Rails. By the way, I like to write a lot (as
-you can see from this README) and there is something interesting about
-markdown too.
+I'm a Ruby developer and for this very reason my configuration has a lot of
+stuff for Ruby and Rails.
 
 Bundles
 -------
@@ -64,16 +62,12 @@ consider, it could be a little outdated.
   [screencasts](http://vimcasts.org/) about it.
 
 - [rails.vim](http://rails.vim.tpope.net/)
-  I love rails and I love Vim. Someone would say I love tpope. But everyone
-  loves tpope. BTW, this plugin is essential if you are a Rails developer.
+  I love rails and I love Vim. Someone would say I love tpope. OK, I confess I
+  love hime. But everyone loves tpope. BTW, this plugin is essential if you
+  are a Rails developer.
 
-- [snipMate](https://github.com/garbas/vim-snipmate)
-  This plugin tries to implement some features of the snippet feature of
-  Textmate. I use it very often, you will.
-
-- [vim-smartword](https://github.com/kana/vim-smartword)
-  It provides word motions that are smarter in some sense. It's a little
-  nice plugin.
+- [ultisnips](https://github.com/SirVer/ultisnips)
+  It's described as the Ultimate snippet solution. I agree.
 
 - [vim-git](https://github.com/tpope/vim-git)
   Vim Git Runtime files.
@@ -117,7 +111,11 @@ consider, it could be a little outdated.
   A custom text object for selecting ruby blocks.
 
 - [vim-visualstar](https://github.com/thinca/vim-visualstar)
-  star for Visual-mode.
+  `*` for Visual-mode.
+
+- [splitjoin.vim](https://github.com/AndrewRaden/splitjoin.vim)
+  Awesome plugin for switching between single-line statemes and multiple-line
+  statements. You need it.
 
 License
 -------
