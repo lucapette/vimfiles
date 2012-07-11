@@ -20,3 +20,7 @@ nmap * *zz
 nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
+
+" splitjoin.vim mappings
+nmap sj :SplitjoinSplit<CR>
+nmap sk :SplitjoinJoin<CR>
