@@ -27,7 +27,7 @@ Bundles
 
 I'm using pathogen.vim to handle all my plugins in combination with git
 submodules. It's quite a common setup. Here a list of all my bundles. Please
-consider, it could be a little outdated.
+consider that it could be a little outdated.
 
 - [Ack.vim](http://www.vim.org/scripts/script.php?script_id=2572)
   This plugin is the Vim interface to [ack](http://betterthangrep.com/). I
@@ -46,10 +46,10 @@ consider, it could be a little outdated.
 
 - [ctrlp.vim](http://kien.github.com/ctrlp.vim/)
   It's the best fuzzy file finder ever. It has a lot of unique and crazy
-  feature. I tried a lot of them and this is the best one. Period.
+  features. I tried a lot of them and this is the best one. Period.
 
 - [vim-endwise](https://github.com/tpope/vim-endwise)
-  This plugin will help you to end structures for Ruby, VimL and other
+  This plugin will close structures in Ruby, VimL and other
   languages.
 
 - [vim-pathogen](https://github.com/tpope/vim-pathogen)
@@ -63,11 +63,12 @@ consider, it could be a little outdated.
 
 - [rails.vim](http://rails.vim.tpope.net/)
   I love rails and I love Vim. Someone would say I love tpope. OK, I confess I
-  love hime. But everyone loves tpope. BTW, this plugin is essential if you
+  love him. But everyone loves tpope. BTW, this plugin is essential if you
   are a Rails developer.
 
 - [ultisnips](https://github.com/SirVer/ultisnips)
-  It's described as the Ultimate snippet solution. I agree.
+  It's described as the ultimate snippet solution. I agree, it's the ultimate
+  solution.
 
 - [vim-git](https://github.com/tpope/vim-git)
   Vim Git Runtime files.
@@ -90,13 +91,6 @@ consider, it could be a little outdated.
 - [vim-ruby-doc](https://github.com/lucapette/vim-ruby-doc)
   Browse Ruby/RSpec/Rails doc quickly.
 
-- [vim-rvm](https://github.com/tpope/vim.rvm)
-  It helps you to switch Ruby versions from inside Vim. Furthermore, it
-  provides a nice statusline string.
-
-- [vim-snipmate](https://github.com/garbas/vim-snipmate)
-  Nice snippets for Vim. This fork is far way better than the original plugin.
-
 - [vim-surround](https://github.com/tpope/vim-surround)
   Incredibly useful plugin for quoting stuff.
 
@@ -109,6 +103,9 @@ consider, it could be a little outdated.
 
 - [vim-textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock)
   A custom text object for selecting ruby blocks.
+
+- [vim-textobj-underscore](https://github.com/lucapette/vim-textobj-underscore)
+  A custom text object for underscored words.
 
 - [vim-visualstar](https://github.com/thinca/vim-visualstar)
   `*` for Visual-mode.

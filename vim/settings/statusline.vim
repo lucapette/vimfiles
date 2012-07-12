@@ -1,6 +1,5 @@
 " Let me decide what goes in the status line.
 set statusline=%{exists('g:loaded_fugitive')?fugitive#statusline():''}                " git branch from fugitive.vim
-set statusline+=\ %{exists('g:loaded_rvm')?rvm#statusline():''}                       " rvm prompt from vim-rvm
 
 " Current buffer:
 set statusline+=\ [%F]                                                                " Full path filename
