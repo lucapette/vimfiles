@@ -32,6 +32,5 @@ runtime mappings/normal.vim
 runtime mappings/visual.vim
 
 " Load colorscheme and fix it a bit.
-colorscheme molokai
+colorscheme Monokai
 hi Comment guifg=SkyBlue ctermfg=74
-hi Visual term=reverse cterm=reverse gui=reverse guifg=#66D9EF guibg=#000000

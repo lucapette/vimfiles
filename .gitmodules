@@ -97,3 +97,6 @@
 [submodule "vim/bundle/splitjoin"]
 	path = vim/bundle/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
+[submodule "vim/bundle/monokai"]
+	path = vim/bundle/monokai
+	url = https://github.com/sickill/vim-monokai
