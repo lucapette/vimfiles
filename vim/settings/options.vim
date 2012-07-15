@@ -68,9 +68,6 @@ set nofoldenable
 " Show as small as possible width for numbers.
 set numberwidth=1
 
-" Paste option toggle mapping.
-set pastetoggle=<F12>
-
 " Use it. It's wonderful.
 set relativenumber
 
