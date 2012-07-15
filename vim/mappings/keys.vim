@@ -14,7 +14,3 @@ nmap <silent> <F5> gg=G``
 " Toggle spell checking.
 ino <silent> <F9> <ESC> :call utils#toggleSpell()<CR>i
 nmap <silent> <F9> :call utils#toggleSpell()<CR>
-
-" Open a Tree in the current working directory.
-ino <silent> <S-F4> <ESC>:Vexplore<CR>
-nmap <silent> <S-F4> :Vexplore<CR>

@@ -8,8 +8,5 @@ nmap <C-k> <C-W>k
 nmap <C-h> <C-W>h
 nmap <C-l> <C-W>l
 
-" Let me complete files quickly in insert-mode.
-inoremap <silent> <C-F> <C-X><C-F>
-
 " Trigger zencoding expansion.
 imap <c-e> <c-y>,
