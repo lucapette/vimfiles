@@ -2,10 +2,6 @@
 ino <silent> <F1> <ESC>
 nmap <silent> <F1> <ESC>
 
-" Open a Tree in the current project directory.
-ino <silent> <F4> <ESC> :Vexplore <C-R>=codepath#path()<CR><CR>
-nmap <silent> <F4> :Vexplore <C-R>=codepath#path()<CR><CR>
-
 " Indent all the file with one keystroke.
 " See http://lucapette.com/vim/rails/vim-for-rails-developers-indenting-code.
 ino <silent> <F5> <ESC> gg=G``a

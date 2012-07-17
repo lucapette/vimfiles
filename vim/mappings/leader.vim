@@ -10,6 +10,10 @@ nmap <leader>b :CtrlPBuffer<CR>
 " Show the diff of current buffer with the git index version.
 nmap <leader>d :Gdiff<CR>
 
+" Open a Tree in the current project directory.
+nmap <leader>e :Vexplore<CR>
+nmap <leader>E :Vexplore <C-R>=codepath#path()<CR><CR>
+
 " Show a preview of the git current status.
 nmap <leader>s :Gstatus<CR>
 
