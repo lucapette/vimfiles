@@ -17,6 +17,9 @@ set backspace=indent,eol,start
 set backup
 set backupdir=/tmp
 
+" Highlight the line where the cursor is. Surprisingly useful.
+set cursorline
+
 " Use a popup to show the completion and matches the longest match first.
 set completeopt=longest,menuone
 
