@@ -25,6 +25,7 @@ runtime settings/statusline.vim
 runtime settings/plugins.vim
 
 " and my personal mappings.
+runtime mappings/command.vim
 runtime mappings/ctrl.vim
 runtime mappings/keys.vim
 runtime mappings/leader.vim
