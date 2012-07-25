@@ -35,12 +35,6 @@ set expandtab
 " when substitute enable g flag by default. Very handy.
 set gdefault
 
-" In short, don't show the menu in gVim
-set guioptions-=A
-set guioptions-=T
-set guioptions-=m
-set guioptions-=r
-
 " Yes, long history please.
 set history=1000
 
