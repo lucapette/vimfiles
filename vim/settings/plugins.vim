@@ -30,9 +30,6 @@ let g:rubycomplete_rails          = 0
 let g:RubyRunner_open_below  = 1
 let g:RubyRunner_window_size = 10
 
-" blocke
-let g:blockle_mapping = '<Leader>B'
-
 " CoffeeScript
 let coffee_compile_vert = 1
 
