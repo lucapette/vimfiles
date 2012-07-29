@@ -36,3 +36,7 @@ let coffee_compile_vert = 1
 " Surround
 let g:surround_{char2nr('-')} = "<% \r %>"
 let g:surround_{char2nr('=')} = "<%= \r %>"
+
+" Turbux
+let g:turbux_command_rspec = 'rspec --color'
+let g:no_turbux_mappings   = 0
