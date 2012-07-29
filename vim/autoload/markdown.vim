@@ -2,6 +2,7 @@
 " I stealed the idea somewhere and adopted it to my needs.
 function! markdown#preview()
   silent update
+
   let output_name = tempname() . '.html'
 
   let file_header = ['<html>', '<head>',
@@ -18,11 +19,12 @@ function! markdown#preview()
   silent exec '!markdown "' . expand('%:p') . '" >> "' . output_name . '"'
 
   silent exec '!echo "</div></body></html>" >> "' . output_name . '"'
-
-  silent exec '!xdg-open "' . output_name . '" &'
+  
+  silent exec '!xdg-open "' . output_name . '" &> /dev/null'
+  redraw!
 endfunction
 
-" Create a markdown header basel on the level parameter (1..6)
+" Create a markdown header based on the level parameter (1..6)
 function! markdown#headerify(level)
   if a:level == 1
     normal! yypVr=
