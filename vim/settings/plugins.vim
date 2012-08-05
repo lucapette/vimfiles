@@ -2,9 +2,6 @@
 let g:netrw_liststyle = 3
 let g:netrw_preview   = 1
 
-" zencoding
-let g:user_zen_settings = { 'indentation' : '  '}
-
 " ultisnips
 let g:UltiSnipsExpandTrigger       = "<tab>"
 let g:UltiSnipsJumpForwardTrigger  = "<tab>"

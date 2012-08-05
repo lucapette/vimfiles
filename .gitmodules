@@ -34,9 +34,6 @@
 [submodule "vim/bundle/codepath"]
 	path = vim/bundle/codepath
 	url = https://github.com/lucapette/codepath.vim
-[submodule "vim/bundle/zencoding"]
-	path = vim/bundle/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
 [submodule "vim/bundle/commentary"]
 	path = vim/bundle/commentary
 	url = https://github.com/tpope/vim-commentary

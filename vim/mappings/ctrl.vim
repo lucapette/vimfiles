@@ -7,6 +7,3 @@ nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
 nmap <C-h> <C-W>h
 nmap <C-l> <C-W>l
-
-" Trigger zencoding expansion.
-imap <c-e> <c-y>,
