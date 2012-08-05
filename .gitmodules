@@ -106,3 +106,6 @@
 [submodule "vim/bundle/ctrlp-register"]
 	path = vim/bundle/ctrlp-register
 	url = https://github.com/mattn/ctrlp-register
+[submodule "vim/bundle/ragtag"]
+	path = vim/bundle/ragtag
+	url = https://github.com/tpope/vim-ragtag
