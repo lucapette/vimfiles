@@ -15,7 +15,7 @@ let g:ctrlp_map                   = '<c-t>'
 let g:ctrlp_match_window_bottom   = 0
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_user_command          = ['.git/', 'cd %s && git ls-files -co --exclude-standard']
-let g:ctrlp_working_path_mode     = 2
+let g:ctrlp_working_path_mode     = 'r'
 
 " RubyComplete
 let g:rubycomplete_buffer_loading = 0
