@@ -1,6 +1,3 @@
-" Don't show the ri -T information.
-setlocal balloonexpr=
-
 " Go to next/previous method definition.
 nmap <buffer> <silent> <c-f> :call ruby#goto('f')<CR>zz
 nmap <buffer> <silent> <c-b> :call ruby#goto('b')<CR>zz
