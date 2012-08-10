@@ -1,10 +1,10 @@
 ino <buffer> <F7> <ESC>:call markdown#preview()<CR>
 nmap <buffer> <F7> :call markdown#preview()<CR>
 
-" Quick markdown link creation 
+" Quick markdown link creation
 " require surround.vim
-nmap <leader>l csw]f]a()<ESC>
-vmap <leader>l S]f]a()<ESC>
+nmap <leader>l csw]f]a()<ESC>i
+vmap <leader>l S]f]a()<ESC>i
 
 nmap <buffer> <silent> <leader>1 :call markdown#headerify(1)<CR>
 nmap <buffer> <silent> <leader>2 :call markdown#headerify(2)<CR>
