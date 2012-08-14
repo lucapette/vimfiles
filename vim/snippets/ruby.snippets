@@ -145,6 +145,14 @@ describe ${1:`!p snip.rv=classify(snip.basename)[0:-4]`} do
   $0
 end
 endsnippet
+snippet lite
+require 'spec_helper_lite'
+require_relative '$2'
+
+describe ${1:`!p snip.rv=classify(snip.basename)[0:-4]`} do
+  $0
+end
+endsnippet
 snippet describe
 describe '${1:description}' do
   $0
