@@ -11,8 +11,8 @@ nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :Gdiff<CR>
 
 " Open a Tree in the current project directory.
-nmap <leader>e :Vexplore %:h<CR>
-nmap <leader>E :Vexplore <c-r>=getcwd()<CR><CR>
+nmap <leader>e :Vexplore<CR>
+nmap <leader>E :Vexplore <C-R>=codepath#path()<CR><CR>
 
 " Indent all the file with one keystroke.
 " See http://lucapette.com/vim/rails/vim-for-rails-developers-indenting-code.
