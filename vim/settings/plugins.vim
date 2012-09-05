@@ -11,10 +11,6 @@ let g:UltiSnipsDoHash              = 0
 
 " CtrlP
 let g:ctrlp_extensions            = ['tag']
-let g:ctrlp_prompt_mappings       = {
-      \ 'AcceptSelection("e")': ['<c-v>'],
-      \ 'AcceptSelection("v")': ['<cr>'],
-      \ }
 let g:ctrlp_map                   = ',,'
 let g:ctrlp_match_window_bottom   = 0
 let g:ctrlp_match_window_reversed = 0
