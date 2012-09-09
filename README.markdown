@@ -31,10 +31,9 @@ consider that it could be a little outdated.
   This plugin is the Vim interface to [ack](http://betterthangrep.com/). I
   recommend to get the latest version of ack from the website.
 
-- [codepath](http://www.vim.org/scripts/script.php?script_id=3435)
+- [rootfinder](https://github.com/lucapette/vim-rootfinder)
 
-  I personally wrote this one and I use it to get the current working based on
-  the assumption that all your projects are under the same *code* path.
+  If you use `set autochdir` you can find this one useful.
 
 - [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
 
