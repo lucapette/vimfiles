@@ -17,12 +17,16 @@ endfunction
 " Care about balloonexpr too.
 function! utils#toggleSpell()
   if &spell
-    set noballooneval
-    set balloonexpr=
+    if has('balloon_eval')
+      set noballooneval
+      set balloonexpr=
+    endif
     set nospell
   else
-    set ballooneval
-    set balloonexpr=utils#spellBalloon()
+    if has('balloon_eval')
+      set ballooneval
+      set balloonexpr=utils#spellBalloon()
+    endif
     set spell
   endif
 endfunction
