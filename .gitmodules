@@ -106,3 +106,6 @@
 [submodule "vim/bundle/rootfinder"]
 	path = vim/bundle/rootfinder
 	url = https://github.com/lucapette/vim-rootfinder
+[submodule "vim/bundle/haml"]
+	path = vim/bundle/haml
+	url = https://github.com/tpope/vim-haml
