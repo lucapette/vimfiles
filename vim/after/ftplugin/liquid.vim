@@ -1,2 +1,2 @@
 " No numbers for blog posts
-set norelativenumber
+setlocal norelativenumber
