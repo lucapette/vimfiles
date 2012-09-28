@@ -5,3 +5,6 @@ command! -narg=1 GoogleSearch :silent exe '!xdg-open https://google.com/search?q
 " Convert Ruby 1.8 hash syntax to Ruby 1.9 syntax
 " based on https://github.com/henrik/dotfiles/blob/master/vim/config/commands.vim#L20
 command! -bar -range=% NotRocket execute '<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/e' . (&gdefault ? '' : 'g')
+
+" My wife needs this all the time.
+command Olia :%s/\n\{3,}/\r\r/e
