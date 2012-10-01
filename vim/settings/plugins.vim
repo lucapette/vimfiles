@@ -37,3 +37,7 @@ let g:surround_{char2nr('=')} = "<%= \r %>"
 let g:VimuxHeight = '30'
 let g:turbux_command_rspec = 'rspec --color'
 let g:no_turbux_mappings   = 0
+
+" RubyDoc JQueryDoc
+let g:ruby_doc_command='open'
+let g:jquery_doc_command='open'
