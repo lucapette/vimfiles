@@ -17,6 +17,9 @@ set backspace=indent,eol,start
 set backup
 set backupdir=/tmp
 
+" Use mac os clipobard
+set clipboard=unnamed
+
 " Highlight the line where the cursor is. Surprisingly useful.
 set cursorline
 
