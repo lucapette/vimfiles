@@ -1,6 +1,8 @@
-" netrw
-let g:netrw_liststyle = 3
-let g:netrw_preview   = 1
+" NERDTree
+let g:NERDTreeHijackNetrw   = 1
+let g:NERDTreeQuitOnOpen    = 1
+let g:NERDTreeMinimalUI     = 1
+let g:NERDTreeDirArrows     = 1
 
 " ultisnips
 let g:UltiSnipsExpandTrigger       = "<tab>"
