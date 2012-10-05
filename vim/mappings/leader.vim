@@ -18,10 +18,6 @@ nmap <leader>E :NERDTree <C-R>=rootfinder#current()<CR><CR>
 " See http://lucapette.com/vim/rails/vim-for-rails-developers-indenting-code.
 nmap <leader>i gg=G``
 
-" Turbux mappings
-nmap <leader>t <Plug>SendFocusedTestToTmux
-nmap <leader>T <Plug>SendTestToTmux
-
 " Show a preview of the git current status.
 nmap <leader>s :Gstatus<CR>
 

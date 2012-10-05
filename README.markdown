@@ -29,16 +29,14 @@ consider that it could be a little outdated.
 - [Ack.vim](http://www.vim.org/scripts/script.php?script_id=2572)
 
   This plugin is the Vim interface to [ack](http://betterthangrep.com/). I
-  recommend to get the latest version of ack from the website.
+  recommend to get the latest version of ack from the website. I use my
+  personal fork of the plugin because I need to search project-wise and I use
+  `set chdir`.
 
 - [rootfinder](https://github.com/lucapette/vim-rootfinder)
 
-  If you use `set autochdir` you can find this one useful.
-
-- [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
-
-  Vim files for [coffeescript](http://coffeescript.org/). Very handy, you can
-  have a live preview of the generated JavaScript.
+  If you use `set autochdir` you can find this one useful. I wrote it. Blame
+  me if it doesn't work.
 
 - [vim-commentary](https://github.com/tpope/vim-commentary)
 
@@ -48,11 +46,6 @@ consider that it could be a little outdated.
 
   It's the best fuzzy file finder ever. It has a lot of unique and crazy
   features. I tried a lot of them and this is the best one. Period.
-
-- [vim-endwise](https://github.com/tpope/vim-endwise)
-
-  This plugin will close structures in Ruby, VimL and other
-  languages.
 
 - [vim-pathogen](https://github.com/tpope/vim-pathogen)
 
@@ -68,7 +61,7 @@ consider that it could be a little outdated.
 - [rails.vim](http://rails.vim.tpope.net/)
 
   I love rails and I love Vim. Someone would say I love tpope. OK, I confess I
-  love him. But everyone loves tpope. BTW, this plugin is essential if you
+  love him. But everyone loves tpope. This plugin is essential if you
   are a Rails developer.
 
 - [ultisnips](https://github.com/SirVer/ultisnips)
@@ -82,12 +75,7 @@ consider that it could be a little outdated.
 
 - [vim-jquery-doc](https://github.com/lucapette/vim-jquery-doc)
 
-  Browse jQuery API doc quickly.
-
-- [vim-liquid](https://github.com/tpope/vim-liquid)
-
-  Vim Liquid runtime files with [Jekyll](http://jekyllrb.com/) enhancements.
-
+  Browse jQuery API doc quickly. I wrote it. Blame me if it doesn't work.
 
 - [vim-rake](https://github.com/tpope/vim-rake)
 
@@ -103,7 +91,8 @@ consider that it could be a little outdated.
 
 - [vim-ruby-doc](https://github.com/lucapette/vim-ruby-doc)
 
-  Browse Ruby/RSpec/Rails doc quickly.
+  Browse Ruby/RSpec/Rails doc quickly. I wrote it. Blame me if it doesn't
+  work.
 
 - [vim-surround](https://github.com/tpope/vim-surround)
 
@@ -124,7 +113,8 @@ consider that it could be a little outdated.
 
 - [vim-textobj-underscore](https://github.com/lucapette/vim-textobj-underscore)
 
-  A custom text object for underscored words.
+  A custom text object for underscored words. I wrote it. Blame me if it
+  doesn't work.
 
 - [vim-visualstar](https://github.com/thinca/vim-visualstar)
 
@@ -132,13 +122,8 @@ consider that it could be a little outdated.
 
 - [splitjoin.vim](https://github.com/AndrewRaden/splitjoin.vim)
 
-  Awesome plugin for switching between single-line statemes and multiple-line
+  Awesome plugin for switching between single-line statements and multiple-line
   statements. You need it.
-
-- [vimux](https://github.com/benmills/vimux/) and [turbux](https://github.com/jgdavey/vim-turbux/)
-
-  I'm using [tmux](http://tmux.sourceforge.net/) for development and these
-  tools allows me to interact with tmux quickly and efficiently.
 
 License
 -------

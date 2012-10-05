@@ -28,17 +28,9 @@ let g:rubycomplete_rails          = 0
 let g:RubyRunner_open_below  = 1
 let g:RubyRunner_window_size = 10
 
-" CoffeeScript
-let coffee_compile_vert = 1
-
 " Surround
 let g:surround_{char2nr('-')} = "<% \r %>"
 let g:surround_{char2nr('=')} = "<%= \r %>"
-
-" Vimux Turbux
-let g:VimuxHeight = '30'
-let g:turbux_command_rspec = 'rspec --color'
-let g:no_turbux_mappings   = 0
 
 " RubyDoc JQueryDoc
 let g:ruby_doc_command='open'
