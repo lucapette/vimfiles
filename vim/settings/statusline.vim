@@ -15,4 +15,3 @@ set statusline+=\ [%l]                                                          
 set statusline+=\ [%c]                                                                " Cursor column number
 set statusline+=\ [%p%%]                                                              " Percentage through file in lines
 set statusline+=\ [%L]                                                                " Number of lines of the current buffer
-set statusline+=\ [%{&ff}]                                                            " File Format of the current buffer
