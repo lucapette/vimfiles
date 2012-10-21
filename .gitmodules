@@ -4,9 +4,6 @@
 [submodule "vim/bundle/surround"]
 	path = vim/bundle/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/ruby"]
 	path = vim/bundle/ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
@@ -61,9 +58,6 @@
 [submodule "vim/bundle/tmux"]
 	path = vim/bundle/tmux
 	url = https://github.com/tsaleh/vim-tmux
-[submodule "vim/bundle/blockle"]
-	path = vim/bundle/blockle
-	url = https://github.com/jgdavey/vim-blockle
 [submodule "vim/bundle/ruby-runner"]
 	path = vim/bundle/ruby-runner
 	url = https://github.com/henrik/vim-ruby-runner
@@ -76,12 +70,12 @@
 [submodule "vim/bundle/splitjoin"]
 	path = vim/bundle/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
-[submodule "vim/bundle/monokai"]
-	path = vim/bundle/monokai
-	url = https://github.com/sickill/vim-monokai
 [submodule "vim/bundle/rootfinder"]
 	path = vim/bundle/rootfinder
 	url = https://github.com/lucapette/vim-rootfinder
 [submodule "vim/bundle/haml"]
 	path = vim/bundle/haml
 	url = https://github.com/tpope/vim-haml
+[submodule "vim/bundle/solarized"]
+	path = vim/bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git

@@ -33,10 +33,5 @@ runtime mappings/normal.vim
 runtime mappings/visual.vim
 
 " Load colorscheme and fix it a bit.
-colorscheme Monokai
-hi Comment guifg=SkyBlue ctermfg=74
-hi Constant ctermfg=135 cterm=bold
-hi Typedef  ctermfg=81
-hi Type     ctermfg=81  cterm=none
-hi NonText  ctermfg=250 ctermbg=233
-hi Normal   ctermfg=252 ctermbg=232
+set background=dark
+colorscheme solarized
