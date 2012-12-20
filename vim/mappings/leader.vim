@@ -20,6 +20,8 @@ nmap <leader>i gg=G``
 
 nmap <leader>t :CtrlPTag<CR>
 
+nmap <leader>o :!open <cWORD><CR>
+
 " Show a preview of the git current status.
 nmap <leader>s :Gstatus<CR>
 
