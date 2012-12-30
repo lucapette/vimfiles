@@ -1,5 +1,4 @@
-ino <buffer> <F7> <ESC>:call markdown#preview()<CR>
-nmap <buffer> <F7> :call markdown#preview()<CR>
+nmap <buffer>  <leader>p :call markdown#preview()<CR>
 
 " Quick markdown link creation
 " require surround.vim

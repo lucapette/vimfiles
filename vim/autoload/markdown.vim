@@ -19,8 +19,8 @@ function! markdown#preview()
   silent exec '!markdown "' . expand('%:p') . '" >> "' . output_name . '"'
 
   silent exec '!echo "</div></body></html>" >> "' . output_name . '"'
-  
-  silent exec '!xdg-open "' . output_name . '" &> /dev/null'
+
+  silent exec '!open "' . output_name . '" &> /dev/null'
   redraw!
 endfunction
 
