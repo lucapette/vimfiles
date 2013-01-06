@@ -32,6 +32,9 @@ set dictionary=/usr/share/dict/words
 " Put in /tmp the swap files.
 set directory=/tmp
 
+" I want to choose what to fold
+set foldmethod=manual
+
 " Use spaces for crappy tabs.
 set expandtab
 
@@ -61,9 +64,6 @@ set matchtime=4
 
 " Yes, enable mouse. Then don't use it.
 set mouse=a
-
-" I want to see the code.
-set nofoldenable
 
 " Show as small as possible width for numbers.
 set numberwidth=1
