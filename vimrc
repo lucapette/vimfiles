@@ -21,7 +21,6 @@ filetype plugin plugin on
 runtime settings/autocommands.vim
 runtime settings/commands.vim
 runtime settings/options.vim
-runtime settings/statusline.vim
 runtime settings/plugins.vim
 
 " and my personal mappings.
