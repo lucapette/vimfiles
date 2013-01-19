@@ -120,7 +120,7 @@ consider that it could be a little outdated.
 
   `*` for Visual-mode.
 
-- [splitjoin.vim](https://github.com/AndrewRaden/splitjoin.vim)
+- [splitjoin.vim](https://github.com/AndrewRadev/splitjoin.vim)
 
   Awesome plugin for switching between single-line statements and multiple-line
   statements. You need it.
