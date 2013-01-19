@@ -55,9 +55,6 @@
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
-[submodule "vim/bundle/tmux"]
-	path = vim/bundle/tmux
-	url = https://github.com/tsaleh/vim-tmux
 [submodule "vim/bundle/textobj-underscore"]
 	path = vim/bundle/textobj-underscore
 	url = https://github.com/lucapette/vim-textobj-underscore
