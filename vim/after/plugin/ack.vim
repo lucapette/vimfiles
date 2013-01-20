@@ -3,4 +3,4 @@
 " at https://github.com/lucapette/ack.vim.
 let g:ackdefaultdir = rootfinder#current()
 
-let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:ackprg = 'ack --nogroup --nocolor --column'
