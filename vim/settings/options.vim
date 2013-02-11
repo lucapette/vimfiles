@@ -101,6 +101,9 @@ set tabstop=4
 " Universal width.
 set textwidth=78
 
+" Fast escape
+set timeoutlen=10
+
 " My terminal has a lot of colors.
 set t_Co=256
 
