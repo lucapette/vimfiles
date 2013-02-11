@@ -2,9 +2,6 @@
 nnoremap / /\v
 vnoremap / /\v
 
-" Re-execute the stored q macro.
-nmap Q @q
-
 " While searching scroll to the center of the window.
 nmap n nzz
 nmap N Nzz
