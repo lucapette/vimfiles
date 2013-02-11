@@ -65,6 +65,9 @@ set matchtime=4
 " Yes, enable mouse. Then don't use it.
 set mouse=a
 
+" Do not show mode
+set noshowmode
+
 " Show as small as possible width for numbers.
 set numberwidth=1
 
