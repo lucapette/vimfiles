@@ -29,7 +29,6 @@ let g:surround_{char2nr('=')} = "<%= \r %>"
 
 " RubyDoc JQueryDoc
 let g:ruby_doc_command='open'
-let g:jquery_doc_command='open'
 
 " I started liking fancy things
 let g:Powerline_symbols = 'fancy'

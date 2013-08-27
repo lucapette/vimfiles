@@ -49,9 +49,6 @@
 [submodule "vim/bundle/ruby-doc"]
 	path = vim/bundle/ruby-doc
 	url = https://github.com/lucapette/vim-ruby-doc
-[submodule "vim/bundle/jquery-doc"]
-	path = vim/bundle/jquery-doc
-	url = https://github.com/lucapette/vim-jquery-doc
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
@@ -73,15 +70,9 @@
 [submodule "vim/bundle/solarized"]
 	path = vim/bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/bundle/javascript"]
-	path = vim/bundle/javascript
-	url = https://github.com/pangloss/vim-javascript.git
 [submodule "vim/bundle/powerline"]
 	path = vim/bundle/powerline
 	url = https://github.com/Lokaltog/vim-powerline
 [submodule "vim/bundle/dispatch"]
 	path = vim/bundle/dispatch
 	url = https://github.com/tpope/vim-dispatch.git
-[submodule "vim/bundle/coffeescript"]
-	path = vim/bundle/coffeescript
-	url = https://github.com/kchmck/vim-coffee-script
