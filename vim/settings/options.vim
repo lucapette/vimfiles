@@ -74,9 +74,6 @@ set numberwidth=1
 " Use it. It's wonderful.
 set relativenumber
 
-" 2 space for indenting with >>.
-set shiftwidth=2
-
 " Show the last partial command
 set showcmd
 

@@ -2,3 +2,5 @@
 nmap <buffer> <silent> <leader>f :call ruby#toggleFocus()<CR>
 
 nmap <buffer> <silent> <leader>c :call ruby#checkSyntax()<CR>
+
+set shiftwidth=2
