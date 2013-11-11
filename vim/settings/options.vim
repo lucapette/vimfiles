@@ -74,6 +74,9 @@ set numberwidth=1
 " Use it. It's wonderful.
 set relativenumber
 
+" Put the current line in relativenumbering
+set number
+
 " Show the last partial command
 set showcmd
 
