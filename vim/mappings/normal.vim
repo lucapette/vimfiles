@@ -1,7 +1,3 @@
-" Use the regex in a sane way.
-nnoremap / /\v
-vnoremap / /\v
-
 " While searching scroll to the center of the window.
 nmap n nzz
 nmap N Nzz
