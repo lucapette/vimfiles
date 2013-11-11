@@ -23,8 +23,6 @@ nmap <leader>i gg=G``
 
 nmap <leader>t :CtrlPTag<CR>
 
-nmap <leader>o :!open <cWORD><CR>
-
 " Show a preview of the git current status.
 nmap <leader>s :Gstatus<CR>
 
@@ -33,6 +31,3 @@ nmap <leader>w ma:w<bar>call utils#trimspaces()<CR>`a
 
 " Highlight the current word without moving the cursor. Very handy.
 nmap <silent> <leader>h :setl hls<CR>:let @/="\\<<C-r><C-w>\\>"<CR>
-
-" Tidy multiple assignment lines
-vnoremap <leader>= :Tabularize assignment<CR>

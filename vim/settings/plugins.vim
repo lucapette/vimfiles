@@ -23,11 +23,7 @@ let g:rubycomplete_buffer_loading = 0
 let g:rubycomplete_include_object = 0
 let g:rubycomplete_rails          = 0
 
-" Surround
-let g:surround_{char2nr('-')} = "<% \r %>"
-let g:surround_{char2nr('=')} = "<%= \r %>"
-
-" RubyDoc JQueryDoc
+" RubyDoc
 let g:ruby_doc_command='open'
 
 " I started liking fancy things
