@@ -67,3 +67,6 @@
 [submodule "vim/bundle/repeat"]
 	path = vim/bundle/repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule "vim/bundle/register"]
+	path = vim/bundle/register
+	url = https://github.com/mattn/ctrlp-register

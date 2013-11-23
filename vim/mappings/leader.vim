@@ -21,6 +21,8 @@ nmap <leader>E :Vexplore <C-R>=rootfinder#current()<CR><CR>
 " See http://lucapette.com/vim/rails/vim-for-rails-developers-indenting-code.
 nmap <leader>i gg=G``
 
+nmap <leader>r :CtrlPRegister<CR>
+
 " Show a preview of the git current status.
 nmap <leader>s :Gstatus<CR>
 
