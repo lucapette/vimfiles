@@ -1,6 +1,3 @@
-" Change the the working directory accordingly to the current buffer.
-set autochdir
-
 " Try to indent new lines.
 set autoindent
 
