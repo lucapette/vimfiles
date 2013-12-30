@@ -70,6 +70,3 @@
 [submodule "vim/bundle/ag"]
 	path = vim/bundle/ag
 	url = https://github.com/rking/ag.vim
-[submodule "vim/bundle/gocode"]
-	path = vim/bundle/gocode
-	url = https://github.com/Blackrush/vim-gocode
