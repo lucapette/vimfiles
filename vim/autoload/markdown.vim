@@ -1,5 +1,5 @@
 " Makes a markdown preview of the current buffer.
-" I stealed the idea somewhere and adopted it to my needs.
+" I stole the idea somewhere and adopted it to my needs.
 function! markdown#preview()
   silent update
 

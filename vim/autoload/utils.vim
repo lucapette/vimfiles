@@ -7,26 +7,10 @@ function! utils#trimspaces()
   let &hlsearch = oldhlsearch
 endfunction
 
-" Show suggestions for the current misspelled-word
-function! utils#spellBalloon()
-  let lines = spellsuggest( spellbadword(v:beval_text)[ 0 ], 5, 0 )
-  return join( lines, has( "balloon_multiline" ) ? "\n" : " " )
-endfunction
-
-" Toggle spell option
-" Care about balloonexpr too.
-function! utils#toggleSpell()
-  if &spell
-    if has('balloon_eval')
-      set noballooneval
-      set balloonexpr=
-    endif
-    set nospell
-  else
-    if has('balloon_eval')
-      set ballooneval
-      set balloonexpr=utils#spellBalloon()
-    endif
-    set spell
-  endif
+" From http://got-ravings.blogspot.com/2008/07/vim-pr0n-visual-search-mappings.html
+function! utils#VSetSearch()
+  let temp = @s
+  norm! gv"sy
+  let @/ = '\V' . substitute(escape(@s, '\'), '\n', '\\n', 'g')
+  let @s = temp
 endfunction

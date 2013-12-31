@@ -1,13 +1,3 @@
-" Toggle focus: true on RSpec blocks.
-" Based on https://github.com/henrik/dotfiles/blob/master/vim/shorts/focus_toggle.vim
-function! ruby#toggleFocus()
-  try
-    s/\v[, ]\s*:focus\s*( do| \{|,)/\1/
-  catch /E486:/  " Pattern not found
-    silent! s/\v( do\s*$| \{)/, :focus\1/
-  endtry
-endfunction
-
 function! ruby#checkSyntax()
   update
 
