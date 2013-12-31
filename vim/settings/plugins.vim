@@ -11,7 +11,6 @@ let g:UltiSnipsSnippetDirectories  = ["snippets"]
 let g:UltiSnipsDoHash              = 0
 
 " CtrlP
-let g:ctrlp_extensions            = ['tag', 'register']
 let g:ctrlp_map                   = ',,'
 let g:ctrlp_match_window_bottom   = 0
 let g:ctrlp_match_window_reversed = 0
