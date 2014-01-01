@@ -1,6 +1,3 @@
-" Stop highlighting.
-nmap <silent> <leader><space> :noh<cr>
-
 " Alternate Rails.vim or Rake.vim
 nmap <leader>a :A<CR>
 
@@ -20,8 +17,6 @@ nmap <leader>E :Vexplore <C-R>=getcwd()<CR><CR>
 " Indent all the file with one keystroke.
 " See http://lucapette.com/vim/rails/vim-for-rails-developers-indenting-code.
 nmap <leader>i gg=G``
-
-nmap <leader>r :CtrlPRegister<CR>
 
 " Show a preview of the git current status.
 nmap <leader>s :Gstatus<CR>
