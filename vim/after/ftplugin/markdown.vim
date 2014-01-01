@@ -1,7 +1,5 @@
-nmap <buffer>  <leader>p :call markdown#preview()<CR>
-
 " Quick markdown link creation
-" require surround.vim
+" requires surround.vim
 nmap <leader>l csw]f]a()<ESC>i
 vmap <leader>l S]f]a()<ESC>i
 
