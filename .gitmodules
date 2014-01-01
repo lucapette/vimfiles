@@ -46,9 +46,6 @@
 [submodule "vim/bundle/splitjoin"]
 	path = vim/bundle/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
-[submodule "vim/bundle/rootfinder"]
-	path = vim/bundle/rootfinder
-	url = https://github.com/lucapette/vim-rootfinder
 [submodule "vim/bundle/solarized"]
 	path = vim/bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
