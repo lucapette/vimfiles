@@ -1,6 +1,6 @@
 IGNORE_FILES = [/^\.gitignore$/, /^Rakefile$/,/^README.markdown$/,/^\.gitmodules$/, /^vim\/bundle/]
 
-files = `git ls-files`.split("\n").reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
+files = `git ls-files -co`.split("\n").reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
 
 target_dir=File.expand_path('~')
 
