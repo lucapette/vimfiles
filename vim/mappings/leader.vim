@@ -1,9 +1,3 @@
-" Alternate Rails.vim or Rake.vim
-nmap <leader>a :A<CR>
-
-" Alternate Rails.vim or Rake.vim
-nmap <leader>A :AV<CR><C-w>h
-
 " Open CtrlP.vim in buffer-mode search.
 nmap <leader>b :CtrlPBuffer<CR>
 
