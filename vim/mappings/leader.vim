@@ -20,3 +20,6 @@ nmap <leader>w ma:w<bar>call utils#trimspaces()<CR>`a
 
 " Highlight the current word without moving the cursor. Very handy.
 nmap <silent> <leader>h :setl hls<CR>:let @/="\\<<C-r><C-w>\\>"<CR>
+
+" Stop highlighting.
+nmap <buffer> <silent> <leader><space> :noh<CR>

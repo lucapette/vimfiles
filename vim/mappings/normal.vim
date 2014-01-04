@@ -1,6 +1,3 @@
-" Stop highlighting.
-nmap <buffer> <silent> <CR> :noh<CR>
-
 " While searching scroll to the center of the window.
 nmap n nzz
 nmap N Nzz
