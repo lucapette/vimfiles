@@ -22,4 +22,4 @@ nmap <leader>w ma:w<bar>call utils#trimspaces()<CR>`a
 nmap <silent> <leader>h :setl hls<CR>:let @/="\\<<C-r><C-w>\\>"<CR>
 
 " Stop highlighting.
-nmap <buffer> <silent> <leader><space> :noh<CR>
+nmap <silent> <leader><space> :noh<CR>
