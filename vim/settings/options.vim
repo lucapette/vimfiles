@@ -35,6 +35,9 @@ set foldmethod=manual
 " Use spaces for crappy tabs.
 set expandtab
 
+" Evaluate .vimrc in current dir
+set exrc
+
 " when substitute enable g flag by default. Very handy.
 set gdefault
 
@@ -49,6 +52,9 @@ set hlsearch
 
 " Show matched search while typing.
 set incsearch
+
+" Why wasn't I using this?
+set ignorecase
 
 " Always show the stl, please.
 set laststatus=2
@@ -73,6 +79,9 @@ set relativenumber
 
 " Put the current line in relativenumbering
 set number
+
+" Use it if you set exrc
+set secure
 
 " Show the last partial command
 set showcmd
