@@ -23,3 +23,9 @@ nmap <silent> <leader>h :setl hls<CR>:let @/="\\<<C-r><C-w>\\>"<CR>
 
 " Stop highlighting.
 nmap <silent> <leader><space> :noh<CR>
+
+" Prompt for a command to run
+nmap <leader>vp :VimuxPromptCommand<CR>
+
+" Run last command executed by VimuxRunCommand
+nmap <leader>vl :VimuxRunLastCommand<CR>
