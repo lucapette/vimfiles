@@ -1,4 +1,4 @@
-function! ruby#checkSyntax()
+func! ruby#checkSyntax()
   update
 
   let output = system('ruby -c '.expand('%'))
@@ -23,4 +23,11 @@ function! ruby#checkSyntax()
 
   " Make it a scratch (temporary) buffer.
   setlocal buftype=nofile bufhidden=wipe noswapfile
-endfunction
+endfunc
+
+func! ruby#PromoteToLet()
+  exec 'normal! dd'
+  exec 'normal! P'
+  :.s/@\=\(\w\+\) = \(.*\)$/let(:\1) { \2 }/
+  :normal ==
+endfun
