@@ -22,9 +22,12 @@ func s:RunTest(...)
   end
 
   if s:IsInTestFile()
-    call s:SetTestFile()
+    let t:test_file = @%
+  elseif exists('g:autoloaded_rails') && !empty(rails#buffer()) && !empty(rails#app())
+    let t:test_file = rails#buffer().test_file()
+  elseif exists('g:loaded_rake') && !empty(rake#buffer())
+    let t:test_file = rake#buffer().related()
   elseif !exists("t:test_file")
-    " maybe try to use alternate file or say something?
     return
   end
 
@@ -77,10 +80,6 @@ endfunc
 
 func s:IsTestUnitFile(filename)
   return match(a:filename, '_test.rb') != -1
-endfunc
-
-func s:SetTestFile()
-  let t:test_file = @%
 endfunc
 
 " vim:set et sw=2:
