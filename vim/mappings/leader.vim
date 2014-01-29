@@ -15,8 +15,8 @@ nmap <leader>i gg=G``
 " Show a preview of the git current status.
 nmap <leader>s :Gstatus<CR>
 
-" Save the current buffer and trimspaces.
-nmap <leader>w ma:w<bar>call utils#trimspaces()<CR>`a
+" Save the current buffer
+nmap <leader>w :w<CR>
 
 " Highlight the current word without moving the cursor. Very handy.
 nmap <silent> <leader>h :setl hls<CR>:let @/="\\<<C-r><C-w>\\>"<CR>
