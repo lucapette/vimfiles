@@ -7,7 +7,7 @@ let g:netrw_winsize   = 30
 let g:UltiSnipsExpandTrigger       = "<tab>"
 let g:UltiSnipsJumpForwardTrigger  = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-let g:UltiSnipsSnippetDirectories  = ["snippets"]
+let g:UltiSnipsSnippetDirectories  = ["snips"]
 let g:UltiSnipsDoHash              = 0
 
 " CtrlP
