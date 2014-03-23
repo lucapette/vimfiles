@@ -1,4 +1,4 @@
-snippet /^package/ "Package" r
+snippet /^main/ "main" r
 package ${1:main}
 
 import(
@@ -8,11 +8,6 @@ import(
 func main() {
     $2
 }
-endsnippet
-snippet /^import/ "Import" r
-import(
-	"${1:fmt}"
-)
 endsnippet
 snippet for "For loop" b
 for ${1:condition}${1/(.+)/ /}{
@@ -57,4 +52,18 @@ map[${1:type}]${2:val}
 endsnippet
 snippet : "Variable declaration :=" !b
 ${1:name} := ${0:value}
+endsnippet
+snippet	test "Test Function" b
+func Test${1:What}(t *testing.T) {
+    $2
+
+	if actual != expected {
+		t.Errorf("Expected '%s' to == '%s'", actual, expected)
+	}
+}
+endsnippet
+snippet	bench "bench Function" b
+func Benchmark${1:What}(b *testing.B) {
+    $2
+}
 endsnippet
