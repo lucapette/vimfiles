@@ -25,6 +25,9 @@ let g:rubycomplete_rails          = 0
 " RubyDoc
 let g:ruby_doc_command='open'
 
+" golang
+let g:gofmt_command = 'goimports'
+
 " I started liking fancy things
 let g:airline_symbols =  get(g:, 'airline_symbols', {})
 
