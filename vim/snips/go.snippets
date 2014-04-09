@@ -24,20 +24,7 @@ if ${1:condition}${1/(.+)/ /}{
 	${0:${VISUAL}}
 }
 endsnippet
-snippet select "Select statement" b
-select {
-case${0}
-}
-endsnippet
-snippet case "Case clause" b
-case ${1:condition}:
-	${0:${VISUAL}}
-endsnippet
-snippet default "Default clause" b
-default:
-	${0:${VISUAL}}
-endsnippet
-snippet /^meth/ "Method" r
+snippet /^meth/ "Method" b
 func (${1:receiver} ${2:type}) ${3:name}(${4:params})${5/(.+)/ /}${5:type} {
 	${0:${VISUAL}}
 }
@@ -47,13 +34,13 @@ func ${1:name}(${2:params})${3/(.+)/ /}${3:type} {
 	${0:${VISUAL}}
 }
 endsnippet
-snippet map "Map type" b
+snippet map "Map type" w
 map[${1:type}]${2:val}
 endsnippet
-snippet : "Variable declaration :=" !b
+snippet : "Variable declaration :=" w
 ${1:name} := ${0:value}
 endsnippet
-snippet	test "Test Function" b
+snippet	test "Test Function" w
 func Test${1:What}(t *testing.T) {
     $2
 
