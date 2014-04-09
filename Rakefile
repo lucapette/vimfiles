@@ -21,7 +21,6 @@ task :sync do
       puts "#{file} removed?"
     end
   end
-  system("$GOPATH/src/github.com/nsf/gocode/vim/pathogen_update.sh")
 end
 
 desc 'init project'
