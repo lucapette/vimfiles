@@ -9,6 +9,15 @@ func main() {
     $2
 }
 endsnippet
+snippet /^test/ "test" r
+package ${1:main}
+
+import(
+    "testing"
+)
+
+$2
+endsnippet
 snippet for "For loop" b
 for ${1:condition}${1/(.+)/ /}{
 	${0:${VISUAL}}
@@ -40,7 +49,7 @@ endsnippet
 snippet : "Variable declaration :=" w
 ${1:name} := ${0:value}
 endsnippet
-snippet	test "Test Function" w
+snippet	t "Test Function" w
 func Test${1:What}(t *testing.T) {
     $2
 
@@ -49,7 +58,7 @@ func Test${1:What}(t *testing.T) {
 	}
 }
 endsnippet
-snippet	bench "bench Function" b
+snippet	b "bench Function" b
 func Benchmark${1:What}(b *testing.B) {
     $2
 }
