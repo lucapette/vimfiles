@@ -58,9 +58,12 @@
 [submodule "vim/bundle/vimux"]
 	path = vim/bundle/vimux
 	url = https://github.com/benmills/vimux
-[submodule "vim/bundle/golang"]
-	path = vim/bundle/golang
-	url = https://github.com/AndrewRadev/vim-golang
 [submodule "vim/bundle/docker"]
 	path = vim/bundle/docker
 	url = https://github.com/ekalinin/Dockerfile.vim
+[submodule "vim/bundle/tagbar"]
+	path = vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule "vim/bundle/go"]
+	path = vim/bundle/go
+	url = https://github.com/fatih/vim-go
