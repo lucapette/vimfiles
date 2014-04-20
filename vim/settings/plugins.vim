@@ -8,7 +8,23 @@ let g:UltiSnipsExpandTrigger       = "<tab>"
 let g:UltiSnipsJumpForwardTrigger  = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 let g:UltiSnipsSnippetDirectories  = ["snips"]
-let g:UltiSnipsDoHash              = 0
+
+function! g:UltiSnips_Complete()
+    call UltiSnips#ExpandSnippet()
+    if g:ulti_expand_res == 0
+        if pumvisible()
+            return "\<C-n>"
+        else
+            call UltiSnips#JumpForwards()
+            if g:ulti_jump_forwards_res == 0
+               return "\<TAB>"
+            endif
+        endif
+    endif
+    return ""
+endfunction
+
+au InsertEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 
 " CtrlP
 let g:ctrlp_map                   = ',,'
@@ -24,9 +40,6 @@ let g:rubycomplete_rails          = 0
 
 " RubyDoc
 let g:ruby_doc_command='open'
-
-" golang
-let g:gofmt_command = 'goimports'
 
 " I started liking fancy things
 let g:airline_symbols =  get(g:, 'airline_symbols', {})
