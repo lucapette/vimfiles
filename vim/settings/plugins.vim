@@ -41,3 +41,6 @@ let g:airline_symbols.linenr = '⭡'
 let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_section_c = '%F'
+
+" vim-go
+let g:go_auto_type_info = 0
