@@ -89,6 +89,9 @@ set showcmd
 " Show me the matching paren.
 set showmatch
 
+" 2 is fine
+set shiftwidth=2
+
 " Be casesentive if I actually type Uppercase chars.
 set smartcase
 
