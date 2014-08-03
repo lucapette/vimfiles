@@ -1,12 +1,6 @@
-IGNORE_FILES = [/^\.gitignore$/, /^Rakefile$/,/^README.markdown$/,/^\.gitmodules$/, /^vim\/bundle/]
+files = `git ls-files -co`.split("\n")
 
-files = `git ls-files -co`.split("\n").reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
-
-target_dir=File.expand_path('~')
-
-Dir["vim/bundle/**/*"].each do |file|
-  files << file unless File.directory?(file)
-end
+target_dir = File.expand_path('~')
 
 desc "sync vimfiles in #{target_dir}"
 task :sync do
@@ -21,17 +15,6 @@ task :sync do
       puts "#{file} removed?"
     end
   end
-end
-
-desc 'init project'
-task :init do
-  system('git submodule init')
-  system('git submodule update')
-end
-
-desc 'update the installed bundles'
-task :update_bundles do
-  system('git submodule foreach git pull origin master')
 end
 
 task default: :sync

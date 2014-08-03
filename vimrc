@@ -1,19 +1,47 @@
-" Don't try to be crappy compatible with Vi. It's 2013.
+" Don't try to be crappy compatible with Vi
 set nocompatible
 
-" pathogen.vim is so awesome you can even bundle it.
-runtime bundle/pathogen/autoload/pathogen.vim
+filetype off
 
-" If you don't know what pathogen.vim is
-" then you definitely need to check it out.
-call pathogen#infect()
-call pathogen#helptags()
+if !isdirectory(expand("~/.vim/bundle/Vundle.vim/.git"))
+  !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+endif
 
-" Enable syntax highlighter.
-syntax on
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-rake'
+Plugin 'kien/ctrlp.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'lucapette/vim-textobj-underscore'
+Plugin 'tpope/vim-bundler'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-repeat'
+Plugin 'rking/ag.vim'
+Plugin 'benmills/vimux'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'fatih/vim-go'
+Plugin 'kchmck/vim-coffee-script'
+
+call vundle#end()
 
 " Indentation.
 filetype plugin indent on
+
+" Enable syntax highlighter.
+syntax on
 
 " And plugins too.
 filetype plugin plugin on
