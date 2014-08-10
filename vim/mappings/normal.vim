@@ -12,3 +12,8 @@ nnoremap Y y$
 " splitjoin.vim mappings
 nmap sj :SplitjoinSplit<CR>
 nmap sk :SplitjoinJoin<CR>
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
