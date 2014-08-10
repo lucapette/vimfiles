@@ -25,9 +25,6 @@ let g:rubycomplete_buffer_loading = 0
 let g:rubycomplete_include_object = 0
 let g:rubycomplete_rails          = 0
 
-" RubyDoc
-let g:ruby_doc_command='open'
-
 " I started liking fancy things
 let g:airline_symbols =  get(g:, 'airline_symbols', {})
 
