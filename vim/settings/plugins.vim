@@ -12,6 +12,8 @@ let g:UltiSnipsSnippetDirectories  = ["snips"]
 " ycm
 let g:ycm_key_list_select_completion = ['<C-n>']
 let g:ycm_key_list_previous_completion = ['<C-p>']
+let g:ycm_filetype_specific_completion_to_disable = {'journal': '1'}
+
 
 " CtrlP
 let g:ctrlp_map                   = ',,'
