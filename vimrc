@@ -38,6 +38,7 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/matchit.zip'
 
 call vundle#end()
 
