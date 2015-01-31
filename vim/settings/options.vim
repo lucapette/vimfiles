@@ -20,6 +20,9 @@ set clipboard=unnamed
 " Highlight the line where the cursor is. Surprisingly useful.
 set cursorline
 
+" Show me where how long is a 100 chars line
+set colorcolumn=100
+
 " Use a popup to show the completion and matches the longest match first.
 set completeopt=longest,menuone
 
