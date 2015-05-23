@@ -12,13 +12,11 @@ let g:UltiSnipsSnippetDirectories  = ["snips"]
 " ycm
 let g:ycm_key_list_select_completion = ['<C-n>']
 let g:ycm_key_list_previous_completion = ['<C-p>']
-let g:ycm_filetype_specific_completion_to_disable = {'journal': '1'}
 let g:ycm_filetype_blacklist = {
       \ 'tagbar' : 1,
       \ 'qf' : 1,
       \ 'notes' : 1,
       \ 'markdown' : 1,
-      \ 'journal' : 1,
       \ 'unite' : 1,
       \ 'text' : 1,
       \ 'vimwiki' : 1,
