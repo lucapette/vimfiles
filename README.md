@@ -13,7 +13,7 @@ Do not use a Vim distro
 the files to learn something and to get inspired. Don't hesitate to contact me
 for any further information but, please, build your own configuration. Read
 [Lazy Modern
-Configuration](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration/)
+Configuration](http://lucapette.me/vim-for-rails-developers-lazy-modern-configuration/)
 to better understand what I mean. Of course, **steal whatever you like**.
 
 I'm a Ruby developer and for this very reason my configuration has a lot of
