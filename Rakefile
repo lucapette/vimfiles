@@ -1,4 +1,8 @@
+IGNORE_FILES = [/^bin/, /^Rakefile$/, /^README.markdown$/, /\.DS_Store$/]
+
 files = `git ls-files -co`.split("\n")
+
+files.reject! { |f| IGNORE_FILES.any? { |re| f.match(re) } }
 
 target_dir = File.expand_path('~')
 
