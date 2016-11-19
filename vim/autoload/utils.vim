@@ -27,4 +27,17 @@ func utils#RunCommand(cmd)
   call VimuxRunCommand(a:cmd)
 endfunc
 
+" zenmode
+func! utils#zenmode()
+  Goyo
+  set background!
+  if exists('g:zenmode') && g:zenmode == 'on'
+    colorscheme solarized
+    let g:zenmode = 'off'
+  else
+    colorscheme pencil
+    let g:zenmode = 'on'
+  endif
+endfunc
+
 " vim:set et sw=2:

@@ -50,3 +50,12 @@ let g:airline_symbols.linenr = '⭡'
 let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_section_c = '%F'
+
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_toml_frontmatter = 1
+
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+
+let g:pencil_higher_contrast_ui = 0

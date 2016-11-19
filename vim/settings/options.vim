@@ -20,6 +20,9 @@ set clipboard=unnamed
 " Highlight the line where the cursor is. Surprisingly useful.
 set cursorline
 
+" Seems helpful for writing
+set conceallevel=2
+
 " Show me where how long is a 100 chars line
 set colorcolumn=100
 

@@ -4,3 +4,6 @@ command! -bar -range=% NotRocket execute '<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/e'
 
 " Remove all trailing spaces
 command! TrimSpaces execute ':call utils#trimspaces()<bar>w'
+
+" Zenmode
+command! Zenmode execute ':call utils#zenmode()<bar>w'
