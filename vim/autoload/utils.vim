@@ -30,11 +30,12 @@ endfunc
 " zenmode
 func! utils#zenmode()
   Goyo
-  set background!
   if exists('g:zenmode') && g:zenmode == 'on'
+    set background=dark
     colorscheme solarized
     let g:zenmode = 'off'
   else
+    set background=light
     colorscheme pencil
     let g:zenmode = 'on'
   endif
