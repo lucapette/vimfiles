@@ -14,7 +14,7 @@ set backspace=indent,eol,start
 set backup
 set backupdir=/tmp
 
-" Use mac os clipobard
+" Use mac OS clipboard
 set clipboard=unnamed
 
 " Highlight the line where the cursor is. Surprisingly useful.
@@ -26,7 +26,7 @@ set conceallevel=2
 " Show me where how long is a 100 chars line
 set colorcolumn=100
 
-" Use a popup to show the completion and matches the longest match first.
+" Use a pop-up to show the completion and matches the longest match first.
 set completeopt=longest,menuone
 
 " Use the default unix dictionary.
@@ -62,17 +62,14 @@ set incsearch
 " Why wasn't I using this?
 set ignorecase
 
-" Always show the stl, please.
+" Always show the status line, please.
 set laststatus=2
 
 " Be magic with patterns
 set magic
 
-" Show the mathcing paren for 4 tenth of seconds.
+" Show the matching paren for 4 tenth of seconds.
 set matchtime=4
-
-" Yes, enable mouse. Then don't use it.
-set mouse=a
 
 " Do not show mode
 set noshowmode
@@ -98,11 +95,8 @@ set showmatch
 " 2 is fine
 set shiftwidth=2
 
-" Be casesentive if I actually type Uppercase chars.
+" Be case sentive if I actually type upper-cased chars.
 set smartcase
-
-" I don't want to add the same words again.
-set spellfile=$HOME/Dropbox/spell.utf8.add
 
 " I like the Queen a lot.
 set spelllang=en_gb
@@ -119,7 +113,7 @@ set textwidth=78
 " Fast escape
 set ttimeoutlen=10
 
-" My terminal has a lot of colors.
+" My terminal has a lot of colours.
 set t_Co=256
 
 " Give me a nice completion on the command line.

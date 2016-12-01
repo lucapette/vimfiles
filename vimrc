@@ -15,7 +15,6 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'SirVer/ultisnips'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'benmills/vimux'
 Plugin 'bling/vim-airline'
