@@ -23,9 +23,6 @@ set cursorline
 " Seems helpful for writing
 set conceallevel=2
 
-" Show me where how long is a 100 chars line
-set colorcolumn=100
-
 " Use a pop-up to show the completion and matches the longest match first.
 set completeopt=longest,menuone
 
