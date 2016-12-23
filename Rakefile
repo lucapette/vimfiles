@@ -1,4 +1,4 @@
-IGNORE_FILES = [/^bin/, /^Rakefile$/, /^README.markdown$/, /\.DS_Store$/]
+IGNORE_FILES = [/^bin/, /^Rakefile$/, /^README.md$/, /\.DS_Store$/]
 
 files = `git ls-files -co`.split("\n")
 
