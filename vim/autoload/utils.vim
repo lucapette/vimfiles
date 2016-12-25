@@ -26,10 +26,12 @@ func! utils#zenmode()
   Goyo
   if exists('g:zenmode') && g:zenmode == 'on'
     set background=dark
+    set nospell
     colorscheme solarized
     let g:zenmode = 'off'
   else
     set background=light
+    set spell
     colorscheme pencil
     let g:zenmode = 'on'
   endif
