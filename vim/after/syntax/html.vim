@@ -1,6 +1,3 @@
-" Please don't underline link content. 
-highlight link htmlLink text
-
 " HTML 5 tags
 syn keyword htmlTagName contained article aside audio bb canvas command datagrid
 syn keyword htmlTagName contained datalist details dialog embed figure footer
