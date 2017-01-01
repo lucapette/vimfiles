@@ -24,17 +24,18 @@ endfunc
 " zenmode
 func! utils#zenmode()
   Goyo
-  PencilToggle
   if exists('g:zenmode') && g:zenmode == 'on'
     set background=dark
     set nospell
     colorscheme solarized
     let g:zenmode = 'off'
+    PencilOff
   else
     set background=light
     set spell
     colorscheme pencil
     let g:zenmode = 'on'
+    PencilSoft
   endif
 endfunc
 
