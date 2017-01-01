@@ -33,9 +33,4 @@ let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_toml_frontmatter = 1
 
-let g:limelight_conceal_ctermfg = 'gray'
-let g:limelight_conceal_ctermfg = 240
-
 let g:pencil_higher_contrast_ui = 0
-let g:pencil_spell_undercurl = 1
-let g:pencil_terminal_italics = 1
