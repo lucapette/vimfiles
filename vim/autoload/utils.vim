@@ -24,6 +24,7 @@ endfunc
 " zenmode
 func! utils#zenmode()
   Goyo
+  PencilToggle
   if exists('g:zenmode') && g:zenmode == 'on'
     set background=dark
     set nospell
