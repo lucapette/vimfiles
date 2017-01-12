@@ -60,3 +60,6 @@ runtime mappings/visual.vim
 " Load colorscheme
 set background=dark
 colorscheme solarized
+
+" hopefully a temporary measure again
+imap <esc> <c-c>:echo "you're doing it wrong"<CR>a
