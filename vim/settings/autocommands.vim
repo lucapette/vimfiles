@@ -6,7 +6,6 @@ function! s:goyo_enter()
   set background=light
   set spell
   colorscheme pencil
-  PencilHard
 
   let b:quitting = 0
   let b:quitting_bang = 0
