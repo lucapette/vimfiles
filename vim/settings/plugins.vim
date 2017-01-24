@@ -30,3 +30,8 @@ let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_section_c = '%F'
 
 let g:pencil_higher_contrast_ui = 0
+
+let g:markdown_fenced_languages = ['html', 'ruby', 'bash=sh', 'js=javascript']
+
+let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0
