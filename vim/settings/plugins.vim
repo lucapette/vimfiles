@@ -33,3 +33,5 @@ let g:markdown_fenced_languages = ['html', 'ruby', 'bash=sh', 'js=javascript']
 
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
+
+let g:omni_sql_no_default_maps = 1
