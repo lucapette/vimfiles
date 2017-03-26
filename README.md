@@ -10,10 +10,9 @@ be able to use Vim everyday.
 **Do not use my configuration** and please **do not use a Vim distro**. Read
 the source code to learn something new and to get inspired. Don't hesitate to
 contact me for any further information but, please, build your own
-configuration. Read [Lazy Modern
+configuration. I wrote [Lazy Modern
 Configuration](http://lucapette.me/vim-for-rails-developers-lazy-modern-configuration/)
-to better understand what I mean. Of course, **steal whatever you like**.
-
+to better explain my claim. Of course, **steal whatever you like**.
 
 # License
 
