@@ -21,4 +21,10 @@ func! utils#VSetSearch()
   let @s = temp
 endfunc
 
+" Run commands in vimux. I'm wrapping it because I want to handle the case in
+" which tmux isn't running and use !
+func utils#RunCommand(cmd)
+  call VimuxRunCommand(a:cmd)
+endfunc
+
 " vim:set et sw=2:

@@ -15,6 +15,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'benmills/vimux'
 Plugin 'fatih/vim-go'
 Plugin 'jparise/vim-graphql'
 Plugin 'kana/vim-textobj-user'
