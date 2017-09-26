@@ -62,7 +62,7 @@ runtime mappings/normal.vim
 runtime mappings/visual.vim
 
 " Load colorscheme
-set background=dark
+set background=light
 colorscheme solarized
 
 " hopefully a temporary measure again
