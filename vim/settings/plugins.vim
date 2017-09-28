@@ -17,7 +17,7 @@ let g:rubycomplete_rails          = 0
 
 " I started liking fancy things
 let g:airline_symbols =  get(g:, 'airline_symbols', {})
-
+let g:airline_theme = 'solarized'
 let g:airline_left_sep = '⮀'
 let g:airline_left_alt_sep = '⮁'
 let g:airline_right_sep = '⮂'

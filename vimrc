@@ -33,6 +33,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-rhubarb'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/matchit.zip'
 
