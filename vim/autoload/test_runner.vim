@@ -52,7 +52,10 @@ endfunc
 
 func s:DetermineRunner(filename)
   if s:IsRspecFile(a:filename)
-    return s:test_runner_prefix.'rspec'
+    if filereadable("bin/rspec")
+      return s:test_runner_prefix.'bin/rspec'
+    end
+      return s:test_runner_prefix.'rspec'
   elseif s:IsTestUnitFile(a:filename)
     return s:test_runner_prefix.'ruby -Itest'
   end
