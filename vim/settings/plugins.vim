@@ -10,24 +10,13 @@ let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_user_command          = ['.git/', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_working_path_mode     = 'r'
 
+" Fancy fonts
+let g:airline_powerline_fonts = 1
+
 " RubyComplete
 let g:rubycomplete_buffer_loading = 0
 let g:rubycomplete_include_object = 0
 let g:rubycomplete_rails          = 0
-
-" I started liking fancy things
-let g:airline_symbols =  get(g:, 'airline_symbols', {})
-let g:airline_theme = 'solarized'
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
-let g:airline_symbols.branch = '⭠'
-let g:airline_symbols.readonly = '⭤'
-let g:airline_symbols.linenr = '⭡'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.whitespace = 'Ξ'
-let g:airline_section_c = '%F'
 
 let g:markdown_fenced_languages = ['html', 'ruby', 'bash=sh', 'js=javascript']
 
