@@ -20,9 +20,6 @@ set clipboard=unnamed
 " Highlight the line where the cursor is. Surprisingly useful.
 set cursorline
 
-" Seems helpful for writing
-set conceallevel=2
-
 " Use a pop-up to show the completion and matches the longest match first.
 set completeopt=longest,menuone
 
@@ -35,13 +32,13 @@ set directory=/tmp
 " I want to choose what to fold
 set foldmethod=manual
 
-" Use spaces for crappy tabs.
+" Use spaces for tabs
 set expandtab
 
 " Evaluate .vimrc in current dir
 set exrc
 
-" when substitute enable g flag by default. Very handy.
+" When substitute enable g flag by default. Very handy.
 set gdefault
 
 " Yes, long history please.
