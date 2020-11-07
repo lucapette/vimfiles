@@ -13,6 +13,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'Einenlum/yaml-revealer'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'benmills/vimux'
 Plugin 'ctrlpvim/ctrlp.vim'
