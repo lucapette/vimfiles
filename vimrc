@@ -15,6 +15,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'Einenlum/yaml-revealer'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'arcticicestudio/nord-vim'
 Plugin 'benmills/vimux'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'kana/vim-textobj-user'
@@ -57,5 +58,4 @@ runtime mappings/normal.vim
 runtime mappings/visual.vim
 
 " Load colorscheme
-set background=light
-colorscheme solarized
+colorscheme nord
