@@ -58,4 +58,8 @@ runtime mappings/normal.vim
 runtime mappings/visual.vim
 
 " Load colorscheme
-colorscheme nord
+if &background ==# 'dark'
+   colorscheme nord
+else
+   colorscheme solarized
+endif
