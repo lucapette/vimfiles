@@ -9,7 +9,7 @@ nmap <leader>e :Vexplore<CR>
 nmap <leader>E :Vexplore <C-R>=getcwd()<CR><CR>
 
 " Indent all the file with one keystroke.
-" See http://lucapette.com/vim/rails/vim-for-rails-developers-indenting-code.
+" See http://lucapette.me/writing/vim-for-rails-developers-indenting-code.
 nmap <leader>i gg=G``
 
 " Show a preview of the git current status.
